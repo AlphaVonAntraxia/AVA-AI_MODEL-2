@@ -108,3 +108,5 @@ widgetsnbextension==4.0.16
 scikit-learn==1.9.1
 scipy==1.18.1
 joblib==1.6.0
+fastapi==0.116.1
+uvicorn==0.35.0

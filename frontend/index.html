@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AVA-AI Stock Prediction</title>
+
+    <title>AVA-AI | Stock Intelligence</title>
 
     <style>
         * {
@@ -13,101 +14,268 @@
         body {
             margin: 0;
             min-height: 100vh;
-            font-family: Arial, sans-serif;
-            background: #0f172a;
-            color: #e2e8f0;
+            font-family: Arial, Helvetica, sans-serif;
+            background:
+                radial-gradient(circle at top right, #1d4ed8 0%, transparent 35%),
+                linear-gradient(135deg, #020617, #0f172a 55%, #111827);
+            color: #e5e7eb;
+        }
+
+        .page {
+            width: 100%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 24px;
+        }
+
+        .header {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
+            margin-bottom: 40px;
         }
 
-        .container {
-            width: 90%;
-            max-width: 700px;
-            padding: 40px;
-            background: #1e293b;
-            border-radius: 16px;
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
-        }
-
-        h1 {
-            margin-top: 0;
-            font-size: 32px;
-        }
-
-        .subtitle {
-            color: #94a3b8;
-            margin-bottom: 30px;
-        }
-
-        .controls {
+        .brand {
             display: flex;
-            gap: 12px;
-            margin-bottom: 30px;
+            align-items: center;
+            gap: 14px;
         }
 
-        select,
-        button {
-            padding: 12px 16px;
-            border-radius: 8px;
-            border: none;
+        .logo {
+            width: 48px;
+            height: 48px;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #2563eb, #06b6d4);
+            font-weight: bold;
+            font-size: 20px;
+            box-shadow: 0 8px 30px rgba(37, 99, 235, 0.35);
+        }
+
+        .brand h1 {
+            margin: 0;
+            font-size: 25px;
+            letter-spacing: 1px;
+        }
+
+        .brand span {
+            color: #64748b;
+            font-size: 12px;
+        }
+
+        .status-badge {
+            padding: 8px 14px;
+            border-radius: 999px;
+            background: rgba(34, 197, 94, 0.12);
+            border: 1px solid rgba(34, 197, 94, 0.3);
+            color: #86efac;
+            font-size: 13px;
+        }
+
+        .hero {
+            margin-bottom: 28px;
+        }
+
+        .hero h2 {
+            margin: 0 0 10px;
+            font-size: 42px;
+            line-height: 1.1;
+        }
+
+        .hero p {
+            margin: 0;
+            color: #94a3b8;
+            font-size: 17px;
+            max-width: 650px;
+            line-height: 1.6;
+        }
+
+        .dashboard {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 22px;
+        }
+
+        .card {
+            background: rgba(15, 23, 42, 0.78);
+            border: 1px solid rgba(148, 163, 184, 0.14);
+            border-radius: 20px;
+            padding: 28px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+            backdrop-filter: blur(12px);
+        }
+
+        .card-label {
+            color: #64748b;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-size: 11px;
+            margin-bottom: 12px;
+        }
+
+        .card h3 {
+            margin: 0 0 22px;
+            font-size: 22px;
+        }
+
+        .selector {
+            width: 100%;
+            padding: 15px;
+            border-radius: 12px;
+            border: 1px solid #334155;
+            background: #111827;
+            color: #f8fafc;
             font-size: 16px;
+            outline: none;
         }
 
-        select {
-            flex: 1;
-            background: #334155;
-            color: white;
+        .selector:focus {
+            border-color: #3b82f6;
         }
 
-        button {
-            background: #2563eb;
+        .predict-button {
+            width: 100%;
+            margin-top: 16px;
+            padding: 15px;
+            border: none;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #2563eb, #0891b2);
             color: white;
+            font-size: 16px;
+            font-weight: bold;
             cursor: pointer;
+            transition: 0.2s ease;
         }
 
-        button:hover {
-            background: #1d4ed8;
+        .predict-button:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
         }
 
         .result {
-            padding: 24px;
-            background: #0f172a;
-            border-radius: 12px;
-            display: none;
+            min-height: 210px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
-        .result h2 {
-            margin-top: 0;
+        .result-ticker {
+            font-size: 14px;
+            color: #94a3b8;
+            margin-bottom: 8px;
         }
 
         .prediction {
-            font-size: 32px;
+            font-size: 48px;
             font-weight: bold;
-            margin: 15px 0;
+            letter-spacing: -1px;
+            margin: 8px 0;
+        }
+
+        .prediction.positive {
+            color: #4ade80;
+        }
+
+        .prediction.negative {
+            color: #f87171;
+        }
+
+        .prediction.neutral {
+            color: #facc15;
         }
 
         .status {
             color: #94a3b8;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .loading {
+            color: #60a5fa;
         }
 
         .error {
             color: #f87171;
+        }
+
+        .info {
+            grid-column: 1 / -1;
+        }
+
+        .info p {
+            color: #94a3b8;
+            line-height: 1.7;
+            margin: 0;
+            font-size: 14px;
+        }
+
+        .footer {
+            text-align: center;
+            color: #475569;
+            font-size: 12px;
+            margin-top: 32px;
+        }
+
+        @media (max-width: 750px) {
+            .dashboard {
+                grid-template-columns: 1fr;
+            }
+
+            .info {
+                grid-column: auto;
+            }
+
+            .hero h2 {
+                font-size: 34px;
+            }
+
+            .header {
+                align-items: flex-start;
+                gap: 16px;
+                flex-direction: column;
+            }
         }
     </style>
 </head>
 
 <body>
 
-    <div class="container">
-        <h1>AVA-AI</h1>
+<div class="page">
 
-        <p class="subtitle">
-            Stock prediction dashboard powered by the AVA-AI backend.
+    <header class="header">
+        <div class="brand">
+            <div class="logo">A</div>
+
+            <div>
+                <h1>AVA-AI</h1>
+                <span>Artificial Intelligence • Market Analysis</span>
+            </div>
+        </div>
+
+        <div class="status-badge">
+            ● API Online
+        </div>
+    </header>
+
+    <section class="hero">
+        <h2>Stock Intelligence Dashboard</h2>
+
+        <p>
+            Analyze selected equities using the AVA-AI machine-learning
+            prediction engine and its technical feature pipeline.
         </p>
+    </section>
 
-        <div class="controls">
-            <select id="ticker">
+    <main class="dashboard">
+
+        <section class="card">
+            <div class="card-label">Market Selection</div>
+
+            <h3>Select a stock</h3>
+
+            <select id="ticker" class="selector">
                 <option value="AAPL">Apple (AAPL)</option>
                 <option value="AMZN">Amazon (AMZN)</option>
                 <option value="GOOGL">Alphabet (GOOGL)</option>
@@ -116,66 +284,119 @@
                 <option value="TSLA">Tesla (TSLA)</option>
             </select>
 
-            <button onclick="getPrediction()">
-                Predict
+            <button class="predict-button" onclick="getPrediction()">
+                Run Prediction
             </button>
-        </div>
+        </section>
 
-        <div id="result" class="result">
-            <h2 id="resultTicker"></h2>
+        <section class="card result">
 
-            <div id="prediction" class="prediction"></div>
+            <div class="card-label">Model Output</div>
 
-            <div id="status" class="status"></div>
-        </div>
+            <div id="resultTicker" class="result-ticker">
+                Select a stock to begin
+            </div>
+
+            <div id="prediction" class="prediction neutral">
+                —
+            </div>
+
+            <div id="status" class="status">
+                Choose a stock and run the prediction model.
+            </div>
+
+        </section>
+
+        <section class="card info">
+
+            <div class="card-label">About the prediction</div>
+
+            <p>
+                AVA-AI returns the model's predicted next-day percentage
+                return based on the features used by the current machine
+                learning pipeline. This value is a model output and should
+                not be interpreted as a guaranteed market outcome or
+                investment recommendation.
+            </p>
+
+        </section>
+
+    </main>
+
+    <div class="footer">
+        AVA-AI • Machine Learning Stock Analysis Project
     </div>
 
-    <script>
-        async function getPrediction() {
-            const ticker = document.getElementById("ticker").value;
+</div>
 
-            const result = document.getElementById("result");
-            const resultTicker = document.getElementById("resultTicker");
-            const prediction = document.getElementById("prediction");
-            const status = document.getElementById("status");
+<script>
+    async function getPrediction() {
 
-            result.style.display = "block";
+        const ticker = document.getElementById("ticker").value;
 
-            resultTicker.textContent = ticker;
-            prediction.textContent = "Loading...";
-            status.textContent = "";
-            status.className = "status";
+        const resultTicker =
+            document.getElementById("resultTicker");
 
-            try {
-                const response = await fetch(
-                    `http://127.0.0.1:8000/predict/${ticker}`
-                );
+        const prediction =
+            document.getElementById("prediction");
 
-                if (!response.ok) {
-                    throw new Error("API request failed");
-                }
+        const status =
+            document.getElementById("status");
 
-                const data = await response.json();
+        resultTicker.textContent = ticker;
 
-                const percentage =
-                    data.predicted_next_day_return * 100;
+        prediction.textContent = "Loading...";
+        prediction.className = "prediction loading";
 
-                prediction.textContent =
-                    `${percentage.toFixed(4)}%`;
+        status.textContent =
+            "Contacting the AVA-AI prediction engine...";
 
-                status.textContent =
-                    "Model prediction returned successfully.";
+        status.className = "status";
 
-            } catch (error) {
-                prediction.textContent = "Error";
+        try {
 
-                status.textContent =
-                    "Could not connect to the AVA-AI backend.";
+            const response = await fetch(
+                `http://127.0.0.1:8000/predict/${ticker}`
+            );
 
-                status.className = "status error";
+            if (!response.ok) {
+                throw new Error("API request failed");
             }
+
+            const data = await response.json();
+
+            const percentage =
+                data.predicted_next_day_return * 100;
+
+            prediction.textContent =
+                `${percentage.toFixed(4)}%`;
+
+            if (percentage > 0.05) {
+                prediction.className =
+                    "prediction positive";
+            } else if (percentage < -0.05) {
+                prediction.className =
+                    "prediction negative";
+            } else {
+                prediction.className =
+                    "prediction neutral";
+            }
+
+            status.textContent =
+                "Model prediction returned successfully.";
+
+        } catch (error) {
+
+            prediction.textContent = "Error";
+            prediction.className = "prediction negative";
+
+            status.textContent =
+                "Could not connect to the AVA-AI backend.";
+
+            status.className = "status error";
         }
-    </script>
+    }
+</script>
 
 </body>
 </html>

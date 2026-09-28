@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVA-AI Stock Prediction</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: #e2e8f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 700px;
+            padding: 40px;
+            background: #1e293b;
+            border-radius: 16px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+        }
+
+        h1 {
+            margin-top: 0;
+            font-size: 32px;
+        }
+
+        .subtitle {
+            color: #94a3b8;
+            margin-bottom: 30px;
+        }
+
+        .controls {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 30px;
+        }
+
+        select,
+        button {
+            padding: 12px 16px;
+            border-radius: 8px;
+            border: none;
+            font-size: 16px;
+        }
+
+        select {
+            flex: 1;
+            background: #334155;
+            color: white;
+        }
+
+        button {
+            background: #2563eb;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #1d4ed8;
+        }
+
+        .result {
+            padding: 24px;
+            background: #0f172a;
+            border-radius: 12px;
+            display: none;
+        }
+
+        .result h2 {
+            margin-top: 0;
+        }
+
+        .prediction {
+            font-size: 32px;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+
+        .status {
+            color: #94a3b8;
+        }
+
+        .error {
+            color: #f87171;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>AVA-AI</h1>
+
+        <p class="subtitle">
+            Stock prediction dashboard powered by the AVA-AI backend.
+        </p>
+
+        <div class="controls">
+            <select id="ticker">
+                <option value="AAPL">Apple (AAPL)</option>
+                <option value="AMZN">Amazon (AMZN)</option>
+                <option value="GOOGL">Alphabet (GOOGL)</option>
+                <option value="MSFT">Microsoft (MSFT)</option>
+                <option value="NVDA">NVIDIA (NVDA)</option>
+                <option value="TSLA">Tesla (TSLA)</option>
+            </select>
+
+            <button onclick="getPrediction()">
+                Predict
+            </button>
+        </div>
+
+        <div id="result" class="result">
+            <h2 id="resultTicker"></h2>
+
+            <div id="prediction" class="prediction"></div>
+
+            <div id="status" class="status"></div>
+        </div>
+    </div>
+
+    <script>
+        async function getPrediction() {
+            const ticker = document.getElementById("ticker").value;
+
+            const result = document.getElementById("result");
+            const resultTicker = document.getElementById("resultTicker");
+            const prediction = document.getElementById("prediction");
+            const status = document.getElementById("status");
+
+            result.style.display = "block";
+
+            resultTicker.textContent = ticker;
+            prediction.textContent = "Loading...";
+            status.textContent = "";
+            status.className = "status";
+
+            try {
+                const response = await fetch(
+                    `http://127.0.0.1:8000/predict/${ticker}`
+                );
+
+                if (!response.ok) {
+                    throw new Error("API request failed");
+                }
+
+                const data = await response.json();
+
+                const percentage =
+                    data.predicted_next_day_return * 100;
+
+                prediction.textContent =
+                    `${percentage.toFixed(4)}%`;
+
+                status.textContent =
+                    "Model prediction returned successfully.";
+
+            } catch (error) {
+                prediction.textContent = "Error";
+
+                status.textContent =
+                    "Could not connect to the AVA-AI backend.";
+
+                status.className = "status error";
+            }
+        }
+    </script>
+
+</body>
+</html>

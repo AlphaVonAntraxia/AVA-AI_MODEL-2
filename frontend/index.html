@@ -305,6 +305,10 @@
                 Choose a stock and run the prediction model.
             </div>
 
+            <div id="modelMeta" class="status">
+                Model: —
+            </div>
+
         </section>
 
         <section class="card info">
@@ -342,6 +346,9 @@
 
         const status =
             document.getElementById("status");
+
+        const modelMeta =
+            document.getElementById("modelMeta");
 
         resultTicker.textContent = ticker;
 
@@ -384,6 +391,9 @@
 
             status.textContent =
                 "Model prediction returned successfully.";
+
+            modelMeta.textContent =
+                `Model: ${data.model_version} • ${data.model_type} • Horizon: ${data.prediction_horizon}`;
 
         } catch (error) {
 

@@ -18,11 +18,13 @@ SUPPORTED_TICKERS = {
 class PredictionResponse(BaseModel):
     ticker: str
     predicted_next_day_return: float
-
+    model_version: str
+    model_type: str
+    prediction_horizon: str
 
 app = FastAPI(
     title="AVA-AI API",
-    version="1.0.0",
+    version="2.0.0",
 )
 
 

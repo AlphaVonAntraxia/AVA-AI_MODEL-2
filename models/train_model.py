@@ -12,15 +12,29 @@ MODEL_DIR = PROJECT_ROOT / "models"
 
 FEATURE_COLUMNS = [
     "close",
+    "MA5",
     "MA20",
     "MA50",
+    "price_vs_MA5",
+    "price_vs_MA20",
+    "price_vs_MA50",
+    "volatility_5",
+    "volatility_10",
     "volatility_20",
     "volume_change",
+    "volume_vs_MA20",
     "return_lag1",
+    "return_lag2",
+    "return_lag3",
     "return_lag5",
+    "return_lag10",
+    "rolling_return_5",
+    "rolling_return_10",
+    "rolling_return_20",
     "RSI_14",
     "MACD",
     "MACD_signal",
+    "MACD_histogram",
 ]
 
 
@@ -45,14 +59,31 @@ def build_features(file_path: Path) -> pd.DataFrame:
 
     df["return"] = df["close"].pct_change()
 
+    df["return_lag1"] = df["return"].shift(1)
+    df["return_lag2"] = df["return"].shift(2)
+    df["return_lag3"] = df["return"].shift(3)
+    df["return_lag5"] = df["return"].shift(5)
+    df["return_lag10"] = df["return"].shift(10)
+
+    df["MA5"] = df["close"].rolling(5).mean()
     df["MA20"] = df["close"].rolling(20).mean()
     df["MA50"] = df["close"].rolling(50).mean()
 
-    df["volatility_20"] = df["return"].rolling(20).std()
-    df["volume_change"] = df["volume"].pct_change()
+    df["price_vs_MA5"] = df["close"] / df["MA5"] - 1
+    df["price_vs_MA20"] = df["close"] / df["MA20"] - 1
+    df["price_vs_MA50"] = df["close"] / df["MA50"] - 1
 
-    df["return_lag1"] = df["return"].shift(1)
-    df["return_lag5"] = df["return"].shift(5)
+    df["rolling_return_5"] = df["return"].rolling(5).mean()
+    df["rolling_return_10"] = df["return"].rolling(10).mean()
+    df["rolling_return_20"] = df["return"].rolling(20).mean()
+
+    df["volatility_5"] = df["return"].rolling(5).std()
+    df["volatility_10"] = df["return"].rolling(10).std()
+    df["volatility_20"] = df["return"].rolling(20).std()
+
+    df["volume_change"] = df["volume"].pct_change()
+    df["volume_MA20"] = df["volume"].rolling(20).mean()
+    df["volume_vs_MA20"] = df["volume"] / df["volume_MA20"] - 1
 
     delta = df["close"].diff()
 
@@ -79,6 +110,10 @@ def build_features(file_path: Path) -> pd.DataFrame:
         span=9,
         adjust=False
     ).mean()
+
+    df["MACD_histogram"] = (
+        df["MACD"] - df["MACD_signal"]
+    )
 
     # Predict the next trading day's return.
     df["target_return"] = (
@@ -118,9 +153,11 @@ def train_stock_model(
         y_test = y.iloc[test_start:test_end]
 
         model = RandomForestRegressor(
-            n_estimators=300,
-            random_state=RANDOM_STATE,
-            n_jobs=-1
+     n_estimators=300,
+     min_samples_leaf=2,
+     max_features="sqrt",
+     random_state=RANDOM_STATE,
+     n_jobs=-1
         )
 
         model.fit(X_train, y_train)
@@ -139,9 +176,11 @@ def train_stock_model(
         )
 
     final_model = RandomForestRegressor(
-        n_estimators=300,
-        random_state=RANDOM_STATE,
-        n_jobs=-1
+    n_estimators=300,
+    min_samples_leaf=2,
+    max_features="sqrt",
+    random_state=RANDOM_STATE,
+    n_jobs=-1
     )
 
     final_model.fit(X, y)

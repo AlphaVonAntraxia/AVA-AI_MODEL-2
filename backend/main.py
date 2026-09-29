@@ -3,16 +3,8 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
 from backend.prediction_service import get_prediction
-
-
-SUPPORTED_TICKERS = {
-    "AAPL",
-    "AMZN",
-    "GOOGL",
-    "MSFT",
-    "NVDA",
-    "TSLA",
-}
+from backend.data.universe.sp500 import search_sp500
+from models.availability import get_prediction_availability
 
 
 class PredictionResponse(BaseModel):
@@ -22,11 +14,11 @@ class PredictionResponse(BaseModel):
     model_type: str
     prediction_horizon: str
 
+
 app = FastAPI(
     title="AVA-AI API",
     version="2.0.0",
 )
-
 
 
 app.add_middleware(
@@ -40,6 +32,7 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
 
 @app.get("/")
 def root():
@@ -55,13 +48,51 @@ def root():
 def predict(ticker: str):
     ticker = ticker.upper()
 
-    if ticker not in SUPPORTED_TICKERS:
+    universe = search_sp500(ticker)
+
+    if universe.empty or ticker not in set(universe["ticker"]):
         raise HTTPException(
-            status_code=400,
-            detail=(
-                f"Unsupported ticker '{ticker}'. "
-                f"Supported tickers: {', '.join(sorted(SUPPORTED_TICKERS))}"
-            ),
+            status_code=404,
+            detail=f"Ticker '{ticker}' is not in the S&P 500 universe.",
+        )
+
+    availability = get_prediction_availability(ticker)
+
+    if not availability["prediction_available"]:
+        raise HTTPException(
+            status_code=503,
+            detail={
+                "ticker": ticker,
+                "message": "Prediction is not available for this stock yet.",
+                "data_available": availability["data_available"],
+                "model_available": availability["model_available"],
+            },
         )
 
     return get_prediction(ticker)
+
+
+@app.get("/stocks/search")
+def search_stocks(q: str = ""):
+    results = search_sp500(q)
+
+    return {
+        "query": q,
+        "count": len(results),
+        "results": results.to_dict(orient="records"),
+    }
+
+
+@app.get("/stocks/{ticker}/availability")
+def stock_availability(ticker: str):
+    ticker = ticker.upper()
+
+    universe = search_sp500(ticker)
+
+    if universe.empty or ticker not in set(universe["ticker"]):
+        raise HTTPException(
+            status_code=404,
+            detail=f"Ticker '{ticker}' is not in the S&P 500 universe.",
+        )
+
+    return get_prediction_availability(ticker)

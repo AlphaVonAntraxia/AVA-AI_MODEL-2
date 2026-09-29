@@ -120,20 +120,187 @@
             font-size: 22px;
         }
 
-        .selector {
-            width: 100%;
-            padding: 15px;
-            border-radius: 12px;
-            border: 1px solid #334155;
-            background: #111827;
-            color: #f8fafc;
-            font-size: 16px;
-            outline: none;
+        /* Hidden ticker state */
+
+        #ticker {
+            display: none;
         }
 
-        .selector:focus {
-            border-color: #3b82f6;
+        /* Search button */
+
+        .search-stock-button {
+            width: 100%;
+            margin-top: 4px;
+            padding: 14px 16px;
+            border: 1px solid rgba(59, 130, 246, 0.35);
+            border-radius: 12px;
+            background: rgba(30, 41, 59, 0.72);
+            color: #e2e8f0;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.2s ease;
         }
+
+        .search-stock-button:hover {
+            border-color: rgba(59, 130, 246, 0.7);
+            background: rgba(30, 41, 59, 0.95);
+            transform: translateY(-1px);
+        }
+
+        /* Search panel */
+
+        .stock-search-panel {
+            margin-top: 14px;
+            padding: 16px;
+            border: 1px solid rgba(148, 163, 184, 0.12);
+            border-radius: 16px;
+            background: rgba(2, 6, 23, 0.55);
+        }
+
+        #stock-search {
+            width: 100%;
+            padding: 14px 15px;
+            border: 1px solid #334155;
+            border-radius: 11px;
+            background: #111827;
+            color: #f8fafc;
+            font-size: 15px;
+            outline: none;
+            transition: 0.2s ease;
+        }
+
+        #stock-search::placeholder {
+            color: #64748b;
+        }
+
+        #stock-search:focus {
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.12);
+        }
+
+        /* Recommended stocks */
+
+        .recommended-stocks {
+            margin-top: 18px;
+        }
+
+        .recommended-title {
+            color: #94a3b8;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            margin-bottom: 10px;
+        }
+
+        .recommended-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+        }
+
+        .recommended-stock {
+            padding: 11px 12px;
+            border: 1px solid rgba(148, 163, 184, 0.12);
+            border-radius: 10px;
+            background: rgba(15, 23, 42, 0.72);
+            color: #f8fafc;
+            text-align: left;
+            cursor: pointer;
+            transition: 0.2s ease;
+        }
+
+        .recommended-stock:hover {
+            border-color: rgba(59, 130, 246, 0.5);
+            background: rgba(30, 41, 59, 0.9);
+            transform: translateY(-1px);
+        }
+
+        .recommended-stock.active {
+            border-color: rgba(59, 130, 246, 0.85);
+            background: rgba(37, 99, 235, 0.16);
+            box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.08);
+        }
+
+        .recommended-stock strong {
+            display: block;
+            font-size: 14px;
+        }
+
+        .recommended-stock span {
+            display: block;
+            margin-top: 3px;
+            color: #64748b;
+            font-size: 11px;
+        }
+
+        /* Search results */
+
+        #stock-search-results {
+            margin-top: 12px;
+            max-height: 250px;
+            overflow-y: auto;
+        }
+
+        .search-result {
+            width: 100%;
+            margin-top: 6px;
+            padding: 12px;
+            border: 1px solid rgba(148, 163, 184, 0.1);
+            border-radius: 10px;
+            background: rgba(15, 23, 42, 0.72);
+            color: #cbd5e1;
+            text-align: left;
+            cursor: pointer;
+            transition: 0.2s ease;
+        }
+
+        .search-result:hover {
+            border-color: rgba(59, 130, 246, 0.5);
+            background: rgba(30, 41, 59, 0.9);
+        }
+
+        .search-result strong {
+            display: block;
+            color: #f8fafc;
+            font-size: 14px;
+        }
+
+        .search-result span {
+            display: block;
+            margin-top: 3px;
+            color: #64748b;
+            font-size: 11px;
+        }
+
+        .search-message {
+            color: #64748b;
+            font-size: 13px;
+            padding: 10px 2px;
+        }
+
+        .search-message.error {
+            color: #f87171;
+        }
+
+        /* Selected stock */
+
+        .selected-stock {
+            margin-top: 14px;
+            padding: 12px 14px;
+            border-radius: 12px;
+            background: rgba(37, 99, 235, 0.10);
+            border: 1px solid rgba(59, 130, 246, 0.20);
+            color: #bfdbfe;
+            font-size: 13px;
+        }
+
+        .selected-stock strong {
+            color: #f8fafc;
+        }
+
+        /* Prediction button */
 
         .predict-button {
             width: 100%;
@@ -153,6 +320,12 @@
             transform: translateY(-1px);
             box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
         }
+
+        .predict-button:active {
+            transform: translateY(0);
+        }
+
+        /* Result */
 
         .result {
             min-height: 210px;
@@ -245,75 +418,251 @@
 <div class="page">
 
     <header class="header">
+
         <div class="brand">
+
             <div class="logo">A</div>
 
             <div>
                 <h1>AVA-AI</h1>
                 <span>Artificial Intelligence • Market Analysis</span>
             </div>
+
         </div>
 
         <div class="status-badge">
             ● API Online
         </div>
+
     </header>
 
+
     <section class="hero">
+
         <h2>Stock Intelligence Dashboard</h2>
 
         <p>
             Analyze selected equities using the AVA-AI machine-learning
             prediction engine and its technical feature pipeline.
         </p>
+
     </section>
+
 
     <main class="dashboard">
 
+
+        <!-- STOCK SELECTION -->
+
         <section class="card">
-            <div class="card-label">Market Selection</div>
+
+            <div class="card-label">
+                Market Selection
+            </div>
 
             <h3>Select a stock</h3>
 
-            <select id="ticker" class="selector">
-                <option value="AAPL">Apple (AAPL)</option>
-                <option value="AMZN">Amazon (AMZN)</option>
-                <option value="GOOGL">Alphabet (GOOGL)</option>
-                <option value="MSFT">Microsoft (MSFT)</option>
-                <option value="NVDA">NVIDIA (NVDA)</option>
-                <option value="TSLA">Tesla (TSLA)</option>
-            </select>
 
-            <button class="predict-button" onclick="getPrediction()">
+            <!-- Hidden ticker state -->
+
+            <input
+                id="ticker"
+                type="hidden"
+                value="AAPL"
+            />
+
+
+            <!-- Search button -->
+
+            <button
+                type="button"
+                class="search-stock-button"
+                onclick="toggleStockSearch()"
+            >
+                🔍 Search S&P 500 stocks
+            </button>
+
+
+            <!-- Search panel -->
+
+            <div
+                id="stock-search-panel"
+                class="stock-search-panel"
+                style="display: none;"
+            >
+
+                <input
+                    id="stock-search"
+                    type="text"
+                    placeholder="Search by company name or ticker..."
+                    autocomplete="off"
+                    oninput="searchStocks()"
+                />
+
+
+                <!-- Recommended stocks -->
+
+                <div class="recommended-stocks">
+
+                    <div class="recommended-title">
+                        Top 6 Recommended Stocks
+                    </div>
+
+
+                    <div class="recommended-grid">
+
+                        <button
+                            type="button"
+                            class="recommended-stock active"
+                            data-ticker="AAPL"
+                            onclick="selectStock('AAPL', 'Apple')"
+                        >
+                            <strong>Apple</strong>
+                            <span>AAPL</span>
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="recommended-stock"
+                            data-ticker="AMZN"
+                            onclick="selectStock('AMZN', 'Amazon')"
+                        >
+                            <strong>Amazon</strong>
+                            <span>AMZN</span>
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="recommended-stock"
+                            data-ticker="GOOGL"
+                            onclick="selectStock('GOOGL', 'Alphabet')"
+                        >
+                            <strong>Alphabet</strong>
+                            <span>GOOGL</span>
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="recommended-stock"
+                            data-ticker="MSFT"
+                            onclick="selectStock('MSFT', 'Microsoft')"
+                        >
+                            <strong>Microsoft</strong>
+                            <span>MSFT</span>
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="recommended-stock"
+                            data-ticker="NVDA"
+                            onclick="selectStock('NVDA', 'NVIDIA')"
+                        >
+                            <strong>NVIDIA</strong>
+                            <span>NVDA</span>
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="recommended-stock"
+                            data-ticker="TSLA"
+                            onclick="selectStock('TSLA', 'Tesla')"
+                        >
+                            <strong>Tesla</strong>
+                            <span>TSLA</span>
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Search results -->
+
+                <div id="stock-search-results"></div>
+
+            </div>
+
+
+            <!-- Selected stock -->
+
+            <div
+                id="selected-stock"
+                class="selected-stock"
+            >
+                Selected stock:
+                <strong>Apple (AAPL)</strong>
+            </div>
+
+
+            <!-- Prediction button -->
+
+            <button
+                type="button"
+                class="predict-button"
+                onclick="getPrediction()"
+            >
                 Run Prediction
             </button>
+
         </section>
+
+
+        <!-- MODEL OUTPUT -->
 
         <section class="card result">
 
-            <div class="card-label">Model Output</div>
+            <div class="card-label">
+                Model Output
+            </div>
 
-            <div id="resultTicker" class="result-ticker">
+
+            <div
+                id="resultTicker"
+                class="result-ticker"
+            >
                 Select a stock to begin
             </div>
 
-            <div id="prediction" class="prediction neutral">
+
+            <div
+                id="prediction"
+                class="prediction neutral"
+            >
                 —
             </div>
 
-            <div id="status" class="status">
+
+            <div
+                id="status"
+                class="status"
+            >
                 Choose a stock and run the prediction model.
             </div>
 
-            <div id="modelMeta" class="status">
+
+            <div
+                id="modelMeta"
+                class="status"
+            >
                 Model: —
             </div>
 
         </section>
 
+
+        <!-- INFORMATION -->
+
         <section class="card info">
 
-            <div class="card-label">About the prediction</div>
+            <div class="card-label">
+                About the prediction
+            </div>
+
 
             <p>
                 AVA-AI returns the model's predicted next-day percentage
@@ -327,85 +676,507 @@
 
     </main>
 
+
     <div class="footer">
         AVA-AI • Machine Learning Stock Analysis Project
     </div>
 
 </div>
 
+
 <script>
+
+    /*
+     * Select a stock
+     *
+     * companyName is supplied directly for search results,
+     * so every S&P 500 company keeps its real company name.
+     */
+
+    function selectStock(ticker, companyName = null) {
+
+        ticker = ticker.toUpperCase();
+
+        document.getElementById("ticker").value = ticker;
+
+
+        /*
+         * Update recommended-stock active state
+         */
+
+        document
+            .querySelectorAll(".recommended-stock")
+            .forEach(button => {
+
+                button.classList.remove("active");
+
+                if (button.dataset.ticker === ticker) {
+                    button.classList.add("active");
+                }
+
+            });
+
+
+        /*
+         * If this is one of the six recommended stocks
+         * and no company name was supplied, get its name.
+         */
+
+        if (!companyName) {
+
+            const selectedButton =
+                document.querySelector(
+                    `.recommended-stock[data-ticker="${ticker}"]`
+                );
+
+            if (selectedButton) {
+
+                companyName =
+                    selectedButton
+                        .querySelector("strong")
+                        .textContent;
+
+            }
+
+        }
+
+
+        /*
+         * Final fallback
+         */
+
+        if (!companyName) {
+            companyName = ticker;
+        }
+
+
+        /*
+         * Update selected stock display
+         */
+
+        document.getElementById(
+            "selected-stock"
+        ).innerHTML =
+            `Selected stock: <strong>${companyName} (${ticker})</strong>`;
+
+
+        /*
+         * Close search panel
+         */
+
+        document.getElementById(
+            "stock-search-panel"
+        ).style.display = "none";
+
+
+        /*
+         * Clear search input/results
+         */
+
+        const searchInput =
+            document.getElementById("stock-search");
+
+        const searchResults =
+            document.getElementById("stock-search-results");
+
+
+        if (searchInput) {
+            searchInput.value = "";
+        }
+
+        if (searchResults) {
+            searchResults.innerHTML = "";
+        }
+
+    }
+
+
+    /*
+     * Open / close S&P 500 search
+     */
+
+    function toggleStockSearch() {
+
+        const panel =
+            document.getElementById(
+                "stock-search-panel"
+            );
+
+
+        if (panel.style.display === "none") {
+
+            panel.style.display = "block";
+
+            document
+                .getElementById("stock-search")
+                .focus();
+
+        } else {
+
+            panel.style.display = "none";
+
+        }
+
+    }
+
+
+    /*
+     * Search S&P 500
+     */
+
+    async function searchStocks() {
+
+        const query =
+            document
+                .getElementById("stock-search")
+                .value
+                .trim();
+
+
+        const results =
+            document.getElementById(
+                "stock-search-results"
+            );
+
+
+        if (!query) {
+
+            results.innerHTML = "";
+
+            return;
+
+        }
+
+
+        results.innerHTML =
+            `<div class="search-message">
+                Searching S&P 500...
+            </div>`;
+
+
+        try {
+
+            const response =
+                await fetch(
+                    `http://127.0.0.1:8000/stocks/search?q=${encodeURIComponent(query)}`
+                );
+
+
+            if (!response.ok) {
+                throw new Error(
+                    "Search request failed"
+                );
+            }
+
+
+            const data =
+                await response.json();
+
+
+            results.innerHTML = "";
+
+
+            if (!data.results.length) {
+
+                results.innerHTML =
+                    `<div class="search-message">
+                        No matching S&P 500 stocks found.
+                    </div>`;
+
+                return;
+
+            }
+
+
+            data.results.forEach(stock => {
+
+                const button =
+                    document.createElement("button");
+
+
+                button.type = "button";
+
+                button.className =
+                    "search-result";
+
+
+                const company =
+                    document.createElement("strong");
+
+                company.textContent =
+                    stock.company_name;
+
+
+                const ticker =
+                    document.createElement("span");
+
+                ticker.textContent =
+                    stock.ticker;
+
+
+                button.appendChild(company);
+
+                button.appendChild(ticker);
+
+
+                /*
+                 * IMPORTANT:
+                 * Pass both ticker AND company name.
+                 */
+
+                button.onclick = () => {
+
+                    selectStock(
+                        stock.ticker,
+                        stock.company_name
+                    );
+
+                };
+
+
+                results.appendChild(button);
+
+            });
+
+
+        } catch (error) {
+
+            results.innerHTML =
+                `<div class="search-message error">
+                    Could not search stocks.
+                </div>`;
+
+            console.error(error);
+
+        }
+
+    }
+
+
+    /*
+     * Run prediction
+     */
+
     async function getPrediction() {
 
-        const ticker = document.getElementById("ticker").value;
+        const ticker =
+            document.getElementById(
+                "ticker"
+            ).value;
+
 
         const resultTicker =
-            document.getElementById("resultTicker");
+            document.getElementById(
+                "resultTicker"
+            );
+
 
         const prediction =
-            document.getElementById("prediction");
+            document.getElementById(
+                "prediction"
+            );
+
 
         const status =
-            document.getElementById("status");
+            document.getElementById(
+                "status"
+            );
+
 
         const modelMeta =
-            document.getElementById("modelMeta");
+            document.getElementById(
+                "modelMeta"
+            );
 
-        resultTicker.textContent = ticker;
 
-        prediction.textContent = "Loading...";
-        prediction.className = "prediction loading";
+        if (!ticker) {
+
+            resultTicker.textContent =
+                "No stock selected";
+
+            prediction.textContent =
+                "—";
+
+            status.textContent =
+                "Please select a stock first.";
+
+            return;
+
+        }
+
+
+        resultTicker.textContent =
+            ticker;
+
+
+        prediction.textContent =
+            "Loading...";
+
+        prediction.className =
+            "prediction loading";
+
 
         status.textContent =
             "Contacting the AVA-AI prediction engine...";
 
-        status.className = "status";
+        status.className =
+            "status";
+
+
+        modelMeta.textContent =
+            "Model: Loading...";
+
 
         try {
 
-            const response = await fetch(
-                `http://127.0.0.1:8000/predict/${ticker}`
-            );
+            const response =
+                await fetch(
+                    `http://127.0.0.1:8000/predict/${ticker}`
+                );
 
-            if (!response.ok) {
-                throw new Error("API request failed");
+
+            /*
+             * Prediction unavailable
+             */
+
+            if (response.status === 503) {
+
+                const errorData =
+                    await response.json();
+
+
+                prediction.textContent =
+                    "Unavailable";
+
+                prediction.className =
+                    "prediction neutral";
+
+
+                status.textContent =
+                    errorData.detail?.message ||
+                    "Prediction is not available for this stock yet.";
+
+
+                modelMeta.textContent =
+                    "Model: No trained model available";
+
+
+                return;
+
             }
 
-            const data = await response.json();
+
+            /*
+             * Invalid ticker
+             */
+
+            if (response.status === 404) {
+
+                prediction.textContent =
+                    "Not Found";
+
+                prediction.className =
+                    "prediction negative";
+
+
+                status.textContent =
+                    "This ticker is not available in the S&P 500 universe.";
+
+
+                modelMeta.textContent =
+                    "Model: —";
+
+
+                return;
+
+            }
+
+
+            /*
+             * Other API errors
+             */
+
+            if (!response.ok) {
+
+                throw new Error(
+                    "API request failed"
+                );
+
+            }
+
+
+            const data =
+                await response.json();
+
+
+            /*
+             * Convert decimal return to percentage
+             */
 
             const percentage =
                 data.predicted_next_day_return * 100;
 
+
             prediction.textContent =
                 `${percentage.toFixed(4)}%`;
 
+
+            /*
+             * Prediction display state
+             */
+
             if (percentage > 0.05) {
+
                 prediction.className =
                     "prediction positive";
+
             } else if (percentage < -0.05) {
+
                 prediction.className =
                     "prediction negative";
+
             } else {
+
                 prediction.className =
                     "prediction neutral";
+
             }
+
 
             status.textContent =
                 "Model prediction returned successfully.";
 
+
             modelMeta.textContent =
                 `Model: ${data.model_version} • ${data.model_type} • Horizon: ${data.prediction_horizon}`;
 
+
         } catch (error) {
 
-            prediction.textContent = "Error";
-            prediction.className = "prediction negative";
+            console.error(error);
+
+
+            prediction.textContent =
+                "Error";
+
+            prediction.className =
+                "prediction negative";
+
 
             status.textContent =
                 "Could not connect to the AVA-AI backend.";
 
-            status.className = "status error";
+            status.className =
+                "status error";
+
+
+            modelMeta.textContent =
+                "Model: —";
+
         }
+
     }
+
 </script>
 
 </body>

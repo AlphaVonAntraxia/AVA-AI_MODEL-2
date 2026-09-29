@@ -4,6 +4,10 @@ from pydantic import BaseModel
 
 from backend.prediction_service import get_prediction
 from backend.data.universe.sp500 import search_sp500
+from backend.data.universe.coverage import (
+    get_data_coverage,
+    get_ticker_data_status,
+)
 from models.availability import get_prediction_availability
 
 
@@ -96,3 +100,50 @@ def stock_availability(ticker: str):
         )
 
     return get_prediction_availability(ticker)
+
+
+@app.get("/stocks/{ticker}/data-status")
+def stock_data_status(ticker: str):
+    status = get_ticker_data_status(ticker)
+
+    if not status["in_sp500"]:
+        raise HTTPException(
+            status_code=404,
+            detail=f"Ticker '{ticker.upper()}' is not in the S&P 500 universe.",
+        )
+
+    return status
+
+
+@app.get("/stocks/coverage")
+def stock_coverage():
+    return get_data_coverage()
+
+
+@app.get("/stocks")
+def list_stocks(q: str = ""):
+    results = search_sp500(q)
+
+    stocks = []
+
+    for _, row in results.iterrows():
+        ticker = row["ticker"]
+
+        status = get_ticker_data_status(ticker)
+        availability = get_prediction_availability(ticker)
+
+        stocks.append(
+            {
+                "ticker": ticker,
+                "company_name": row["company_name"],
+                "data_available": status["data_available"],
+                "model_available": availability["model_available"],
+                "prediction_available": availability["prediction_available"],
+            }
+        )
+
+    return {
+        "query": q,
+        "count": len(stocks),
+        "results": stocks,
+    }

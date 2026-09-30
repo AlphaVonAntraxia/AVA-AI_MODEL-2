@@ -1,0 +1,504 @@
+ticker,company_name,asset_type,model_version,model_type,model_file,data_available,model_available,prediction_available,MAE,RMSE,folds,training_rows,registry_status
+MMM,3M,stock,v2,random_forest,MMM_random_forest.joblib,True,True,True,0.013408095642619,0.0176727500253688,5.0,450.0,READY
+AOS,A. O. Smith,stock,v2,random_forest,AOS_random_forest.joblib,True,True,True,0.0142128388886039,0.018067746575272,5.0,450.0,READY
+ABT,Abbott Laboratories,stock,v2,random_forest,ABT_random_forest.joblib,True,True,True,0.0119131318310817,0.0161174880905385,5.0,450.0,READY
+ABBV,AbbVie,stock,v2,random_forest,ABBV_random_forest.joblib,True,True,True,0.012759761637389,0.0170633430279273,5.0,450.0,READY
+ACN,Accenture,stock,v2,random_forest,ACN_random_forest.joblib,True,True,True,0.0205266771252426,0.0275485662319805,5.0,450.0,READY
+ADBE,Adobe Inc.,stock,v2,random_forest,ADBE_random_forest.joblib,True,True,True,0.019119494546839,0.0245445430146461,5.0,450.0,READY
+AMD,Advanced Micro Devices,stock,v2,random_forest,AMD_random_forest.joblib,True,True,True,0.0327188895605153,0.0445722299101578,5.0,450.0,READY
+AES,AES Corporation,stock,v2,random_forest,AES_random_forest.joblib,True,True,True,0.0112841498036838,0.0174520979887915,5.0,450.0,READY
+AFL,Aflac,stock,v2,random_forest,AFL_random_forest.joblib,True,True,True,0.0097647915137317,0.0124141446876299,5.0,450.0,READY
+A,Agilent Technologies,stock,v2,random_forest,A_random_forest.joblib,True,True,True,0.0146385087727688,0.0202084417050652,5.0,450.0,READY
+APD,Air Products,stock,v2,random_forest,APD_random_forest.joblib,True,True,True,0.0115225126313786,0.0159380484137196,5.0,450.0,READY
+ABNB,Airbnb,stock,v2,random_forest,ABNB_random_forest.joblib,True,True,True,0.0161026702841877,0.022492443350117,5.0,450.0,READY
+AKAM,Akamai Technologies,stock,v2,random_forest,AKAM_random_forest.joblib,True,True,True,0.0261874773942834,0.036797182372886,5.0,450.0,READY
+ALB,Albemarle Corporation,stock,v2,random_forest,ALB_random_forest.joblib,True,True,True,0.0305530058109961,0.0392295061280153,5.0,450.0,READY
+ARE,Alexandria Real Estate Equities,stock,v2,random_forest,ARE_random_forest.joblib,True,True,True,0.0208192764017927,0.0284319814910121,5.0,450.0,READY
+ALGN,Align Technology,stock,v2,random_forest,ALGN_random_forest.joblib,True,True,True,0.0220466251611999,0.032114285120728,5.0,450.0,READY
+ALLE,Allegion,stock,v2,random_forest,ALLE_random_forest.joblib,True,True,True,0.0122362258718956,0.0171668843813768,5.0,450.0,READY
+LNT,Alliant Energy,stock,v2,random_forest,LNT_random_forest.joblib,True,True,True,0.0104685230935525,0.0127860630672175,5.0,450.0,READY
+ALL,Allstate,stock,v2,random_forest,ALL_random_forest.joblib,True,True,True,0.0137259745407854,0.0174844248703413,5.0,450.0,READY
+GOOGL,Alphabet Inc. (Class A),stock,v2,random_forest,GOOGL_random_forest.joblib,True,True,True,0.0160434578130477,0.0216708948276624,5.0,450.0,READY
+GOOG,Alphabet Inc. (Class C),stock,v2,random_forest,GOOG_random_forest.joblib,True,True,True,0.0155738088557867,0.0211342959578429,5.0,450.0,READY
+MO,Altria,stock,v2,random_forest,MO_random_forest.joblib,True,True,True,0.0125050754487799,0.0167855774489348,5.0,450.0,READY
+AMZN,Amazon,stock,v2,random_forest,AMZN_random_forest.joblib,True,True,True,0.016661735507361,0.0229299369911945,5.0,450.0,READY
+AMCR,Amcor,stock,v2,random_forest,AMCR_random_forest.joblib,True,True,True,0.0150396508038225,0.0203825131973469,5.0,450.0,READY
+AEE,Ameren,stock,v2,random_forest,AEE_random_forest.joblib,True,True,True,0.0098499134415487,0.0120659066089178,5.0,450.0,READY
+AEP,American Electric Power,stock,v2,random_forest,AEP_random_forest.joblib,True,True,True,0.0101131334117939,0.0130621489151297,5.0,450.0,READY
+AXP,American Express,stock,v2,random_forest,AXP_random_forest.joblib,True,True,True,0.012161408880269,0.0163743893185489,5.0,450.0,READY
+AIG,American International Group,stock,v2,random_forest,AIG_random_forest.joblib,True,True,True,0.0115395527113912,0.0154098830505742,5.0,450.0,READY
+AMT,American Tower,stock,v2,random_forest,AMT_random_forest.joblib,True,True,True,0.0132291315105485,0.0167466866865261,5.0,450.0,READY
+AWK,American Water Works,stock,v2,random_forest,AWK_random_forest.joblib,True,True,True,0.011026722191074,0.0141163598687545,5.0,450.0,READY
+AMP,Ameriprise Financial,stock,v2,random_forest,AMP_random_forest.joblib,True,True,True,0.0126768853251528,0.0164363793135314,5.0,450.0,READY
+AME,Ametek,stock,v2,random_forest,AME_random_forest.joblib,True,True,True,0.0113041271546954,0.0148788110944708,5.0,450.0,READY
+AMGN,Amgen,stock,v2,random_forest,AMGN_random_forest.joblib,True,True,True,0.0135244209238916,0.0190246681242823,5.0,450.0,READY
+APH,Amphenol,stock,v2,random_forest,APH_random_forest.joblib,True,True,True,0.0208874546198029,0.0276037187877231,5.0,450.0,READY
+ADI,Analog Devices,stock,v2,random_forest,ADI_random_forest.joblib,True,True,True,0.0170722015309305,0.0223636667816614,5.0,450.0,READY
+AON,Aon plc,stock,v2,random_forest,AON_random_forest.joblib,True,True,True,0.0129568539957292,0.0175250712405448,5.0,450.0,READY
+APA,APA Corporation,stock,v2,random_forest,APA_random_forest.joblib,True,True,True,0.0248513589533904,0.0314602336450365,5.0,450.0,READY
+APO,Apollo Global Management,stock,v2,random_forest,APO_random_forest.joblib,True,True,True,0.0174640872057525,0.0233228248075875,5.0,450.0,READY
+AAPL,Apple Inc.,stock,v2,random_forest,AAPL_random_forest.joblib,True,True,True,0.012393813727293,0.0166968400684337,5.0,450.0,READY
+AMAT,Applied Materials,stock,v2,random_forest,AMAT_random_forest.joblib,True,True,True,0.0296682425968993,0.0384336579250195,5.0,450.0,READY
+APP,AppLovin,stock,v2,random_forest,APP_random_forest.joblib,True,True,True,0.0376605581236593,0.0485570640034481,5.0,450.0,READY
+APTV,Aptiv,stock,v2,random_forest,APTV_random_forest.joblib,True,True,True,0.020356711405548,0.0271751973000256,5.0,450.0,READY
+ACGL,Arch Capital Group,stock,v2,random_forest,ACGL_random_forest.joblib,True,True,True,0.0114463773709353,0.0145772376951506,5.0,450.0,READY
+ADM,Archer Daniels Midland,stock,v2,random_forest,ADM_random_forest.joblib,True,True,True,0.0136972707812069,0.0177954781595928,5.0,450.0,READY
+ARES,Ares Management,stock,v2,random_forest,ARES_random_forest.joblib,True,True,True,0.0196050205700822,0.0261683089515378,5.0,450.0,READY
+ANET,Arista Networks,stock,v2,random_forest,ANET_random_forest.joblib,True,True,True,0.0328575504928204,0.0405254487475767,5.0,450.0,READY
+AJG,Arthur J. Gallagher & Co.,stock,v2,random_forest,AJG_random_forest.joblib,True,True,True,0.0144979192906837,0.019560839039885,5.0,450.0,READY
+AIZ,Assurant,stock,v2,random_forest,AIZ_random_forest.joblib,True,True,True,0.0118190720961501,0.0166079453704729,5.0,450.0,READY
+T,AT&T,stock,v2,random_forest,T_random_forest.joblib,True,True,True,0.0124362332551433,0.0158900705585316,5.0,450.0,READY
+ATO,Atmos Energy,stock,v2,random_forest,ATO_random_forest.joblib,True,True,True,0.0083842135798855,0.0105805742903497,5.0,450.0,READY
+ADSK,Autodesk,stock,v2,random_forest,ADSK_random_forest.joblib,True,True,True,0.0181901818397919,0.0241943241659517,5.0,450.0,READY
+ADP,Automatic Data Processing,stock,v2,random_forest,ADP_random_forest.joblib,True,True,True,0.012831887106883,0.0171954753223391,5.0,450.0,READY
+AZO,AutoZone,stock,v2,random_forest,AZO_random_forest.joblib,True,True,True,0.0142961124274181,0.0187024176089605,5.0,450.0,READY
+AVY,Avery Dennison,stock,v2,random_forest,AVY_random_forest.joblib,True,True,True,0.0138953809655824,0.0179073910666145,5.0,450.0,READY
+AXON,Axon Enterprise,stock,v2,random_forest,AXON_random_forest.joblib,True,True,True,0.0313508156019541,0.0414254820814418,5.0,450.0,READY
+BKR,Baker Hughes,stock,v2,random_forest,BKR_random_forest.joblib,True,True,True,0.0175005449360349,0.022911433744601,5.0,450.0,READY
+BALL,Ball Corporation,stock,v2,random_forest,BALL_random_forest.joblib,True,True,True,0.0123150901519282,0.016903766723001,5.0,450.0,READY
+BAC,Bank of America,stock,v2,random_forest,BAC_random_forest.joblib,True,True,True,0.0107428337386133,0.0139184444353345,5.0,450.0,READY
+BAX,Baxter International,stock,v2,random_forest,BAX_random_forest.joblib,True,True,True,0.020697470188872,0.0297334182747823,5.0,450.0,READY
+BDX,Becton Dickinson,stock,v2,random_forest,BDX_random_forest.joblib,True,True,True,0.0129722170471834,0.01721849356797,5.0,450.0,READY
+BRK.B,Berkshire Hathaway,stock,v2,random_forest,BRK.B_random_forest.joblib,True,True,True,0.0072200079875424,0.0092318139943992,5.0,450.0,READY
+BBY,Best Buy,stock,v2,random_forest,BBY_random_forest.joblib,True,True,True,0.0189918240814944,0.0248244179764429,5.0,450.0,READY
+TECH,Bio-Techne,stock,v2,random_forest,TECH_random_forest.joblib,True,True,True,0.0195529650450967,0.0264465001497825,5.0,450.0,READY
+BIIB,Biogen,stock,v2,random_forest,BIIB_random_forest.joblib,True,True,True,0.0172032938917636,0.0229277665108186,5.0,450.0,READY
+BLK,BlackRock,stock,v2,random_forest,BLK_random_forest.joblib,True,True,True,0.0135091655085636,0.0178213701140485,5.0,450.0,READY
+BX,Blackstone Inc.,stock,v2,random_forest,BX_random_forest.joblib,True,True,True,0.0180100959279992,0.0233457389404846,5.0,450.0,READY
+XYZ,"Block, Inc.",stock,v2,random_forest,XYZ_random_forest.joblib,True,True,True,0.0214413931787821,0.0284751186058161,5.0,450.0,READY
+BE,Bloom Energy,stock,v2,random_forest,BE_random_forest.joblib,True,True,True,0.0680413546074972,0.08466872299026,5.0,450.0,READY
+BNY,BNY Mellon,stock,v2,random_forest,BNY_random_forest.joblib,True,True,True,0.0121864287610336,0.0152367615916366,5.0,450.0,READY
+BA,Boeing,stock,v2,random_forest,BA_random_forest.joblib,True,True,True,0.0161651766450307,0.0211250375303147,5.0,450.0,READY
+BKNG,Booking Holdings,stock,v2,random_forest,BKNG_random_forest.joblib,True,True,True,0.0174932289482625,0.0228857562433833,5.0,450.0,READY
+BSX,Boston Scientific,stock,v2,random_forest,BSX_random_forest.joblib,True,True,True,0.0170152379944975,0.0234061630921885,5.0,450.0,READY
+BMY,Bristol Myers Squibb,stock,v2,random_forest,BMY_random_forest.joblib,True,True,True,0.0139395212160914,0.0181346242241274,5.0,450.0,READY
+AVGO,Broadcom,stock,v2,random_forest,AVGO_random_forest.joblib,True,True,True,0.0230104624033739,0.0303312081396844,5.0,450.0,READY
+BR,Broadridge Financial Solutions,stock,v2,random_forest,BR_random_forest.joblib,True,True,True,0.0143868073707264,0.0192514212861875,5.0,450.0,READY
+BRO,Brown & Brown,stock,v2,random_forest,BRO_random_forest.joblib,True,True,True,0.014155219194231,0.0197813893766233,5.0,450.0,READY
+BF.B,Brown–Forman,stock,v2,random_forest,BF.B_random_forest.joblib,True,True,True,0.017315379621266,0.0235470562375669,5.0,450.0,READY
+BG,Bunge Global,stock,v2,random_forest,BG_random_forest.joblib,True,True,True,0.015796378989321,0.0207834994247839,5.0,450.0,READY
+BXP,"BXP, Inc.",stock,v2,random_forest,BXP_random_forest.joblib,True,True,True,0.0153863822058881,0.0195930012329512,5.0,450.0,READY
+CHRW,C.H. Robinson,stock,v2,random_forest,CHRW_random_forest.joblib,True,True,True,0.0189911388508122,0.0302730141238295,5.0,450.0,READY
+CDNS,Cadence Design Systems,stock,v2,random_forest,CDNS_random_forest.joblib,True,True,True,0.02032751334976,0.0271332533138613,5.0,450.0,READY
+CPT,Camden Property Trust,stock,v2,random_forest,CPT_random_forest.joblib,True,True,True,0.0110834966063673,0.0137375133534242,5.0,450.0,READY
+COF,Capital One,stock,v2,random_forest,COF_random_forest.joblib,True,True,True,0.0149664904304675,0.019751216611159,5.0,450.0,READY
+CAH,Cardinal Health,stock,v2,random_forest,CAH_random_forest.joblib,True,True,True,0.0130480240630482,0.018949177575305,5.0,450.0,READY
+CCL,Carnival Corporation,stock,v2,random_forest,CCL_random_forest.joblib,True,True,True,0.0214687679169872,0.0291981818558302,5.0,450.0,READY
+CARR,Carrier Global,stock,v2,random_forest,CARR_random_forest.joblib,True,True,True,0.0184701042851828,0.0241660996770429,5.0,450.0,READY
+CVNA,Carvana,stock,v2,random_forest,CVNA_random_forest.joblib,True,True,True,0.0304248622890115,0.0397415944267341,5.0,450.0,READY
+CASY,Casey's,stock,v2,random_forest,CASY_random_forest.joblib,True,True,True,0.0180065864413432,0.0252001156100883,5.0,450.0,READY
+CAT,Caterpillar Inc.,stock,v2,random_forest,CAT_random_forest.joblib,True,True,True,0.0186072510128364,0.0248597941195929,5.0,450.0,READY
+CBOE,Cboe Global Markets,stock,v2,random_forest,CBOE_random_forest.joblib,True,True,True,0.0157699851838151,0.0201351626424004,5.0,450.0,READY
+CBRE,CBRE Group,stock,v2,random_forest,CBRE_random_forest.joblib,True,True,True,0.0155944068902246,0.020786981737878,5.0,450.0,READY
+CDW,CDW Corporation,stock,v2,random_forest,CDW_random_forest.joblib,True,True,True,0.0195134610831881,0.0273929581523493,5.0,450.0,READY
+COR,Cencora,stock,v2,random_forest,COR_random_forest.joblib,True,True,True,0.0131978721245899,0.0191309200398974,5.0,450.0,READY
+CNC,Centene Corporation,stock,v2,random_forest,CNC_random_forest.joblib,True,True,True,0.028985278731047,0.0380382691932172,5.0,450.0,READY
+CNP,CenterPoint Energy,stock,v2,random_forest,CNP_random_forest.joblib,True,True,True,0.0090207830979962,0.011184455146106,5.0,450.0,READY
+CF,CF Industries,stock,v2,random_forest,CF_random_forest.joblib,True,True,True,0.0202513264877342,0.026425250635569,5.0,450.0,READY
+CRL,Charles River Laboratories,stock,v2,random_forest,CRL_random_forest.joblib,True,True,True,0.0230925969894013,0.0313059609067802,5.0,450.0,READY
+SCHW,Charles Schwab Corporation,stock,v2,random_forest,SCHW_random_forest.joblib,True,True,True,0.0131875100205744,0.017125687825546,5.0,450.0,READY
+CHTR,Charter Communications,stock,v2,random_forest,CHTR_random_forest.joblib,True,True,True,0.0269145124962242,0.0352414668797093,5.0,450.0,READY
+CVX,Chevron Corporation,stock,v2,random_forest,CVX_random_forest.joblib,True,True,True,0.0160054133720556,0.0190204862493561,5.0,450.0,READY
+CMG,Chipotle Mexican Grill,stock,v2,random_forest,CMG_random_forest.joblib,True,True,True,0.0207716169336073,0.028286019846761,5.0,450.0,READY
+CB,Chubb Limited,stock,v2,random_forest,CB_random_forest.joblib,True,True,True,0.0097562166064655,0.0128339935620307,5.0,450.0,READY
+CHD,Church & Dwight,stock,v2,random_forest,CHD_random_forest.joblib,True,True,True,0.0110435139280407,0.0144418192094102,5.0,450.0,READY
+CIEN,Ciena,stock,v2,random_forest,CIEN_random_forest.joblib,True,True,True,0.0378047676238315,0.0495415965072128,5.0,450.0,READY
+CI,Cigna,stock,v2,random_forest,CI_random_forest.joblib,True,True,True,0.015006073194351,0.0204915848960549,5.0,450.0,READY
+CINF,Cincinnati Financial,stock,v2,random_forest,CINF_random_forest.joblib,True,True,True,0.0109264579022956,0.0141647625742326,5.0,450.0,READY
+CTAS,Cintas,stock,v2,random_forest,CTAS_random_forest.joblib,True,True,True,0.0112016847681817,0.0148816987860305,5.0,450.0,READY
+CSCO,Cisco,stock,v2,random_forest,CSCO_random_forest.joblib,True,True,True,0.0172391212526231,0.023172765492576,5.0,450.0,READY
+C,Citigroup,stock,v2,random_forest,C_random_forest.joblib,True,True,True,0.0145267685228822,0.0190016052453192,5.0,450.0,READY
+CFG,Citizens Financial Group,stock,v2,random_forest,CFG_random_forest.joblib,True,True,True,0.0127024705233765,0.0171538471093181,5.0,450.0,READY
+CLX,Clorox,stock,v2,random_forest,CLX_random_forest.joblib,True,True,True,0.0148951221690025,0.0190684346517329,5.0,450.0,READY
+CME,CME Group,stock,v2,random_forest,CME_random_forest.joblib,True,True,True,0.0121914234503272,0.01529237450094,5.0,450.0,READY
+CMS,CMS Energy,stock,v2,random_forest,CMS_random_forest.joblib,True,True,True,0.0094664366588056,0.0115274792031556,5.0,450.0,READY
+KO,Coca-Cola Company (The),stock,v2,random_forest,KO_random_forest.joblib,True,True,True,0.0090967979387106,0.0120496255885212,5.0,450.0,READY
+CTSH,Cognizant,stock,v2,random_forest,CTSH_random_forest.joblib,True,True,True,0.0178234930050507,0.0248066075056585,5.0,450.0,READY
+COHR,Coherent Corp.,stock,v2,random_forest,COHR_random_forest.joblib,True,True,True,0.045318425498465,0.0576724531583477,5.0,450.0,READY
+COIN,Coinbase,stock,v2,random_forest,COIN_random_forest.joblib,True,True,True,0.0367481987140111,0.0467799368265336,5.0,450.0,READY
+CL,Colgate-Palmolive,stock,v2,random_forest,CL_random_forest.joblib,True,True,True,0.0120477683576724,0.0148860507317796,5.0,450.0,READY
+CMCSA,Comcast,stock,v2,random_forest,CMCSA_random_forest.joblib,True,True,True,0.0153067158667522,0.0203679418693312,5.0,450.0,READY
+FIX,Comfort Systems USA,stock,v2,random_forest,FIX_random_forest.joblib,True,True,True,0.0285300263918578,0.0384785990248592,5.0,450.0,READY
+COP,ConocoPhillips,stock,v2,random_forest,COP_random_forest.joblib,True,True,True,0.0194874768716662,0.023492375596526,5.0,450.0,READY
+ED,Consolidated Edison,stock,v2,random_forest,ED_random_forest.joblib,True,True,True,0.00908041494724,0.0111204129666252,5.0,450.0,READY
+STZ,Constellation Brands,stock,v2,random_forest,STZ_random_forest.joblib,True,True,True,0.0147129012232564,0.0195329126068841,5.0,450.0,READY
+CEG,Constellation Energy,stock,v2,random_forest,CEG_random_forest.joblib,True,True,True,0.0229984176400709,0.0298874148187726,5.0,450.0,READY
+COO,Cooper Companies (The),stock,v2,random_forest,COO_random_forest.joblib,True,True,True,0.0170512899831526,0.0232969966956122,5.0,450.0,READY
+CPRT,Copart,stock,v2,random_forest,CPRT_random_forest.joblib,True,True,True,0.0135325862781597,0.0185179218917379,5.0,450.0,READY
+GLW,Corning Inc.,stock,v2,random_forest,GLW_random_forest.joblib,True,True,True,0.0332377257885395,0.0433546841024332,5.0,450.0,READY
+CPAY,Corpay,stock,v2,random_forest,CPAY_random_forest.joblib,True,True,True,0.0178419661924625,0.0235823751198488,5.0,450.0,READY
+CTVA,Corteva,stock,v2,random_forest,CTVA_random_forest.joblib,True,True,True,0.0128714179724695,0.0172424434621121,5.0,450.0,READY
+CSGP,CoStar Group,stock,v2,random_forest,CSGP_random_forest.joblib,True,True,True,0.020572665789904,0.0276546601804854,5.0,450.0,READY
+COST,Costco,stock,v2,random_forest,COST_random_forest.joblib,True,True,True,0.0099402007797728,0.0125318368504364,5.0,450.0,READY
+CRH,CRH plc,stock,v2,random_forest,CRH_random_forest.joblib,True,True,True,0.0171708184591793,0.0218458890357038,5.0,450.0,READY
+CRWD,CrowdStrike,stock,v2,random_forest,CRWD_random_forest.joblib,True,True,True,0.0253314480154371,0.0337204529625616,5.0,450.0,READY
+CCI,Crown Castle,stock,v2,random_forest,CCI_random_forest.joblib,True,True,True,0.0149159964349955,0.0194381945522984,5.0,450.0,READY
+CSX,CSX Corporation,stock,v2,random_forest,CSX_random_forest.joblib,True,True,True,0.0113193272211074,0.0150609691719156,5.0,450.0,READY
+CMI,Cummins,stock,v2,random_forest,CMI_random_forest.joblib,True,True,True,0.0184048391793022,0.0236154790768776,5.0,450.0,READY
+CVS,CVS Health,stock,v2,random_forest,CVS_random_forest.joblib,True,True,True,0.0184645239700352,0.0233594829278947,5.0,450.0,READY
+DHR,Danaher Corporation,stock,v2,random_forest,DHR_random_forest.joblib,True,True,True,0.0161815568739754,0.0213389540761683,5.0,450.0,READY
+DRI,Darden Restaurants,stock,v2,random_forest,DRI_random_forest.joblib,True,True,True,0.0142737410126467,0.0182544174706612,5.0,450.0,READY
+DDOG,Datadog,stock,v2,random_forest,DDOG_random_forest.joblib,True,True,True,0.0272799714273928,0.0419675292877402,5.0,450.0,READY
+DVA,DaVita,stock,v2,random_forest,DVA_random_forest.joblib,True,True,True,0.0182609014564213,0.0287147950082678,5.0,450.0,READY
+DECK,Deckers Brands,stock,v2,random_forest,DECK_random_forest.joblib,True,True,True,0.0206298459804116,0.0284478087784008,5.0,450.0,READY
+DE,Deere & Company,stock,v2,random_forest,DE_random_forest.joblib,True,True,True,0.0147719348755898,0.0203723303429024,5.0,450.0,READY
+DELL,Dell Technologies,stock,v2,random_forest,DELL_random_forest.joblib,True,True,True,0.0311044516764798,0.0432336966673459,5.0,450.0,READY
+DAL,Delta Air Lines,stock,v2,random_forest,DAL_random_forest.joblib,True,True,True,0.0200795809342227,0.0259673141786599,5.0,450.0,READY
+DVN,Devon Energy,stock,v2,random_forest,DVN_random_forest.joblib,True,True,True,0.0199194070938189,0.0249031331507693,5.0,450.0,READY
+DXCM,Dexcom,stock,v2,random_forest,DXCM_random_forest.joblib,True,True,True,0.0181533109886563,0.0261270413927998,5.0,450.0,READY
+FANG,Diamondback Energy,stock,v2,random_forest,FANG_random_forest.joblib,True,True,True,0.0165233722534417,0.020592737657059,5.0,450.0,READY
+DLR,Digital Realty,stock,v2,random_forest,DLR_random_forest.joblib,True,True,True,0.0129201670910386,0.0171157925981485,5.0,450.0,READY
+DG,Dollar General,stock,v2,random_forest,DG_random_forest.joblib,True,True,True,0.0175347745486502,0.0234180512520714,5.0,450.0,READY
+DLTR,Dollar Tree,stock,v2,random_forest,DLTR_random_forest.joblib,True,True,True,0.020202527439766,0.0263068206417281,5.0,450.0,READY
+D,Dominion Energy,stock,v2,random_forest,D_random_forest.joblib,True,True,True,0.0101442758343074,0.0135343349016342,5.0,450.0,READY
+DPZ,Domino's,stock,v2,random_forest,DPZ_random_forest.joblib,True,True,True,0.015691119461096,0.0200705883704689,5.0,450.0,READY
+DASH,DoorDash,stock,v2,random_forest,DASH_random_forest.joblib,True,True,True,0.0222889685416533,0.029608232388493,5.0,450.0,READY
+DOV,Dover Corporation,stock,v2,random_forest,DOV_random_forest.joblib,True,True,True,0.0122322848175204,0.0162820926426923,5.0,450.0,READY
+DOW,Dow Inc.,stock,v2,random_forest,DOW_random_forest.joblib,True,True,True,0.0250982753916079,0.0331029904534859,5.0,450.0,READY
+DHI,D. R. Horton,stock,v2,random_forest,DHI_random_forest.joblib,True,True,True,0.0180690326525032,0.0246459652809447,5.0,450.0,READY
+DTE,DTE Energy,stock,v2,random_forest,DTE_random_forest.joblib,True,True,True,0.0095648418697596,0.0117347838346411,5.0,450.0,READY
+DUK,Duke Energy,stock,v2,random_forest,DUK_random_forest.joblib,True,True,True,0.0089952400509168,0.0109789345469604,5.0,450.0,READY
+DD,DuPont,stock,v2,random_forest,DD_random_forest.joblib,True,True,True,0.0147906299314727,0.0193399367429739,5.0,450.0,READY
+ETN,Eaton Corporation,stock,v2,random_forest,ETN_random_forest.joblib,True,True,True,0.0198571283034023,0.0249502212474188,5.0,450.0,READY
+EBAY,eBay Inc.,stock,v2,random_forest,EBAY_random_forest.joblib,True,True,True,0.0192419016704719,0.0265909855219948,5.0,450.0,READY
+ECHO,EchoStar,stock,v2,random_forest,ECHO_random_forest.joblib,True,True,True,0.0314015925182205,0.0494355280835629,5.0,450.0,READY
+ECL,Ecolab,stock,v2,random_forest,ECL_random_forest.joblib,True,True,True,0.0106128090986766,0.0137163515965547,5.0,450.0,READY
+EIX,Edison International,stock,v2,random_forest,EIX_random_forest.joblib,True,True,True,0.0162074445520967,0.0223771135808498,5.0,450.0,READY
+EW,Edwards Lifesciences,stock,v2,random_forest,EW_random_forest.joblib,True,True,True,0.0123085474354723,0.0161519736091727,5.0,450.0,READY
+ELV,Elevance Health,stock,v2,random_forest,ELV_random_forest.joblib,True,True,True,0.0200935173062488,0.0259497263969735,5.0,450.0,READY
+EME,Emcor,stock,v2,random_forest,EME_random_forest.joblib,True,True,True,0.0195596025164681,0.0270963333152226,5.0,450.0,READY
+EMR,Emerson Electric,stock,v2,random_forest,EMR_random_forest.joblib,True,True,True,0.0157879414061699,0.0200371403738825,5.0,450.0,READY
+ETR,Entergy,stock,v2,random_forest,ETR_random_forest.joblib,True,True,True,0.0113707094069756,0.0146779429056198,5.0,450.0,READY
+EOG,EOG Resources,stock,v2,random_forest,EOG_random_forest.joblib,True,True,True,0.0152999378990516,0.0189530244480391,5.0,450.0,READY
+EQT,EQT Corporation,stock,v2,random_forest,EQT_random_forest.joblib,True,True,True,0.015353964507976,0.0196077079849917,5.0,450.0,READY
+EFX,Equifax,stock,v2,random_forest,EFX_random_forest.joblib,True,True,True,0.0198448791816886,0.0263722554511152,5.0,450.0,READY
+EQIX,Equinix,stock,v2,random_forest,EQIX_random_forest.joblib,True,True,True,0.0118236738783981,0.0156277129535065,5.0,450.0,READY
+ERIE,Erie Indemnity,stock,v2,random_forest,ERIE_random_forest.joblib,True,True,True,0.0174365317759943,0.0226113333618016,5.0,450.0,READY
+ESS,Essex Property Trust,stock,v2,random_forest,ESS_random_forest.joblib,True,True,True,0.0106408934082169,0.0140062784879346,5.0,450.0,READY
+EL,Estée Lauder Companies (The),stock,v2,random_forest,EL_random_forest.joblib,True,True,True,0.0232652163400865,0.0322923321261739,5.0,450.0,READY
+EG,Everest Group,stock,v2,random_forest,EG_random_forest.joblib,True,True,True,0.0118444341454067,0.0159938381407621,5.0,450.0,READY
+EVRG,Evergy,stock,v2,random_forest,EVRG_random_forest.joblib,True,True,True,0.0098975208255715,0.0118539156245967,5.0,450.0,READY
+P,Everpure,stock,v2,random_forest,P_random_forest.joblib,True,True,True,0.0337498349470312,0.0490040669139863,5.0,450.0,READY
+ES,Eversource Energy,stock,v2,random_forest,ES_random_forest.joblib,True,True,True,0.0114957890472802,0.0153945697902133,5.0,450.0,READY
+EXC,Exelon,stock,v2,random_forest,EXC_random_forest.joblib,True,True,True,0.009864569067377,0.0124269285624254,5.0,450.0,READY
+EXE,Expand Energy,stock,v2,random_forest,EXE_random_forest.joblib,True,True,True,0.0148032297171463,0.0190717838700635,5.0,450.0,READY
+EXPE,Expedia Group,stock,v2,random_forest,EXPE_random_forest.joblib,True,True,True,0.0230349058120752,0.0313844166649523,5.0,450.0,READY
+EXPD,Expeditors International,stock,v2,random_forest,EXPD_random_forest.joblib,True,True,True,0.0162758067070835,0.0226494378541776,5.0,450.0,READY
+EXR,Extra Space Storage,stock,v2,random_forest,EXR_random_forest.joblib,True,True,True,0.012075136755253,0.0158328032467583,5.0,450.0,READY
+XOM,ExxonMobil,stock,v2,random_forest,XOM_random_forest.joblib,True,True,True,0.0147017962875098,0.0182324161620503,5.0,450.0,READY
+FFIV,"F5, Inc.",stock,v2,random_forest,FFIV_random_forest.joblib,True,True,True,0.0199363189107532,0.0256722735451981,5.0,450.0,READY
+FDS,FactSet,stock,v2,random_forest,FDS_random_forest.joblib,True,True,True,0.0230470962023004,0.0308546280980245,5.0,450.0,READY
+FICO,Fair Isaac,stock,v2,random_forest,FICO_random_forest.joblib,True,True,True,0.0247815196457984,0.0375357941055714,5.0,450.0,READY
+FAST,Fastenal,stock,v2,random_forest,FAST_random_forest.joblib,True,True,True,0.0124812586168271,0.0161973086988171,5.0,450.0,READY
+FRT,Federal Realty Investment Trust,stock,v2,random_forest,FRT_random_forest.joblib,True,True,True,0.009874110148447,0.0126073923872725,5.0,450.0,READY
+FDX,FedEx,stock,v2,random_forest,FDX_random_forest.joblib,True,True,True,0.0152033626382566,0.0199753490254404,5.0,450.0,READY
+FDXF,FedEx Freight,stock,v2,random_forest,FDXF_random_forest.joblib,True,False,False,,,,,NO_MODEL
+FERG,Ferguson Enterprises,stock,v2,random_forest,FERG_random_forest.joblib,True,True,True,0.0146437093813772,0.0194863640985845,5.0,450.0,READY
+FIS,Fidelity National Information Services,stock,v2,random_forest,FIS_random_forest.joblib,True,True,True,0.0162091579411,0.0217223305129315,5.0,450.0,READY
+FITB,Fifth Third Bancorp,stock,v2,random_forest,FITB_random_forest.joblib,True,True,True,0.012238008601587,0.0163350290176358,5.0,450.0,READY
+FSLR,First Solar,stock,v2,random_forest,FSLR_random_forest.joblib,True,True,True,0.0274479284735209,0.036587515392098,5.0,450.0,READY
+FE,FirstEnergy,stock,v2,random_forest,FE_random_forest.joblib,True,True,True,0.0088413303278033,0.0108841422748365,5.0,450.0,READY
+FISV,Fiserv,stock,v2,random_forest,FISV_random_forest.joblib,True,True,True,0.0201828976002212,0.0331277301096548,5.0,450.0,READY
+FLEX,Flex Ltd.,stock,v2,random_forest,FLEX_random_forest.joblib,True,True,True,0.028183656374836,0.0399564282701979,5.0,450.0,READY
+F,Ford Motor Company,stock,v2,random_forest,F_random_forest.joblib,True,True,True,0.0172307500365406,0.0233821192807863,5.0,450.0,READY
+FTNT,Fortinet,stock,v2,random_forest,FTNT_random_forest.joblib,True,True,True,0.0212828314866685,0.0301310706739115,5.0,450.0,READY
+FTV,Fortive,stock,v2,random_forest,FTV_random_forest.joblib,True,True,True,0.0124169720449854,0.016370088232422,5.0,450.0,READY
+FOXA,Fox Corporation (Class A),stock,v2,random_forest,FOXA_random_forest.joblib,True,True,True,0.0172099060166783,0.0233439926169017,5.0,450.0,READY
+FOX,Fox Corporation (Class B),stock,v2,random_forest,FOX_random_forest.joblib,True,True,True,0.0168822930947058,0.0230637740876217,5.0,450.0,READY
+BEN,Franklin Resources,stock,v2,random_forest,BEN_random_forest.joblib,True,True,True,0.0140222084563556,0.0178034870434102,5.0,450.0,READY
+FCX,Freeport-McMoRan,stock,v2,random_forest,FCX_random_forest.joblib,True,True,True,0.0264587609375361,0.0346011481888898,5.0,450.0,READY
+GRMN,Garmin,stock,v2,random_forest,GRMN_random_forest.joblib,True,True,True,0.0181653340452352,0.024656608817372,5.0,450.0,READY
+IT,Gartner,stock,v2,random_forest,IT_random_forest.joblib,True,True,True,0.0235315005147561,0.0364341208957438,5.0,450.0,READY
+GE,GE Aerospace,stock,v2,random_forest,GE_random_forest.joblib,True,True,True,0.0160889974180871,0.0202026770113286,5.0,450.0,READY
+GEHC,GE HealthCare,stock,v2,random_forest,GEHC_random_forest.joblib,True,True,True,0.0162243180489974,0.0223226558483371,5.0,450.0,READY
+GEV,GE Vernova,stock,v2,random_forest,GEV_random_forest.joblib,True,True,True,0.0258459852926922,0.0347629582884872,5.0,450.0,READY
+GEN,Gen Digital,stock,v2,random_forest,GEN_random_forest.joblib,True,True,True,0.0185207396329886,0.0254223731967595,5.0,450.0,READY
+GNRC,Generac,stock,v2,random_forest,GNRC_random_forest.joblib,True,True,True,0.0259208450448346,0.0368251532426224,5.0,450.0,READY
+GD,General Dynamics,stock,v2,random_forest,GD_random_forest.joblib,True,True,True,0.0106370066234659,0.0141019125527216,5.0,450.0,READY
+GIS,General Mills,stock,v2,random_forest,GIS_random_forest.joblib,True,True,True,0.0137471066707751,0.0179226742770261,5.0,450.0,READY
+GM,General Motors,stock,v2,random_forest,GM_random_forest.joblib,True,True,True,0.0169461135941833,0.0233400715049651,5.0,450.0,READY
+GPC,Genuine Parts Company,stock,v2,random_forest,GPC_random_forest.joblib,True,True,True,0.0152193446133529,0.0205165785791707,5.0,450.0,READY
+GILD,Gilead Sciences,stock,v2,random_forest,GILD_random_forest.joblib,True,True,True,0.0137408275656793,0.0178588960527235,5.0,450.0,READY
+GPN,Global Payments,stock,v2,random_forest,GPN_random_forest.joblib,True,True,True,0.0193242318304833,0.0259460304457117,5.0,450.0,READY
+GL,Globe Life,stock,v2,random_forest,GL_random_forest.joblib,True,True,True,0.0135235513978022,0.01675125384023,5.0,450.0,READY
+GDDY,GoDaddy,stock,v2,random_forest,GDDY_random_forest.joblib,True,True,True,0.0215798092660682,0.0297848636894183,5.0,450.0,READY
+GS,Goldman Sachs,stock,v2,random_forest,GS_random_forest.joblib,True,True,True,0.014806121773413,0.0196506985205146,5.0,450.0,READY
+HAL,Halliburton,stock,v2,random_forest,HAL_random_forest.joblib,True,True,True,0.0187042634058793,0.0234200782261336,5.0,450.0,READY
+HIG,Hartford (The),stock,v2,random_forest,HIG_random_forest.joblib,True,True,True,0.00984482288196,0.0126243032816854,5.0,450.0,READY
+HAS,Hasbro,stock,v2,random_forest,HAS_random_forest.joblib,True,True,True,0.0135446553691797,0.0186552631399505,5.0,450.0,READY
+HCA,HCA Healthcare,stock,v2,random_forest,HCA_random_forest.joblib,True,True,True,0.0142819122444521,0.0193963634887064,5.0,450.0,READY
+DOC,Healthpeak Properties,stock,v2,random_forest,DOC_random_forest.joblib,True,True,True,0.0122821595729901,0.0175892556201735,5.0,450.0,READY
+HSIC,Henry Schein,stock,v2,random_forest,HSIC_random_forest.joblib,True,True,True,0.0129330068023917,0.0174114310092416,5.0,450.0,READY
+HSY,Hershey Company (The),stock,v2,random_forest,HSY_random_forest.joblib,True,True,True,0.014908186615588,0.0187174122190681,5.0,450.0,READY
+HPE,Hewlett Packard Enterprise,stock,v2,random_forest,HPE_random_forest.joblib,True,True,True,0.0264878473235672,0.0356088782618844,5.0,450.0,READY
+HLT,Hilton Worldwide,stock,v2,random_forest,HLT_random_forest.joblib,True,True,True,0.0116880941601431,0.0152239807395889,5.0,450.0,READY
+HD,Home Depot (The),stock,v2,random_forest,HD_random_forest.joblib,True,True,True,0.0131619194088522,0.0165698310674757,5.0,450.0,READY
+HONA,Honeywell Aerospace,stock,v2,random_forest,HONA_random_forest.joblib,True,False,False,,,,,NO_MODEL
+HON,Honeywell Technologies,stock,v2,random_forest,HON_random_forest.joblib,True,True,True,0.0128929114486552,0.0172673817117733,5.0,450.0,READY
+HRL,Hormel Foods,stock,v2,random_forest,HRL_random_forest.joblib,True,True,True,0.0136352595461047,0.0198425192896032,5.0,450.0,READY
+HST,Host Hotels & Resorts,stock,v2,random_forest,HST_random_forest.joblib,True,True,True,0.0131017081411084,0.0170916537163394,5.0,450.0,READY
+HWM,Howmet Aerospace,stock,v2,random_forest,HWM_random_forest.joblib,True,True,True,0.0164793704790759,0.0216753733547194,5.0,450.0,READY
+HPQ,HP Inc.,stock,v2,random_forest,HPQ_random_forest.joblib,True,True,True,0.0209292628702393,0.0276692439389053,5.0,450.0,READY
+HUBB,Hubbell Incorporated,stock,v2,random_forest,HUBB_random_forest.joblib,True,True,True,0.0154059519305596,0.0195125961341014,5.0,450.0,READY
+HUM,Humana,stock,v2,random_forest,HUM_random_forest.joblib,True,True,True,0.0235209172362085,0.032039318068506,5.0,450.0,READY
+HBAN,Huntington Bancshares,stock,v2,random_forest,HBAN_random_forest.joblib,True,True,True,0.0128308526083956,0.0165904037177322,5.0,450.0,READY
+HII,Huntington Ingalls Industries,stock,v2,random_forest,HII_random_forest.joblib,True,True,True,0.0172965204024647,0.0248825225025013,5.0,450.0,READY
+IBM,IBM,stock,v2,random_forest,IBM_random_forest.joblib,True,True,True,0.0191734272887815,0.0289826512654482,5.0,450.0,READY
+IEX,IDEX Corporation,stock,v2,random_forest,IEX_random_forest.joblib,True,True,True,0.0133151171734163,0.0172589695318601,5.0,450.0,READY
+IDXX,Idexx Laboratories,stock,v2,random_forest,IDXX_random_forest.joblib,True,True,True,0.0159273424038872,0.0252149815391487,5.0,450.0,READY
+ITW,Illinois Tool Works,stock,v2,random_forest,ITW_random_forest.joblib,True,True,True,0.0103234797509393,0.0136732774463706,5.0,450.0,READY
+ILMN,"Illumina, Inc.",stock,v2,random_forest,ILMN_random_forest.joblib,True,True,True,0.0236510660950517,0.0324472116797044,5.0,450.0,READY
+INCY,Incyte,stock,v2,random_forest,INCY_random_forest.joblib,True,True,True,0.0172797730167333,0.0235465303367739,5.0,450.0,READY
+IR,Ingersoll Rand,stock,v2,random_forest,IR_random_forest.joblib,True,True,True,0.0158837187591793,0.0212994263687095,5.0,450.0,READY
+PODD,Insulet Corporation,stock,v2,random_forest,PODD_random_forest.joblib,True,True,True,0.0214328207081051,0.0291397808597501,5.0,450.0,READY
+INTC,Intel,stock,v2,random_forest,INTC_random_forest.joblib,True,True,True,0.0401986744942028,0.0532043634109382,5.0,450.0,READY
+IBKR,Interactive Brokers,stock,v2,random_forest,IBKR_random_forest.joblib,True,True,True,0.0207970984435117,0.0261670648141871,5.0,450.0,READY
+ICE,Intercontinental Exchange,stock,v2,random_forest,ICE_random_forest.joblib,True,True,True,0.0113782419534051,0.0150728261086673,5.0,450.0,READY
+IFF,International Flavors & Fragrances,stock,v2,random_forest,IFF_random_forest.joblib,True,True,True,0.0158014300250119,0.0222158312169059,5.0,450.0,READY
+IP,International Paper,stock,v2,random_forest,IP_random_forest.joblib,True,True,True,0.0223192502177909,0.0296443489798965,5.0,450.0,READY
+INTU,Intuit,stock,v2,random_forest,INTU_random_forest.joblib,True,True,True,0.0254883169074047,0.0326685535022897,5.0,450.0,READY
+ISRG,Intuitive Surgical,stock,v2,random_forest,ISRG_random_forest.joblib,True,True,True,0.0177252577246699,0.0250152694959177,5.0,450.0,READY
+IVZ,Invesco,stock,v2,random_forest,IVZ_random_forest.joblib,True,True,True,0.0177156102778778,0.0227816053678397,5.0,450.0,READY
+INVH,Invitation Homes,stock,v2,random_forest,INVH_random_forest.joblib,True,True,True,0.0114032009763635,0.0143644889756404,5.0,450.0,READY
+IQV,IQVIA,stock,v2,random_forest,IQV_random_forest.joblib,True,True,True,0.0185471952733115,0.0270995504013907,5.0,450.0,READY
+IRM,Iron Mountain,stock,v2,random_forest,IRM_random_forest.joblib,True,True,True,0.0160247256296934,0.0213807789283838,5.0,450.0,READY
+JBHT,J.B. Hunt,stock,v2,random_forest,JBHT_random_forest.joblib,True,True,True,0.0183462505049207,0.0264180782612693,5.0,450.0,READY
+JBL,Jabil,stock,v2,random_forest,JBL_random_forest.joblib,True,True,True,0.0233855650917156,0.0299518951746798,5.0,450.0,READY
+JKHY,Jack Henry & Associates,stock,v2,random_forest,JKHY_random_forest.joblib,True,True,True,0.0145342955189826,0.0191261365114176,5.0,450.0,READY
+J,Jacobs Solutions,stock,v2,random_forest,J_random_forest.joblib,True,True,True,0.014411051031041,0.019716448408932,5.0,450.0,READY
+JNJ,Johnson & Johnson,stock,v2,random_forest,JNJ_random_forest.joblib,True,True,True,0.0102121483167427,0.0126828423690584,5.0,450.0,READY
+JCI,Johnson Controls,stock,v2,random_forest,JCI_random_forest.joblib,True,True,True,0.0152502811181176,0.0200569838749106,5.0,450.0,READY
+JPM,JPMorgan Chase,stock,v2,random_forest,JPM_random_forest.joblib,True,True,True,0.0111851842454473,0.0142395545240663,5.0,450.0,READY
+KVUE,Kenvue,stock,v2,random_forest,KVUE_random_forest.joblib,True,True,True,0.0137671118307786,0.019206942163811,5.0,450.0,READY
+KDP,Keurig Dr Pepper,stock,v2,random_forest,KDP_random_forest.joblib,True,True,True,0.0133916431979432,0.018462965173356,5.0,450.0,READY
+KEY,KeyCorp,stock,v2,random_forest,KEY_random_forest.joblib,True,True,True,0.0119538759501362,0.0153142252463391,5.0,450.0,READY
+KEYS,Keysight Technologies,stock,v2,random_forest,KEYS_random_forest.joblib,True,True,True,0.0198800115584242,0.0278953343576829,5.0,450.0,READY
+KMB,Kimberly-Clark,stock,v2,random_forest,KMB_random_forest.joblib,True,True,True,0.0121058779859454,0.0171473489219963,5.0,450.0,READY
+KIM,Kimco Realty,stock,v2,random_forest,KIM_random_forest.joblib,True,True,True,0.0098795940836282,0.0125873509756762,5.0,450.0,READY
+KMI,Kinder Morgan,stock,v2,random_forest,KMI_random_forest.joblib,True,True,True,0.012312878105907,0.015382899495073,5.0,450.0,READY
+KKR,KKR & Co.,stock,v2,random_forest,KKR_random_forest.joblib,True,True,True,0.0187062829026407,0.024459226431967,5.0,450.0,READY
+KLAC,KLA Corporation,stock,v2,random_forest,KLAC_random_forest.joblib,True,True,True,0.0283982568393278,0.0380147110870601,5.0,450.0,READY
+KHC,Kraft Heinz,stock,v2,random_forest,KHC_random_forest.joblib,True,True,True,0.0129436439744983,0.0167375855290325,5.0,450.0,READY
+KR,Kroger,stock,v2,random_forest,KR_random_forest.joblib,True,True,True,0.0138216181988868,0.0178957007272334,5.0,450.0,READY
+LHX,L3Harris,stock,v2,random_forest,LHX_random_forest.joblib,True,True,True,0.0133855121869415,0.0172880781594498,5.0,450.0,READY
+LH,Labcorp,stock,v2,random_forest,LH_random_forest.joblib,True,True,True,0.0131934874495208,0.017005961767319,5.0,450.0,READY
+LRCX,Lam Research,stock,v2,random_forest,LRCX_random_forest.joblib,True,True,True,0.031425914193269,0.0402806088296373,5.0,450.0,READY
+LVS,Las Vegas Sands,stock,v2,random_forest,LVS_random_forest.joblib,True,True,True,0.0161544109083085,0.022259537648723,5.0,450.0,READY
+LDOS,Leidos,stock,v2,random_forest,LDOS_random_forest.joblib,True,True,True,0.0156524447865704,0.0216827213526302,5.0,450.0,READY
+LEN,Lennar,stock,v2,random_forest,LEN_random_forest.joblib,True,True,True,0.0197622378301009,0.0258590499705216,5.0,450.0,READY
+LII,Lennox International,stock,v2,random_forest,LII_random_forest.joblib,True,True,True,0.019555627985358,0.0264431356300362,5.0,450.0,READY
+LLY,Lilly (Eli),stock,v2,random_forest,LLY_random_forest.joblib,True,True,True,0.0182389866729766,0.0253475432120297,5.0,450.0,READY
+LIN,Linde plc,stock,v2,random_forest,LIN_random_forest.joblib,True,True,True,0.0091780289958766,0.0119076219058537,5.0,450.0,READY
+LYV,Live Nation Entertainment,stock,v2,random_forest,LYV_random_forest.joblib,True,True,True,0.0147423075666651,0.0194080107388714,5.0,450.0,READY
+LMT,Lockheed Martin,stock,v2,random_forest,LMT_random_forest.joblib,True,True,True,0.0136411363556645,0.0189747114255205,5.0,450.0,READY
+L,Loews Corporation,stock,v2,random_forest,L_random_forest.joblib,True,True,True,0.0089540555483471,0.0115296492105804,5.0,450.0,READY
+LOW,Lowe's,stock,v2,random_forest,LOW_random_forest.joblib,True,True,True,0.0139216128247037,0.0176322791221104,5.0,450.0,READY
+LULU,Lululemon Athletica,stock,v2,random_forest,LULU_random_forest.joblib,True,True,True,0.0217106978598015,0.0297459143323277,5.0,450.0,READY
+LITE,Lumentum,stock,v2,random_forest,LITE_random_forest.joblib,True,True,True,0.0531187809536565,0.064807380674755,5.0,450.0,READY
+LYB,LyondellBasell,stock,v2,random_forest,LYB_random_forest.joblib,True,True,True,0.0235978315884223,0.0302706797255827,5.0,450.0,READY
+MTB,M&T Bank,stock,v2,random_forest,MTB_random_forest.joblib,True,True,True,0.0107930920129673,0.013805305602737,5.0,450.0,READY
+MPC,Marathon Petroleum,stock,v2,random_forest,MPC_random_forest.joblib,True,True,True,0.0173477510935799,0.0221840538926194,5.0,450.0,READY
+MAR,Marriott International,stock,v2,random_forest,MAR_random_forest.joblib,True,True,True,0.0130559747569747,0.0172467572641581,5.0,450.0,READY
+MRSH,Marsh McLennan,stock,v2,random_forest,MRSH_random_forest.joblib,True,True,True,0.011484628177413,0.0156468927564327,5.0,450.0,READY
+MLM,Martin Marietta Materials,stock,v2,random_forest,MLM_random_forest.joblib,True,True,True,0.0137395121449157,0.017606527035219,5.0,450.0,READY
+MRVL,Marvell Technology,stock,v2,random_forest,MRVL_random_forest.joblib,True,True,True,0.0385607644052986,0.0515666799719239,5.0,450.0,READY
+MAS,Masco,stock,v2,random_forest,MAS_random_forest.joblib,True,True,True,0.0161375829266222,0.0220308525696206,5.0,450.0,READY
+MA,Mastercard,stock,v2,random_forest,MA_random_forest.joblib,True,True,True,0.0106718630917768,0.0139776065019817,5.0,450.0,READY
+MKC,McCormick & Company,stock,v2,random_forest,MKC_random_forest.joblib,True,True,True,0.0145940946103775,0.0183838378569129,5.0,450.0,READY
+MCD,McDonald's,stock,v2,random_forest,MCD_random_forest.joblib,True,True,True,0.0103742530767598,0.0129891273734788,5.0,450.0,READY
+MCK,McKesson Corporation,stock,v2,random_forest,MCK_random_forest.joblib,True,True,True,0.0136852149720063,0.0194140538036903,5.0,450.0,READY
+MDT,Medtronic,stock,v2,random_forest,MDT_random_forest.joblib,True,True,True,0.011692965861836,0.0152477636623369,5.0,450.0,READY
+MRK,Merck & Co.,stock,v2,random_forest,MRK_random_forest.joblib,True,True,True,0.0136402375514626,0.0192404844571052,5.0,450.0,READY
+META,Meta Platforms,stock,v2,random_forest,META_random_forest.joblib,True,True,True,0.0177780756851822,0.0258388159522474,5.0,450.0,READY
+MET,MetLife,stock,v2,random_forest,MET_random_forest.joblib,True,True,True,0.0117189907590642,0.0153775979409776,5.0,450.0,READY
+MTD,Mettler Toledo,stock,v2,random_forest,MTD_random_forest.joblib,True,True,True,0.0152492739243024,0.0204237399278419,5.0,450.0,READY
+MGM,MGM Resorts,stock,v2,random_forest,MGM_random_forest.joblib,True,True,True,0.0186019753341528,0.0261575559193766,5.0,450.0,READY
+MCHP,Microchip Technology,stock,v2,random_forest,MCHP_random_forest.joblib,True,True,True,0.0229973950090868,0.0308710831469338,5.0,450.0,READY
+MU,Micron Technology,stock,v2,random_forest,MU_random_forest.joblib,True,True,True,0.0402464439079326,0.0517564566100327,5.0,450.0,READY
+MSFT,Microsoft,stock,v2,random_forest,MSFT_random_forest.joblib,True,True,True,0.0135801557270885,0.0188595159958443,5.0,450.0,READY
+MAA,Mid-America Apartment Communities,stock,v2,random_forest,MAA_random_forest.joblib,True,True,True,0.0098472473199909,0.0126621320164575,5.0,450.0,READY
+MRNA,Moderna,stock,v2,random_forest,MRNA_random_forest.joblib,True,True,True,0.0415926193345081,0.0832558240232577,5.0,450.0,READY
+MDLZ,Mondelez International,stock,v2,random_forest,MDLZ_random_forest.joblib,True,True,True,0.0114902438143414,0.0149989619405186,5.0,450.0,READY
+MPWR,Monolithic Power Systems,stock,v2,random_forest,MPWR_random_forest.joblib,True,True,True,0.0262944173693289,0.0341774603710592,5.0,450.0,READY
+MNST,Monster Beverage,stock,v2,random_forest,MNST_random_forest.joblib,True,True,True,0.0127857907529829,0.0176445876518708,5.0,450.0,READY
+MCO,Moody's Corporation,stock,v2,random_forest,MCO_random_forest.joblib,True,True,True,0.0130320628828657,0.0169696512760202,5.0,450.0,READY
+MS,Morgan Stanley,stock,v2,random_forest,MS_random_forest.joblib,True,True,True,0.0143971783977907,0.0181284541818944,5.0,450.0,READY
+MOS,Mosaic Company (The),stock,v2,random_forest,MOS_random_forest.joblib,True,True,True,0.0225798194309924,0.0294072537445819,5.0,450.0,READY
+MSI,Motorola Solutions,stock,v2,random_forest,MSI_random_forest.joblib,True,True,True,0.0128835094757475,0.017723668388381,5.0,450.0,READY
+MSCI,MSCI,stock,v2,random_forest,MSCI_random_forest.joblib,True,True,True,0.0133994211401747,0.0191547207718139,5.0,450.0,READY
+NDAQ,"Nasdaq, Inc.",stock,v2,random_forest,NDAQ_random_forest.joblib,True,True,True,0.0121447459740391,0.0168436463579136,5.0,450.0,READY
+NTAP,NetApp,stock,v2,random_forest,NTAP_random_forest.joblib,True,True,True,0.0186737327153532,0.0264450299548803,5.0,450.0,READY
+NFLX,Netflix,stock,v2,random_forest,NFLX_random_forest.joblib,True,True,True,0.0178995508604413,0.0241742175854748,5.0,450.0,READY
+NEM,Newmont,stock,v2,random_forest,NEM_random_forest.joblib,True,True,True,0.0266188327222939,0.0335711469418867,5.0,450.0,READY
+NWSA,News Corp (Class A),stock,v2,random_forest,NWSA_random_forest.joblib,True,True,True,0.0126609040085502,0.0167385446206045,5.0,450.0,READY
+NWS,News Corp (Class B),stock,v2,random_forest,NWS_random_forest.joblib,True,True,True,0.0127659887138292,0.017271236913335,5.0,450.0,READY
+NEE,NextEra Energy,stock,v2,random_forest,NEE_random_forest.joblib,True,True,True,0.0111086004146022,0.0145518523927866,5.0,450.0,READY
+NKE,"Nike, Inc.",stock,v2,random_forest,NKE_random_forest.joblib,True,True,True,0.0192343569400421,0.0253366985268635,5.0,450.0,READY
+NI,NiSource,stock,v2,random_forest,NI_random_forest.joblib,True,True,True,0.0101087941952083,0.0126327753526983,5.0,450.0,READY
+NDSN,Nordson Corporation,stock,v2,random_forest,NDSN_random_forest.joblib,True,True,True,0.0130946304587492,0.016775773132307,5.0,450.0,READY
+NSC,Norfolk Southern,stock,v2,random_forest,NSC_random_forest.joblib,True,True,True,0.0097764020172365,0.0133912385383581,5.0,450.0,READY
+NTRS,Northern Trust,stock,v2,random_forest,NTRS_random_forest.joblib,True,True,True,0.0119761909393443,0.0160076510112191,5.0,450.0,READY
+NOC,Northrop Grumman,stock,v2,random_forest,NOC_random_forest.joblib,True,True,True,0.0170244149225539,0.0210950120967396,5.0,450.0,READY
+NCLH,Norwegian Cruise Line Holdings,stock,v2,random_forest,NCLH_random_forest.joblib,True,True,True,0.0261534090016829,0.0339883211651697,5.0,450.0,READY
+NRG,NRG Energy,stock,v2,random_forest,NRG_random_forest.joblib,True,True,True,0.0230589963301626,0.0309575333600746,5.0,450.0,READY
+NUE,Nucor,stock,v2,random_forest,NUE_random_forest.joblib,True,True,True,0.0171269719924588,0.0214624043340325,5.0,450.0,READY
+NVDA,Nvidia,stock,v2,random_forest,NVDA_random_forest.joblib,True,True,True,0.01858356038463,0.0236631925038363,5.0,450.0,READY
+NVR,"NVR, Inc.",stock,v2,random_forest,NVR_random_forest.joblib,True,True,True,0.0141022770911406,0.0182164380252098,5.0,450.0,READY
+NXPI,NXP Semiconductors,stock,v2,random_forest,NXPI_random_forest.joblib,True,True,True,0.0207671471001884,0.0289578608105171,5.0,450.0,READY
+ORLY,O'Reilly Automotive,stock,v2,random_forest,ORLY_random_forest.joblib,True,True,True,0.0123555333063384,0.016344357019717,5.0,450.0,READY
+OXY,Occidental Petroleum,stock,v2,random_forest,OXY_random_forest.joblib,True,True,True,0.0182166806553604,0.0231507519315554,5.0,450.0,READY
+ODFL,Old Dominion,stock,v2,random_forest,ODFL_random_forest.joblib,True,True,True,0.0209307610433034,0.0269225215884713,5.0,450.0,READY
+OMC,Omnicom Group,stock,v2,random_forest,OMC_random_forest.joblib,True,True,True,0.0162114603301651,0.0222490253384391,5.0,450.0,READY
+ON,ON Semiconductor,stock,v2,random_forest,ON_random_forest.joblib,True,True,True,0.0289753833543609,0.039160041228845,5.0,450.0,READY
+OKE,Oneok,stock,v2,random_forest,OKE_random_forest.joblib,True,True,True,0.0156592943577986,0.0192422573450703,5.0,450.0,READY
+ORCL,Oracle Corporation,stock,v2,random_forest,ORCL_random_forest.joblib,True,True,True,0.0298144465796672,0.0417982575684994,5.0,450.0,READY
+OTIS,Otis Worldwide,stock,v2,random_forest,OTIS_random_forest.joblib,True,True,True,0.0111429330546893,0.015362180451947,5.0,450.0,READY
+PCAR,Paccar,stock,v2,random_forest,PCAR_random_forest.joblib,True,True,True,0.0133616357331802,0.0176323914421192,5.0,450.0,READY
+PKG,Packaging Corporation of America,stock,v2,random_forest,PKG_random_forest.joblib,True,True,True,0.0127964909067843,0.0176303500350997,5.0,450.0,READY
+PLTR,Palantir Technologies,stock,v2,random_forest,PLTR_random_forest.joblib,True,True,True,0.0265210630524648,0.0378528761230333,5.0,450.0,READY
+PANW,Palo Alto Networks,stock,v2,random_forest,PANW_random_forest.joblib,True,True,True,0.0233137614837502,0.0306338193822721,5.0,450.0,READY
+PSKY,Paramount Skydance Corporation,stock,v2,random_forest,PSKY_random_forest.joblib,True,True,True,0.0334593160881498,0.0461419024237512,5.0,450.0,READY
+PH,Parker Hannifin,stock,v2,random_forest,PH_random_forest.joblib,True,True,True,0.0123834409991592,0.0165351119794705,5.0,450.0,READY
+PAYX,Paychex,stock,v2,random_forest,PAYX_random_forest.joblib,True,True,True,0.0147071061674214,0.0190530675910169,5.0,450.0,READY
+PYPL,PayPal,stock,v2,random_forest,PYPL_random_forest.joblib,True,True,True,0.0186022915057866,0.0271493143692149,5.0,450.0,READY
+PNR,Pentair,stock,v2,random_forest,PNR_random_forest.joblib,True,True,True,0.0153170465992937,0.0213566820730175,5.0,450.0,READY
+PEP,PepsiCo,stock,v2,random_forest,PEP_random_forest.joblib,True,True,True,0.0102650033580595,0.0136136017546817,5.0,450.0,READY
+PFE,Pfizer,stock,v2,random_forest,PFE_random_forest.joblib,True,True,True,0.0117278340529073,0.0155837690756927,5.0,450.0,READY
+PCG,PG&E Corporation,stock,v2,random_forest,PCG_random_forest.joblib,True,True,True,0.0152946894125762,0.0210442615938181,5.0,450.0,READY
+PM,Philip Morris International,stock,v2,random_forest,PM_random_forest.joblib,True,True,True,0.015387864675461,0.0198819400693478,5.0,450.0,READY
+PSX,Phillips 66,stock,v2,random_forest,PSX_random_forest.joblib,True,True,True,0.0178857783270118,0.0228369085129857,5.0,450.0,READY
+PNW,Pinnacle West Capital,stock,v2,random_forest,PNW_random_forest.joblib,True,True,True,0.0093546001654697,0.0115171424917512,5.0,450.0,READY
+PNC,PNC Financial Services,stock,v2,random_forest,PNC_random_forest.joblib,True,True,True,0.0105815791599234,0.0135745459475444,5.0,450.0,READY
+PPG,PPG Industries,stock,v2,random_forest,PPG_random_forest.joblib,True,True,True,0.0145446299209701,0.0186859306588403,5.0,450.0,READY
+PPL,PPL Corporation,stock,v2,random_forest,PPL_random_forest.joblib,True,True,True,0.0097997262332143,0.0120309542724661,5.0,450.0,READY
+PFG,Principal Financial Group,stock,v2,random_forest,PFG_random_forest.joblib,True,True,True,0.0116423584927054,0.0151659838976255,5.0,450.0,READY
+PG,Procter & Gamble,stock,v2,random_forest,PG_random_forest.joblib,True,True,True,0.0098994022159614,0.0122915275889618,5.0,450.0,READY
+PGR,Progressive Corporation,stock,v2,random_forest,PGR_random_forest.joblib,True,True,True,0.0124513012704102,0.0168489798824241,5.0,450.0,READY
+PLD,Prologis,stock,v2,random_forest,PLD_random_forest.joblib,True,True,True,0.0119610053065179,0.0151814633729203,5.0,450.0,READY
+PRU,Prudential Financial,stock,v2,random_forest,PRU_random_forest.joblib,True,True,True,0.0120768064890988,0.0152804136573934,5.0,450.0,READY
+PEG,Public Service Enterprise Group,stock,v2,random_forest,PEG_random_forest.joblib,True,True,True,0.0099098334918794,0.0124898796674788,5.0,450.0,READY
+PTC,PTC Inc.,stock,v2,random_forest,PTC_random_forest.joblib,True,True,True,0.016353305157138,0.0220421162282962,5.0,450.0,READY
+PSA,Public Storage,stock,v2,random_forest,PSA_random_forest.joblib,True,True,True,0.0119090459129861,0.0150565671213418,5.0,450.0,READY
+PHM,PulteGroup,stock,v2,random_forest,PHM_random_forest.joblib,True,True,True,0.0167490869287837,0.0221919325187306,5.0,450.0,READY
+PWR,Quanta Services,stock,v2,random_forest,PWR_random_forest.joblib,True,True,True,0.0193854615857349,0.0267689442278572,5.0,450.0,READY
+QCOM,Qualcomm,stock,v2,random_forest,QCOM_random_forest.joblib,True,True,True,0.0234503182694025,0.0313802937967788,5.0,450.0,READY
+DGX,Quest Diagnostics,stock,v2,random_forest,DGX_random_forest.joblib,True,True,True,0.0111759231252866,0.0159810401578848,5.0,450.0,READY
+Q,Qnity Electronics,stock,v2,random_forest,Q_random_forest.joblib,True,False,False,,,,,NO_MODEL
+RL,Ralph Lauren Corporation,stock,v2,random_forest,RL_random_forest.joblib,True,True,True,0.0163479626935232,0.0217924213499296,5.0,450.0,READY
+RJF,Raymond James Financial,stock,v2,random_forest,RJF_random_forest.joblib,True,True,True,0.0124550319764996,0.0164208680222903,5.0,450.0,READY
+RDDT,Reddit,stock,v2,random_forest,RDDT_random_forest.joblib,True,True,True,0.0351826069958388,0.0464469200089229,5.0,450.0,READY
+RTX,RTX Corporation,stock,v2,random_forest,RTX_random_forest.joblib,True,True,True,0.0128224509937959,0.0171489498720085,5.0,450.0,READY
+O,Realty Income,stock,v2,random_forest,O_random_forest.joblib,True,True,True,0.0087604156375168,0.0111027121774802,5.0,450.0,READY
+REG,Regency Centers,stock,v2,random_forest,REG_random_forest.joblib,True,True,True,0.0088830208108423,0.0113267688905257,5.0,450.0,READY
+REGN,Regeneron Pharmaceuticals,stock,v2,random_forest,REGN_random_forest.joblib,True,True,True,0.018094392997332,0.0235494486996373,5.0,450.0,READY
+RF,Regions Financial Corporation,stock,v2,random_forest,RF_random_forest.joblib,True,True,True,0.011787118790844,0.0153898869321271,5.0,450.0,READY
+RSG,Republic Services,stock,v2,random_forest,RSG_random_forest.joblib,True,True,True,0.0093331241304081,0.0122028923646507,5.0,450.0,READY
+RMD,ResMed |,stock,v2,random_forest,RMD_random_forest.joblib,True,True,True,0.0149699640266226,0.0193426460796805,5.0,450.0,READY
+RVTY,Revvity,stock,v2,random_forest,RVTY_random_forest.joblib,True,True,True,0.0192592555093701,0.0256792673321011,5.0,450.0,READY
+HOOD,Robinhood Markets,stock,v2,random_forest,HOOD_random_forest.joblib,True,True,True,0.0355199679199208,0.0463033395906435,5.0,450.0,READY
+ROK,Rockwell Automation,stock,v2,random_forest,ROK_random_forest.joblib,True,True,True,0.0151182929598535,0.0197150523466378,5.0,450.0,READY
+ROL,"Rollins, Inc.",stock,v2,random_forest,ROL_random_forest.joblib,True,True,True,0.0124942950687701,0.0178279244828047,5.0,450.0,READY
+ROP,Roper Technologies,stock,v2,random_forest,ROP_random_forest.joblib,True,True,True,0.0128290407998956,0.0176258598970512,5.0,450.0,READY
+ROST,Ross Stores,stock,v2,random_forest,ROST_random_forest.joblib,True,True,True,0.013230902581086,0.0178695903321171,5.0,450.0,READY
+RCL,Royal Caribbean Group,stock,v2,random_forest,RCL_random_forest.joblib,True,True,True,0.0211293901240816,0.0283101402752002,5.0,450.0,READY
+SPGI,S&P Global,stock,v2,random_forest,SPGI_random_forest.joblib,True,True,True,0.0135529675905574,0.0188302768718543,5.0,450.0,READY
+CRM,Salesforce,stock,v2,random_forest,CRM_random_forest.joblib,True,True,True,0.0220924496741111,0.0298720658721962,5.0,450.0,READY
+SNDK,Sandisk,stock,v2,random_forest,SNDK_random_forest.joblib,True,False,False,,,,,NO_MODEL
+SBAC,SBA Communications,stock,v2,random_forest,SBAC_random_forest.joblib,True,True,True,0.0165929189912158,0.0222635902238972,5.0,450.0,READY
+SLB,Schlumberger,stock,v2,random_forest,SLB_random_forest.joblib,True,True,True,0.0172560280944743,0.0231145959675092,5.0,450.0,READY
+STX,Seagate Technology,stock,v2,random_forest,STX_random_forest.joblib,True,True,True,0.03422470908191,0.044612935598639,5.0,450.0,READY
+SRE,Sempra,stock,v2,random_forest,SRE_random_forest.joblib,True,True,True,0.0120810965155344,0.0154021744521973,5.0,450.0,READY
+NOW,ServiceNow,stock,v2,random_forest,NOW_random_forest.joblib,True,True,True,0.0260671515449925,0.034824915159929,5.0,450.0,READY
+SHW,Sherwin-Williams,stock,v2,random_forest,SHW_random_forest.joblib,True,True,True,0.0140318822335547,0.0178759393171491,5.0,450.0,READY
+SPG,Simon Property Group,stock,v2,random_forest,SPG_random_forest.joblib,True,True,True,0.0108686359093488,0.013772610128711,5.0,450.0,READY
+SWKS,Skyworks Solutions,stock,v2,random_forest,SWKS_random_forest.joblib,True,True,True,0.0224184729246391,0.0308957552148863,5.0,450.0,READY
+SJM,J.M. Smucker Company (The),stock,v2,random_forest,SJM_random_forest.joblib,True,True,True,0.0130422819218222,0.0173109756721466,5.0,450.0,READY
+SW,Smurfit Westrock,stock,v2,random_forest,SW_random_forest.joblib,True,True,True,0.0202409169561363,0.0271245558757737,5.0,450.0,READY
+SNA,Snap-on,stock,v2,random_forest,SNA_random_forest.joblib,True,True,True,0.0101837329044616,0.0129036511946387,5.0,450.0,READY
+SOLV,Solventum,stock,v2,random_forest,SOLV_random_forest.joblib,True,True,True,0.0155863995376989,0.0198247882261272,5.0,450.0,READY
+SO,Southern Company,stock,v2,random_forest,SO_random_forest.joblib,True,True,True,0.0086944344833953,0.010929457832129,5.0,450.0,READY
+LUV,Southwest Airlines,stock,v2,random_forest,LUV_random_forest.joblib,True,True,True,0.0217602328671593,0.0288649397677599,5.0,450.0,READY
+SWK,Stanley Black & Decker,stock,v2,random_forest,SWK_random_forest.joblib,True,True,True,0.0187304779806508,0.0244395383330319,5.0,450.0,READY
+SBUX,Starbucks,stock,v2,random_forest,SBUX_random_forest.joblib,True,True,True,0.0134534133970209,0.0176232112605813,5.0,450.0,READY
+STT,State Street Corporation,stock,v2,random_forest,STT_random_forest.joblib,True,True,True,0.0151209302610302,0.0183787807994942,5.0,450.0,READY
+STLD,Steel Dynamics,stock,v2,random_forest,STLD_random_forest.joblib,True,True,True,0.0183406633739525,0.0235973770839347,5.0,450.0,READY
+STE,Steris,stock,v2,random_forest,STE_random_forest.joblib,True,True,True,0.0120565299704262,0.0166035032869921,5.0,450.0,READY
+SYK,Stryker Corporation,stock,v2,random_forest,SYK_random_forest.joblib,True,True,True,0.0140837488459389,0.0183057984955489,5.0,450.0,READY
+SMCI,Supermicro,stock,v2,random_forest,SMCI_random_forest.joblib,True,True,True,0.0413864681682635,0.0573127314065395,5.0,450.0,READY
+SYF,Synchrony Financial,stock,v2,random_forest,SYF_random_forest.joblib,True,True,True,0.0148627692675579,0.0194879931773039,5.0,450.0,READY
+SNPS,Synopsys,stock,v2,random_forest,SNPS_random_forest.joblib,True,True,True,0.0219105700273254,0.0327991551356568,5.0,450.0,READY
+SYY,Sysco,stock,v2,random_forest,SYY_random_forest.joblib,True,True,True,0.0110258530235214,0.0156014882603361,5.0,450.0,READY
+TMUS,T-Mobile US,stock,v2,random_forest,TMUS_random_forest.joblib,True,True,True,0.0138730599331436,0.018813310893247,5.0,450.0,READY
+TROW,T. Rowe Price,stock,v2,random_forest,TROW_random_forest.joblib,True,True,True,0.0115651851210066,0.0153546504526448,5.0,450.0,READY
+TTWO,Take-Two Interactive,stock,v2,random_forest,TTWO_random_forest.joblib,True,True,True,0.0157171601056385,0.0213229678059163,5.0,450.0,READY
+TPR,"Tapestry, Inc.",stock,v2,random_forest,TPR_random_forest.joblib,True,True,True,0.0193757934589779,0.0280416993714462,5.0,450.0,READY
+TRGP,Targa Resources,stock,v2,random_forest,TRGP_random_forest.joblib,True,True,True,0.0159500565911072,0.019904060116066,5.0,450.0,READY
+TGT,Target Corporation,stock,v2,random_forest,TGT_random_forest.joblib,True,True,True,0.0165855881488243,0.0209531123750515,5.0,450.0,READY
+TEL,TE Connectivity,stock,v2,random_forest,TEL_random_forest.joblib,True,True,True,0.0156758072554826,0.0218032133928418,5.0,450.0,READY
+TDY,Teledyne Technologies,stock,v2,random_forest,TDY_random_forest.joblib,True,True,True,0.0126322869190028,0.0164483223058393,5.0,450.0,READY
+TER,Teradyne,stock,v2,random_forest,TER_random_forest.joblib,True,True,True,0.0340411010551866,0.0467293005148052,5.0,450.0,READY
+TSLA,"Tesla, Inc.",stock,v2,random_forest,TSLA_random_forest.joblib,True,True,True,0.0240030412883054,0.0307039014962451,5.0,450.0,READY
+TXN,Texas Instruments,stock,v2,random_forest,TXN_random_forest.joblib,True,True,True,0.018504619330976,0.0262002032112357,5.0,450.0,READY
+TPL,Texas Pacific Land Corporation,stock,v2,random_forest,TPL_random_forest.joblib,True,True,True,0.0238068579052995,0.0315838441639107,5.0,450.0,READY
+TXT,Textron,stock,v2,random_forest,TXT_random_forest.joblib,True,True,True,0.0134238903260569,0.0178540377219375,5.0,450.0,READY
+TMO,Thermo Fisher Scientific,stock,v2,random_forest,TMO_random_forest.joblib,True,True,True,0.0144916822695146,0.0200080849925285,5.0,450.0,READY
+TJX,TJX Companies,stock,v2,random_forest,TJX_random_forest.joblib,True,True,True,0.0105465081035064,0.0135755719176357,5.0,450.0,READY
+TKO,TKO Group Holdings,stock,v2,random_forest,TKO_random_forest.joblib,True,True,True,0.0155972577553616,0.0208469177262075,5.0,450.0,READY
+TSCO,Tractor Supply,stock,v2,random_forest,TSCO_random_forest.joblib,True,True,True,0.0165273026634446,0.0211723805420603,5.0,450.0,READY
+TT,Trane Technologies,stock,v2,random_forest,TT_random_forest.joblib,True,True,True,0.0137302213229584,0.0183330482004014,5.0,450.0,READY
+TDG,TransDigm Group,stock,v2,random_forest,TDG_random_forest.joblib,True,True,True,0.0137718412654279,0.0190477355954752,5.0,450.0,READY
+TRV,Travelers Companies (The),stock,v2,random_forest,TRV_random_forest.joblib,True,True,True,0.0101341096332415,0.0134911326898337,5.0,450.0,READY
+TRMB,Trimble Inc.,stock,v2,random_forest,TRMB_random_forest.joblib,True,True,True,0.0156655741648515,0.0200900839991327,5.0,450.0,READY
+TFC,Truist Financial,stock,v2,random_forest,TFC_random_forest.joblib,True,True,True,0.0117812833635956,0.0152617559411407,5.0,450.0,READY
+TYL,Tyler Technologies,stock,v2,random_forest,TYL_random_forest.joblib,True,True,True,0.018347098825538,0.0252583357034037,5.0,450.0,READY
+TSN,Tyson Foods,stock,v2,random_forest,TSN_random_forest.joblib,True,True,True,0.0123349015462215,0.0166207299345328,5.0,450.0,READY
+USB,U.S. Bancorp,stock,v2,random_forest,USB_random_forest.joblib,True,True,True,0.0114625796837923,0.0147896718409154,5.0,450.0,READY
+UBER,Uber,stock,v2,random_forest,UBER_random_forest.joblib,True,True,True,0.0163794608217293,0.0217849617349429,5.0,450.0,READY
+UDR,"UDR, Inc.",stock,v2,random_forest,UDR_random_forest.joblib,True,True,True,0.0104177949350755,0.0135404756404468,5.0,450.0,READY
+ULTA,Ulta Beauty,stock,v2,random_forest,ULTA_random_forest.joblib,True,True,True,0.01678138775505,0.0232585995950604,5.0,450.0,READY
+UNP,Union Pacific Corporation,stock,v2,random_forest,UNP_random_forest.joblib,True,True,True,0.010869673645032,0.0145988353531551,5.0,450.0,READY
+UAL,United Airlines Holdings,stock,v2,random_forest,UAL_random_forest.joblib,True,True,True,0.0238335306075514,0.0302520003526553,5.0,450.0,READY
+UPS,United Parcel Service,stock,v2,random_forest,UPS_random_forest.joblib,True,True,True,0.0165533722469034,0.0221936449783126,5.0,450.0,READY
+URI,United Rentals,stock,v2,random_forest,URI_random_forest.joblib,True,True,True,0.0181164234566036,0.0267370858007859,5.0,450.0,READY
+UNH,UnitedHealth Group,stock,v2,random_forest,UNH_random_forest.joblib,True,True,True,0.0169555287393119,0.0238294719332098,5.0,450.0,READY
+UHS,Universal Health Services,stock,v2,random_forest,UHS_random_forest.joblib,True,True,True,0.0159585348427547,0.0213358972233758,5.0,450.0,READY
+VLO,Valero Energy,stock,v2,random_forest,VLO_random_forest.joblib,True,True,True,0.0194517595865975,0.0252963947978853,5.0,450.0,READY
+VEEV,Veeva Systems,stock,v2,random_forest,VEEV_random_forest.joblib,True,True,True,0.0191250554842692,0.0264720978065468,5.0,450.0,READY
+VTR,Ventas,stock,v2,random_forest,VTR_random_forest.joblib,True,True,True,0.0118385542370163,0.0153139507368068,5.0,450.0,READY
+VLTO,Veralto,stock,v2,random_forest,VLTO_random_forest.joblib,True,True,True,0.010459381615473,0.0139572759166531,5.0,450.0,READY
+VRSN,Verisign,stock,v2,random_forest,VRSN_random_forest.joblib,True,True,True,0.0137580926498295,0.0192432272357331,5.0,450.0,READY
+VRSK,Verisk Analytics,stock,v2,random_forest,VRSK_random_forest.joblib,True,True,True,0.0165877182074654,0.022427374727429,5.0,450.0,READY
+VZ,Verizon,stock,v2,random_forest,VZ_random_forest.joblib,True,True,True,0.0115474931190963,0.0158596184776035,5.0,450.0,READY
+VRTX,Vertex Pharmaceuticals,stock,v2,random_forest,VRTX_random_forest.joblib,True,True,True,0.0149828575127615,0.0216299526445593,5.0,450.0,READY
+VRT,Vertiv,stock,v2,random_forest,VRT_random_forest.joblib,True,True,True,0.0333840860111156,0.0446745999852907,5.0,450.0,READY
+VTRS,Viatris,stock,v2,random_forest,VTRS_random_forest.joblib,True,True,True,0.0162451170341944,0.0219495111689758,5.0,450.0,READY
+VICI,Vici Properties,stock,v2,random_forest,VICI_random_forest.joblib,True,True,True,0.0091348313908166,0.0118453977877613,5.0,450.0,READY
+V,Visa Inc.,stock,v2,random_forest,V_random_forest.joblib,True,True,True,0.0107753195111545,0.0142841597808469,5.0,450.0,READY
+VST,Vistra Corp .,stock,v2,random_forest,VST_random_forest.joblib,True,True,True,0.0243574607227225,0.0310353882687625,5.0,450.0,READY
+VMRK,Vivmark Residential,stock,v2,random_forest,VMRK_random_forest.joblib,True,True,True,0.010466382684454,0.0135247766127603,5.0,450.0,READY
+VMC,Vulcan Materials Company,stock,v2,random_forest,VMC_random_forest.joblib,True,True,True,0.0136096760336168,0.0174403453523582,5.0,450.0,READY
+WRB,W. R. Berkley Corporation,stock,v2,random_forest,WRB_random_forest.joblib,True,True,True,0.0103897577064522,0.0134484300868041,5.0,450.0,READY
+GWW,W. W. Grainger,stock,v2,random_forest,GWW_random_forest.joblib,True,True,True,0.011375969983102,0.0160872140324877,5.0,450.0,READY
+WAB,Wabtec,stock,v2,random_forest,WAB_random_forest.joblib,True,True,True,0.0130458025224194,0.0176160322850297,5.0,450.0,READY
+WMT,Walmart,stock,v2,random_forest,WMT_random_forest.joblib,True,True,True,0.0120948841244358,0.0166070491841147,5.0,450.0,READY
+DIS,Walt Disney Company (The),stock,v2,random_forest,DIS_random_forest.joblib,True,True,True,0.0121092996195151,0.0160319118796313,5.0,450.0,READY
+WBD,Warner Bros. Discovery,stock,v2,random_forest,WBD_random_forest.joblib,True,True,True,0.0194770027178868,0.0283044515550007,5.0,450.0,READY
+WM,Waste Management,stock,v2,random_forest,WM_random_forest.joblib,True,True,True,0.0094894442354934,0.0123121055472392,5.0,450.0,READY
+WAT,Waters Corporation,stock,v2,random_forest,WAT_random_forest.joblib,True,True,True,0.0162110650985081,0.0229129250796333,5.0,450.0,READY
+WEC,WEC Energy Group,stock,v2,random_forest,WEC_random_forest.joblib,True,True,True,0.0086888999853858,0.0105494905830079,5.0,450.0,READY
+WFC,Wells Fargo,stock,v2,random_forest,WFC_random_forest.joblib,True,True,True,0.0134516707045836,0.0172271876071619,5.0,450.0,READY
+WELL,Welltower,stock,v2,random_forest,WELL_random_forest.joblib,True,True,True,0.0110633154250157,0.0142411081339792,5.0,450.0,READY
+WST,West Pharmaceutical Services,stock,v2,random_forest,WST_random_forest.joblib,True,True,True,0.0214874704478535,0.0305601164453504,5.0,450.0,READY
+WDC,Western Digital,stock,v2,random_forest,WDC_random_forest.joblib,True,True,True,0.0377435257126313,0.0488092603604745,5.0,450.0,READY
+WY,Weyerhaeuser,stock,v2,random_forest,WY_random_forest.joblib,True,True,True,0.013237337395951,0.0174117833185579,5.0,450.0,READY
+WSM,"Williams-Sonoma, Inc.",stock,v2,random_forest,WSM_random_forest.joblib,True,True,True,0.0174722484331645,0.0221737569429393,5.0,450.0,READY
+WMB,Williams Companies,stock,v2,random_forest,WMB_random_forest.joblib,True,True,True,0.0135274249802395,0.0169811768327415,5.0,450.0,READY
+WTW,Willis Towers Watson,stock,v2,random_forest,WTW_random_forest.joblib,True,True,True,0.0131004569251332,0.0187045699607839,5.0,450.0,READY
+WDAY,"Workday, Inc.",stock,v2,random_forest,WDAY_random_forest.joblib,True,True,True,0.0257626032558699,0.0340849562756166,5.0,450.0,READY
+WYNN,Wynn Resorts,stock,v2,random_forest,WYNN_random_forest.joblib,True,True,True,0.0167274917969495,0.021702379816243,5.0,450.0,READY
+XEL,Xcel Energy,stock,v2,random_forest,XEL_random_forest.joblib,True,True,True,0.0110040347009865,0.0141584574361665,5.0,450.0,READY
+XYL,Xylem Inc.,stock,v2,random_forest,XYL_random_forest.joblib,True,True,True,0.011717453334061,0.0164246879103759,5.0,450.0,READY
+YUM,Yum! Brands,stock,v2,random_forest,YUM_random_forest.joblib,True,True,True,0.0128293017188285,0.0163229884088478,5.0,450.0,READY
+ZBRA,Zebra Technologies,stock,v2,random_forest,ZBRA_random_forest.joblib,True,True,True,0.0212991717745732,0.0312518648739449,5.0,450.0,READY
+ZBH,Zimmer Biomet,stock,v2,random_forest,ZBH_random_forest.joblib,True,True,True,0.0147961730212092,0.0205359021204502,5.0,450.0,READY
+ZTS,Zoetis,stock,v2,random_forest,ZTS_random_forest.joblib,True,True,True,0.0145989899604874,0.0213913600727441,5.0,450.0,READY

@@ -1,504 +1,504 @@
 ticker,company_name,asset_type,data_available,model_available,prediction_available
-MMM,3M,stock,True,False,False
-AOS,A. O. Smith,stock,True,False,False
-ABT,Abbott Laboratories,stock,True,False,False
-ABBV,AbbVie,stock,True,False,False
-ACN,Accenture,stock,True,False,False
-ADBE,Adobe Inc.,stock,True,False,False
-AMD,Advanced Micro Devices,stock,True,False,False
-AES,AES Corporation,stock,True,False,False
-AFL,Aflac,stock,True,False,False
-A,Agilent Technologies,stock,True,False,False
-APD,Air Products,stock,True,False,False
-ABNB,Airbnb,stock,True,False,False
-AKAM,Akamai Technologies,stock,True,False,False
-ALB,Albemarle Corporation,stock,True,False,False
-ARE,Alexandria Real Estate Equities,stock,True,False,False
-ALGN,Align Technology,stock,True,False,False
-ALLE,Allegion,stock,True,False,False
-LNT,Alliant Energy,stock,True,False,False
-ALL,Allstate,stock,True,False,False
-GOOGL,Alphabet Inc. (Class A),stock,True,False,False
-GOOG,Alphabet Inc. (Class C),stock,True,False,False
-MO,Altria,stock,True,False,False
-AMZN,Amazon,stock,True,False,False
-AMCR,Amcor,stock,True,False,False
-AEE,Ameren,stock,True,False,False
-AEP,American Electric Power,stock,True,False,False
-AXP,American Express,stock,True,False,False
-AIG,American International Group,stock,True,False,False
-AMT,American Tower,stock,True,False,False
-AWK,American Water Works,stock,True,False,False
-AMP,Ameriprise Financial,stock,True,False,False
-AME,Ametek,stock,True,False,False
-AMGN,Amgen,stock,True,False,False
-APH,Amphenol,stock,True,False,False
-ADI,Analog Devices,stock,True,False,False
-AON,Aon plc,stock,True,False,False
-APA,APA Corporation,stock,True,False,False
-APO,Apollo Global Management,stock,True,False,False
-AAPL,Apple Inc.,stock,True,False,False
-AMAT,Applied Materials,stock,True,False,False
-APP,AppLovin,stock,True,False,False
-APTV,Aptiv,stock,True,False,False
-ACGL,Arch Capital Group,stock,True,False,False
-ADM,Archer Daniels Midland,stock,True,False,False
-ARES,Ares Management,stock,True,False,False
-ANET,Arista Networks,stock,True,False,False
-AJG,Arthur J. Gallagher & Co.,stock,True,False,False
-AIZ,Assurant,stock,True,False,False
-T,AT&T,stock,True,False,False
-ATO,Atmos Energy,stock,True,False,False
-ADSK,Autodesk,stock,True,False,False
-ADP,Automatic Data Processing,stock,True,False,False
-AZO,AutoZone,stock,True,False,False
-AVY,Avery Dennison,stock,True,False,False
-AXON,Axon Enterprise,stock,True,False,False
-BKR,Baker Hughes,stock,True,False,False
-BALL,Ball Corporation,stock,True,False,False
-BAC,Bank of America,stock,True,False,False
-BAX,Baxter International,stock,True,False,False
-BDX,Becton Dickinson,stock,True,False,False
-BRK.B,Berkshire Hathaway,stock,True,False,False
-BBY,Best Buy,stock,True,False,False
-TECH,Bio-Techne,stock,True,False,False
-BIIB,Biogen,stock,True,False,False
-BLK,BlackRock,stock,True,False,False
-BX,Blackstone Inc.,stock,True,False,False
-XYZ,"Block, Inc.",stock,True,False,False
-BE,Bloom Energy,stock,True,False,False
-BNY,BNY Mellon,stock,True,False,False
-BA,Boeing,stock,True,False,False
-BKNG,Booking Holdings,stock,True,False,False
-BSX,Boston Scientific,stock,True,False,False
-BMY,Bristol Myers Squibb,stock,True,False,False
-AVGO,Broadcom,stock,True,False,False
-BR,Broadridge Financial Solutions,stock,True,False,False
-BRO,Brown & Brown,stock,True,False,False
-BF.B,Brown–Forman,stock,True,False,False
-BG,Bunge Global,stock,True,False,False
-BXP,"BXP, Inc.",stock,True,False,False
-CHRW,C.H. Robinson,stock,True,False,False
-CDNS,Cadence Design Systems,stock,True,False,False
-CPT,Camden Property Trust,stock,True,False,False
-COF,Capital One,stock,True,False,False
-CAH,Cardinal Health,stock,True,False,False
-CCL,Carnival Corporation,stock,True,False,False
-CARR,Carrier Global,stock,True,False,False
-CVNA,Carvana,stock,True,False,False
-CASY,Casey's,stock,True,False,False
-CAT,Caterpillar Inc.,stock,True,False,False
-CBOE,Cboe Global Markets,stock,True,False,False
-CBRE,CBRE Group,stock,True,False,False
-CDW,CDW Corporation,stock,True,False,False
-COR,Cencora,stock,True,False,False
-CNC,Centene Corporation,stock,True,False,False
-CNP,CenterPoint Energy,stock,True,False,False
-CF,CF Industries,stock,True,False,False
-CRL,Charles River Laboratories,stock,True,False,False
-SCHW,Charles Schwab Corporation,stock,True,False,False
-CHTR,Charter Communications,stock,True,False,False
-CVX,Chevron Corporation,stock,True,False,False
-CMG,Chipotle Mexican Grill,stock,True,False,False
-CB,Chubb Limited,stock,True,False,False
-CHD,Church & Dwight,stock,True,False,False
-CIEN,Ciena,stock,True,False,False
-CI,Cigna,stock,True,False,False
-CINF,Cincinnati Financial,stock,True,False,False
-CTAS,Cintas,stock,True,False,False
-CSCO,Cisco,stock,True,False,False
-C,Citigroup,stock,True,False,False
-CFG,Citizens Financial Group,stock,True,False,False
-CLX,Clorox,stock,True,False,False
-CME,CME Group,stock,True,False,False
-CMS,CMS Energy,stock,True,False,False
-KO,Coca-Cola Company (The),stock,True,False,False
-CTSH,Cognizant,stock,True,False,False
-COHR,Coherent Corp.,stock,True,False,False
-COIN,Coinbase,stock,True,False,False
-CL,Colgate-Palmolive,stock,True,False,False
-CMCSA,Comcast,stock,True,False,False
-FIX,Comfort Systems USA,stock,True,False,False
-COP,ConocoPhillips,stock,True,False,False
-ED,Consolidated Edison,stock,True,False,False
-STZ,Constellation Brands,stock,True,False,False
-CEG,Constellation Energy,stock,True,False,False
-COO,Cooper Companies (The),stock,True,False,False
-CPRT,Copart,stock,True,False,False
-GLW,Corning Inc.,stock,True,False,False
-CPAY,Corpay,stock,True,False,False
-CTVA,Corteva,stock,True,False,False
-CSGP,CoStar Group,stock,True,False,False
-COST,Costco,stock,True,False,False
-CRH,CRH plc,stock,True,False,False
-CRWD,CrowdStrike,stock,True,False,False
-CCI,Crown Castle,stock,True,False,False
-CSX,CSX Corporation,stock,True,False,False
-CMI,Cummins,stock,True,False,False
-CVS,CVS Health,stock,True,False,False
-DHR,Danaher Corporation,stock,True,False,False
-DRI,Darden Restaurants,stock,True,False,False
-DDOG,Datadog,stock,True,False,False
-DVA,DaVita,stock,True,False,False
-DECK,Deckers Brands,stock,True,False,False
-DE,Deere & Company,stock,True,False,False
-DELL,Dell Technologies,stock,True,False,False
-DAL,Delta Air Lines,stock,True,False,False
-DVN,Devon Energy,stock,True,False,False
-DXCM,Dexcom,stock,True,False,False
-FANG,Diamondback Energy,stock,True,False,False
-DLR,Digital Realty,stock,True,False,False
-DG,Dollar General,stock,True,False,False
-DLTR,Dollar Tree,stock,True,False,False
-D,Dominion Energy,stock,True,False,False
-DPZ,Domino's,stock,True,False,False
-DASH,DoorDash,stock,True,False,False
-DOV,Dover Corporation,stock,True,False,False
-DOW,Dow Inc.,stock,True,False,False
-DHI,D. R. Horton,stock,True,False,False
-DTE,DTE Energy,stock,True,False,False
-DUK,Duke Energy,stock,True,False,False
-DD,DuPont,stock,True,False,False
-ETN,Eaton Corporation,stock,True,False,False
-EBAY,eBay Inc.,stock,True,False,False
-ECHO,EchoStar,stock,True,False,False
-ECL,Ecolab,stock,True,False,False
-EIX,Edison International,stock,True,False,False
-EW,Edwards Lifesciences,stock,True,False,False
-ELV,Elevance Health,stock,True,False,False
-EME,Emcor,stock,True,False,False
-EMR,Emerson Electric,stock,True,False,False
-ETR,Entergy,stock,True,False,False
-EOG,EOG Resources,stock,True,False,False
-EQT,EQT Corporation,stock,True,False,False
-EFX,Equifax,stock,True,False,False
-EQIX,Equinix,stock,True,False,False
-ERIE,Erie Indemnity,stock,True,False,False
-ESS,Essex Property Trust,stock,True,False,False
-EL,Estée Lauder Companies (The),stock,True,False,False
-EG,Everest Group,stock,True,False,False
-EVRG,Evergy,stock,True,False,False
-P,Everpure,stock,True,False,False
-ES,Eversource Energy,stock,True,False,False
-EXC,Exelon,stock,True,False,False
-EXE,Expand Energy,stock,True,False,False
-EXPE,Expedia Group,stock,True,False,False
-EXPD,Expeditors International,stock,True,False,False
-EXR,Extra Space Storage,stock,True,False,False
-XOM,ExxonMobil,stock,True,False,False
-FFIV,"F5, Inc.",stock,True,False,False
-FDS,FactSet,stock,True,False,False
-FICO,Fair Isaac,stock,True,False,False
-FAST,Fastenal,stock,True,False,False
-FRT,Federal Realty Investment Trust,stock,True,False,False
-FDX,FedEx,stock,True,False,False
+MMM,3M,stock,True,True,True
+AOS,A. O. Smith,stock,True,True,True
+ABT,Abbott Laboratories,stock,True,True,True
+ABBV,AbbVie,stock,True,True,True
+ACN,Accenture,stock,True,True,True
+ADBE,Adobe Inc.,stock,True,True,True
+AMD,Advanced Micro Devices,stock,True,True,True
+AES,AES Corporation,stock,True,True,True
+AFL,Aflac,stock,True,True,True
+A,Agilent Technologies,stock,True,True,True
+APD,Air Products,stock,True,True,True
+ABNB,Airbnb,stock,True,True,True
+AKAM,Akamai Technologies,stock,True,True,True
+ALB,Albemarle Corporation,stock,True,True,True
+ARE,Alexandria Real Estate Equities,stock,True,True,True
+ALGN,Align Technology,stock,True,True,True
+ALLE,Allegion,stock,True,True,True
+LNT,Alliant Energy,stock,True,True,True
+ALL,Allstate,stock,True,True,True
+GOOGL,Alphabet Inc. (Class A),stock,True,True,True
+GOOG,Alphabet Inc. (Class C),stock,True,True,True
+MO,Altria,stock,True,True,True
+AMZN,Amazon,stock,True,True,True
+AMCR,Amcor,stock,True,True,True
+AEE,Ameren,stock,True,True,True
+AEP,American Electric Power,stock,True,True,True
+AXP,American Express,stock,True,True,True
+AIG,American International Group,stock,True,True,True
+AMT,American Tower,stock,True,True,True
+AWK,American Water Works,stock,True,True,True
+AMP,Ameriprise Financial,stock,True,True,True
+AME,Ametek,stock,True,True,True
+AMGN,Amgen,stock,True,True,True
+APH,Amphenol,stock,True,True,True
+ADI,Analog Devices,stock,True,True,True
+AON,Aon plc,stock,True,True,True
+APA,APA Corporation,stock,True,True,True
+APO,Apollo Global Management,stock,True,True,True
+AAPL,Apple Inc.,stock,True,True,True
+AMAT,Applied Materials,stock,True,True,True
+APP,AppLovin,stock,True,True,True
+APTV,Aptiv,stock,True,True,True
+ACGL,Arch Capital Group,stock,True,True,True
+ADM,Archer Daniels Midland,stock,True,True,True
+ARES,Ares Management,stock,True,True,True
+ANET,Arista Networks,stock,True,True,True
+AJG,Arthur J. Gallagher & Co.,stock,True,True,True
+AIZ,Assurant,stock,True,True,True
+T,AT&T,stock,True,True,True
+ATO,Atmos Energy,stock,True,True,True
+ADSK,Autodesk,stock,True,True,True
+ADP,Automatic Data Processing,stock,True,True,True
+AZO,AutoZone,stock,True,True,True
+AVY,Avery Dennison,stock,True,True,True
+AXON,Axon Enterprise,stock,True,True,True
+BKR,Baker Hughes,stock,True,True,True
+BALL,Ball Corporation,stock,True,True,True
+BAC,Bank of America,stock,True,True,True
+BAX,Baxter International,stock,True,True,True
+BDX,Becton Dickinson,stock,True,True,True
+BRK.B,Berkshire Hathaway,stock,True,True,True
+BBY,Best Buy,stock,True,True,True
+TECH,Bio-Techne,stock,True,True,True
+BIIB,Biogen,stock,True,True,True
+BLK,BlackRock,stock,True,True,True
+BX,Blackstone Inc.,stock,True,True,True
+XYZ,"Block, Inc.",stock,True,True,True
+BE,Bloom Energy,stock,True,True,True
+BNY,BNY Mellon,stock,True,True,True
+BA,Boeing,stock,True,True,True
+BKNG,Booking Holdings,stock,True,True,True
+BSX,Boston Scientific,stock,True,True,True
+BMY,Bristol Myers Squibb,stock,True,True,True
+AVGO,Broadcom,stock,True,True,True
+BR,Broadridge Financial Solutions,stock,True,True,True
+BRO,Brown & Brown,stock,True,True,True
+BF.B,Brown–Forman,stock,True,True,True
+BG,Bunge Global,stock,True,True,True
+BXP,"BXP, Inc.",stock,True,True,True
+CHRW,C.H. Robinson,stock,True,True,True
+CDNS,Cadence Design Systems,stock,True,True,True
+CPT,Camden Property Trust,stock,True,True,True
+COF,Capital One,stock,True,True,True
+CAH,Cardinal Health,stock,True,True,True
+CCL,Carnival Corporation,stock,True,True,True
+CARR,Carrier Global,stock,True,True,True
+CVNA,Carvana,stock,True,True,True
+CASY,Casey's,stock,True,True,True
+CAT,Caterpillar Inc.,stock,True,True,True
+CBOE,Cboe Global Markets,stock,True,True,True
+CBRE,CBRE Group,stock,True,True,True
+CDW,CDW Corporation,stock,True,True,True
+COR,Cencora,stock,True,True,True
+CNC,Centene Corporation,stock,True,True,True
+CNP,CenterPoint Energy,stock,True,True,True
+CF,CF Industries,stock,True,True,True
+CRL,Charles River Laboratories,stock,True,True,True
+SCHW,Charles Schwab Corporation,stock,True,True,True
+CHTR,Charter Communications,stock,True,True,True
+CVX,Chevron Corporation,stock,True,True,True
+CMG,Chipotle Mexican Grill,stock,True,True,True
+CB,Chubb Limited,stock,True,True,True
+CHD,Church & Dwight,stock,True,True,True
+CIEN,Ciena,stock,True,True,True
+CI,Cigna,stock,True,True,True
+CINF,Cincinnati Financial,stock,True,True,True
+CTAS,Cintas,stock,True,True,True
+CSCO,Cisco,stock,True,True,True
+C,Citigroup,stock,True,True,True
+CFG,Citizens Financial Group,stock,True,True,True
+CLX,Clorox,stock,True,True,True
+CME,CME Group,stock,True,True,True
+CMS,CMS Energy,stock,True,True,True
+KO,Coca-Cola Company (The),stock,True,True,True
+CTSH,Cognizant,stock,True,True,True
+COHR,Coherent Corp.,stock,True,True,True
+COIN,Coinbase,stock,True,True,True
+CL,Colgate-Palmolive,stock,True,True,True
+CMCSA,Comcast,stock,True,True,True
+FIX,Comfort Systems USA,stock,True,True,True
+COP,ConocoPhillips,stock,True,True,True
+ED,Consolidated Edison,stock,True,True,True
+STZ,Constellation Brands,stock,True,True,True
+CEG,Constellation Energy,stock,True,True,True
+COO,Cooper Companies (The),stock,True,True,True
+CPRT,Copart,stock,True,True,True
+GLW,Corning Inc.,stock,True,True,True
+CPAY,Corpay,stock,True,True,True
+CTVA,Corteva,stock,True,True,True
+CSGP,CoStar Group,stock,True,True,True
+COST,Costco,stock,True,True,True
+CRH,CRH plc,stock,True,True,True
+CRWD,CrowdStrike,stock,True,True,True
+CCI,Crown Castle,stock,True,True,True
+CSX,CSX Corporation,stock,True,True,True
+CMI,Cummins,stock,True,True,True
+CVS,CVS Health,stock,True,True,True
+DHR,Danaher Corporation,stock,True,True,True
+DRI,Darden Restaurants,stock,True,True,True
+DDOG,Datadog,stock,True,True,True
+DVA,DaVita,stock,True,True,True
+DECK,Deckers Brands,stock,True,True,True
+DE,Deere & Company,stock,True,True,True
+DELL,Dell Technologies,stock,True,True,True
+DAL,Delta Air Lines,stock,True,True,True
+DVN,Devon Energy,stock,True,True,True
+DXCM,Dexcom,stock,True,True,True
+FANG,Diamondback Energy,stock,True,True,True
+DLR,Digital Realty,stock,True,True,True
+DG,Dollar General,stock,True,True,True
+DLTR,Dollar Tree,stock,True,True,True
+D,Dominion Energy,stock,True,True,True
+DPZ,Domino's,stock,True,True,True
+DASH,DoorDash,stock,True,True,True
+DOV,Dover Corporation,stock,True,True,True
+DOW,Dow Inc.,stock,True,True,True
+DHI,D. R. Horton,stock,True,True,True
+DTE,DTE Energy,stock,True,True,True
+DUK,Duke Energy,stock,True,True,True
+DD,DuPont,stock,True,True,True
+ETN,Eaton Corporation,stock,True,True,True
+EBAY,eBay Inc.,stock,True,True,True
+ECHO,EchoStar,stock,True,True,True
+ECL,Ecolab,stock,True,True,True
+EIX,Edison International,stock,True,True,True
+EW,Edwards Lifesciences,stock,True,True,True
+ELV,Elevance Health,stock,True,True,True
+EME,Emcor,stock,True,True,True
+EMR,Emerson Electric,stock,True,True,True
+ETR,Entergy,stock,True,True,True
+EOG,EOG Resources,stock,True,True,True
+EQT,EQT Corporation,stock,True,True,True
+EFX,Equifax,stock,True,True,True
+EQIX,Equinix,stock,True,True,True
+ERIE,Erie Indemnity,stock,True,True,True
+ESS,Essex Property Trust,stock,True,True,True
+EL,Estée Lauder Companies (The),stock,True,True,True
+EG,Everest Group,stock,True,True,True
+EVRG,Evergy,stock,True,True,True
+P,Everpure,stock,True,True,True
+ES,Eversource Energy,stock,True,True,True
+EXC,Exelon,stock,True,True,True
+EXE,Expand Energy,stock,True,True,True
+EXPE,Expedia Group,stock,True,True,True
+EXPD,Expeditors International,stock,True,True,True
+EXR,Extra Space Storage,stock,True,True,True
+XOM,ExxonMobil,stock,True,True,True
+FFIV,"F5, Inc.",stock,True,True,True
+FDS,FactSet,stock,True,True,True
+FICO,Fair Isaac,stock,True,True,True
+FAST,Fastenal,stock,True,True,True
+FRT,Federal Realty Investment Trust,stock,True,True,True
+FDX,FedEx,stock,True,True,True
 FDXF,FedEx Freight,stock,True,False,False
-FERG,Ferguson Enterprises,stock,True,False,False
-FIS,Fidelity National Information Services,stock,True,False,False
-FITB,Fifth Third Bancorp,stock,True,False,False
-FSLR,First Solar,stock,True,False,False
-FE,FirstEnergy,stock,True,False,False
-FISV,Fiserv,stock,True,False,False
-FLEX,Flex Ltd.,stock,True,False,False
-F,Ford Motor Company,stock,True,False,False
-FTNT,Fortinet,stock,True,False,False
-FTV,Fortive,stock,True,False,False
-FOXA,Fox Corporation (Class A),stock,True,False,False
-FOX,Fox Corporation (Class B),stock,True,False,False
-BEN,Franklin Resources,stock,True,False,False
-FCX,Freeport-McMoRan,stock,True,False,False
-GRMN,Garmin,stock,True,False,False
-IT,Gartner,stock,True,False,False
-GE,GE Aerospace,stock,True,False,False
-GEHC,GE HealthCare,stock,True,False,False
-GEV,GE Vernova,stock,True,False,False
-GEN,Gen Digital,stock,True,False,False
-GNRC,Generac,stock,True,False,False
-GD,General Dynamics,stock,True,False,False
-GIS,General Mills,stock,True,False,False
-GM,General Motors,stock,True,False,False
-GPC,Genuine Parts Company,stock,True,False,False
-GILD,Gilead Sciences,stock,True,False,False
-GPN,Global Payments,stock,True,False,False
-GL,Globe Life,stock,True,False,False
-GDDY,GoDaddy,stock,True,False,False
-GS,Goldman Sachs,stock,True,False,False
-HAL,Halliburton,stock,True,False,False
-HIG,Hartford (The),stock,True,False,False
-HAS,Hasbro,stock,True,False,False
-HCA,HCA Healthcare,stock,True,False,False
-DOC,Healthpeak Properties,stock,True,False,False
-HSIC,Henry Schein,stock,True,False,False
-HSY,Hershey Company (The),stock,True,False,False
-HPE,Hewlett Packard Enterprise,stock,True,False,False
-HLT,Hilton Worldwide,stock,True,False,False
-HD,Home Depot (The),stock,True,False,False
+FERG,Ferguson Enterprises,stock,True,True,True
+FIS,Fidelity National Information Services,stock,True,True,True
+FITB,Fifth Third Bancorp,stock,True,True,True
+FSLR,First Solar,stock,True,True,True
+FE,FirstEnergy,stock,True,True,True
+FISV,Fiserv,stock,True,True,True
+FLEX,Flex Ltd.,stock,True,True,True
+F,Ford Motor Company,stock,True,True,True
+FTNT,Fortinet,stock,True,True,True
+FTV,Fortive,stock,True,True,True
+FOXA,Fox Corporation (Class A),stock,True,True,True
+FOX,Fox Corporation (Class B),stock,True,True,True
+BEN,Franklin Resources,stock,True,True,True
+FCX,Freeport-McMoRan,stock,True,True,True
+GRMN,Garmin,stock,True,True,True
+IT,Gartner,stock,True,True,True
+GE,GE Aerospace,stock,True,True,True
+GEHC,GE HealthCare,stock,True,True,True
+GEV,GE Vernova,stock,True,True,True
+GEN,Gen Digital,stock,True,True,True
+GNRC,Generac,stock,True,True,True
+GD,General Dynamics,stock,True,True,True
+GIS,General Mills,stock,True,True,True
+GM,General Motors,stock,True,True,True
+GPC,Genuine Parts Company,stock,True,True,True
+GILD,Gilead Sciences,stock,True,True,True
+GPN,Global Payments,stock,True,True,True
+GL,Globe Life,stock,True,True,True
+GDDY,GoDaddy,stock,True,True,True
+GS,Goldman Sachs,stock,True,True,True
+HAL,Halliburton,stock,True,True,True
+HIG,Hartford (The),stock,True,True,True
+HAS,Hasbro,stock,True,True,True
+HCA,HCA Healthcare,stock,True,True,True
+DOC,Healthpeak Properties,stock,True,True,True
+HSIC,Henry Schein,stock,True,True,True
+HSY,Hershey Company (The),stock,True,True,True
+HPE,Hewlett Packard Enterprise,stock,True,True,True
+HLT,Hilton Worldwide,stock,True,True,True
+HD,Home Depot (The),stock,True,True,True
 HONA,Honeywell Aerospace,stock,True,False,False
-HON,Honeywell Technologies,stock,True,False,False
-HRL,Hormel Foods,stock,True,False,False
-HST,Host Hotels & Resorts,stock,True,False,False
-HWM,Howmet Aerospace,stock,True,False,False
-HPQ,HP Inc.,stock,True,False,False
-HUBB,Hubbell Incorporated,stock,True,False,False
-HUM,Humana,stock,True,False,False
-HBAN,Huntington Bancshares,stock,True,False,False
-HII,Huntington Ingalls Industries,stock,True,False,False
-IBM,IBM,stock,True,False,False
-IEX,IDEX Corporation,stock,True,False,False
-IDXX,Idexx Laboratories,stock,True,False,False
-ITW,Illinois Tool Works,stock,True,False,False
-ILMN,"Illumina, Inc.",stock,True,False,False
-INCY,Incyte,stock,True,False,False
-IR,Ingersoll Rand,stock,True,False,False
-PODD,Insulet Corporation,stock,True,False,False
-INTC,Intel,stock,True,False,False
-IBKR,Interactive Brokers,stock,True,False,False
-ICE,Intercontinental Exchange,stock,True,False,False
-IFF,International Flavors & Fragrances,stock,True,False,False
-IP,International Paper,stock,True,False,False
-INTU,Intuit,stock,True,False,False
-ISRG,Intuitive Surgical,stock,True,False,False
-IVZ,Invesco,stock,True,False,False
-INVH,Invitation Homes,stock,True,False,False
-IQV,IQVIA,stock,True,False,False
-IRM,Iron Mountain,stock,True,False,False
-JBHT,J.B. Hunt,stock,True,False,False
-JBL,Jabil,stock,True,False,False
-JKHY,Jack Henry & Associates,stock,True,False,False
-J,Jacobs Solutions,stock,True,False,False
-JNJ,Johnson & Johnson,stock,True,False,False
-JCI,Johnson Controls,stock,True,False,False
-JPM,JPMorgan Chase,stock,True,False,False
-KVUE,Kenvue,stock,True,False,False
-KDP,Keurig Dr Pepper,stock,True,False,False
-KEY,KeyCorp,stock,True,False,False
-KEYS,Keysight Technologies,stock,True,False,False
-KMB,Kimberly-Clark,stock,True,False,False
-KIM,Kimco Realty,stock,True,False,False
-KMI,Kinder Morgan,stock,True,False,False
-KKR,KKR & Co.,stock,True,False,False
-KLAC,KLA Corporation,stock,True,False,False
-KHC,Kraft Heinz,stock,True,False,False
-KR,Kroger,stock,True,False,False
-LHX,L3Harris,stock,True,False,False
-LH,Labcorp,stock,True,False,False
-LRCX,Lam Research,stock,True,False,False
-LVS,Las Vegas Sands,stock,True,False,False
-LDOS,Leidos,stock,True,False,False
-LEN,Lennar,stock,True,False,False
-LII,Lennox International,stock,True,False,False
-LLY,Lilly (Eli),stock,True,False,False
-LIN,Linde plc,stock,True,False,False
-LYV,Live Nation Entertainment,stock,True,False,False
-LMT,Lockheed Martin,stock,True,False,False
-L,Loews Corporation,stock,True,False,False
-LOW,Lowe's,stock,True,False,False
-LULU,Lululemon Athletica,stock,True,False,False
-LITE,Lumentum,stock,True,False,False
-LYB,LyondellBasell,stock,True,False,False
-MTB,M&T Bank,stock,True,False,False
-MPC,Marathon Petroleum,stock,True,False,False
-MAR,Marriott International,stock,True,False,False
-MRSH,Marsh McLennan,stock,True,False,False
-MLM,Martin Marietta Materials,stock,True,False,False
-MRVL,Marvell Technology,stock,True,False,False
-MAS,Masco,stock,True,False,False
-MA,Mastercard,stock,True,False,False
-MKC,McCormick & Company,stock,True,False,False
-MCD,McDonald's,stock,True,False,False
-MCK,McKesson Corporation,stock,True,False,False
-MDT,Medtronic,stock,True,False,False
-MRK,Merck & Co.,stock,True,False,False
-META,Meta Platforms,stock,True,False,False
-MET,MetLife,stock,True,False,False
-MTD,Mettler Toledo,stock,True,False,False
-MGM,MGM Resorts,stock,True,False,False
-MCHP,Microchip Technology,stock,True,False,False
-MU,Micron Technology,stock,True,False,False
-MSFT,Microsoft,stock,True,False,False
-MAA,Mid-America Apartment Communities,stock,True,False,False
-MRNA,Moderna,stock,True,False,False
-MDLZ,Mondelez International,stock,True,False,False
-MPWR,Monolithic Power Systems,stock,True,False,False
-MNST,Monster Beverage,stock,True,False,False
-MCO,Moody's Corporation,stock,True,False,False
-MS,Morgan Stanley,stock,True,False,False
-MOS,Mosaic Company (The),stock,True,False,False
-MSI,Motorola Solutions,stock,True,False,False
-MSCI,MSCI,stock,True,False,False
-NDAQ,"Nasdaq, Inc.",stock,True,False,False
-NTAP,NetApp,stock,True,False,False
-NFLX,Netflix,stock,True,False,False
-NEM,Newmont,stock,True,False,False
-NWSA,News Corp (Class A),stock,True,False,False
-NWS,News Corp (Class B),stock,True,False,False
-NEE,NextEra Energy,stock,True,False,False
-NKE,"Nike, Inc.",stock,True,False,False
-NI,NiSource,stock,True,False,False
-NDSN,Nordson Corporation,stock,True,False,False
-NSC,Norfolk Southern,stock,True,False,False
-NTRS,Northern Trust,stock,True,False,False
-NOC,Northrop Grumman,stock,True,False,False
-NCLH,Norwegian Cruise Line Holdings,stock,True,False,False
-NRG,NRG Energy,stock,True,False,False
-NUE,Nucor,stock,True,False,False
-NVDA,Nvidia,stock,True,False,False
-NVR,"NVR, Inc.",stock,True,False,False
-NXPI,NXP Semiconductors,stock,True,False,False
-ORLY,O'Reilly Automotive,stock,True,False,False
-OXY,Occidental Petroleum,stock,True,False,False
-ODFL,Old Dominion,stock,True,False,False
-OMC,Omnicom Group,stock,True,False,False
-ON,ON Semiconductor,stock,True,False,False
-OKE,Oneok,stock,True,False,False
-ORCL,Oracle Corporation,stock,True,False,False
-OTIS,Otis Worldwide,stock,True,False,False
-PCAR,Paccar,stock,True,False,False
-PKG,Packaging Corporation of America,stock,True,False,False
-PLTR,Palantir Technologies,stock,True,False,False
-PANW,Palo Alto Networks,stock,True,False,False
-PSKY,Paramount Skydance Corporation,stock,True,False,False
-PH,Parker Hannifin,stock,True,False,False
-PAYX,Paychex,stock,True,False,False
-PYPL,PayPal,stock,True,False,False
-PNR,Pentair,stock,True,False,False
-PEP,PepsiCo,stock,True,False,False
-PFE,Pfizer,stock,True,False,False
-PCG,PG&E Corporation,stock,True,False,False
-PM,Philip Morris International,stock,True,False,False
-PSX,Phillips 66,stock,True,False,False
-PNW,Pinnacle West Capital,stock,True,False,False
-PNC,PNC Financial Services,stock,True,False,False
-PPG,PPG Industries,stock,True,False,False
-PPL,PPL Corporation,stock,True,False,False
-PFG,Principal Financial Group,stock,True,False,False
-PG,Procter & Gamble,stock,True,False,False
-PGR,Progressive Corporation,stock,True,False,False
-PLD,Prologis,stock,True,False,False
-PRU,Prudential Financial,stock,True,False,False
-PEG,Public Service Enterprise Group,stock,True,False,False
-PTC,PTC Inc.,stock,True,False,False
-PSA,Public Storage,stock,True,False,False
-PHM,PulteGroup,stock,True,False,False
-PWR,Quanta Services,stock,True,False,False
-QCOM,Qualcomm,stock,True,False,False
-DGX,Quest Diagnostics,stock,True,False,False
+HON,Honeywell Technologies,stock,True,True,True
+HRL,Hormel Foods,stock,True,True,True
+HST,Host Hotels & Resorts,stock,True,True,True
+HWM,Howmet Aerospace,stock,True,True,True
+HPQ,HP Inc.,stock,True,True,True
+HUBB,Hubbell Incorporated,stock,True,True,True
+HUM,Humana,stock,True,True,True
+HBAN,Huntington Bancshares,stock,True,True,True
+HII,Huntington Ingalls Industries,stock,True,True,True
+IBM,IBM,stock,True,True,True
+IEX,IDEX Corporation,stock,True,True,True
+IDXX,Idexx Laboratories,stock,True,True,True
+ITW,Illinois Tool Works,stock,True,True,True
+ILMN,"Illumina, Inc.",stock,True,True,True
+INCY,Incyte,stock,True,True,True
+IR,Ingersoll Rand,stock,True,True,True
+PODD,Insulet Corporation,stock,True,True,True
+INTC,Intel,stock,True,True,True
+IBKR,Interactive Brokers,stock,True,True,True
+ICE,Intercontinental Exchange,stock,True,True,True
+IFF,International Flavors & Fragrances,stock,True,True,True
+IP,International Paper,stock,True,True,True
+INTU,Intuit,stock,True,True,True
+ISRG,Intuitive Surgical,stock,True,True,True
+IVZ,Invesco,stock,True,True,True
+INVH,Invitation Homes,stock,True,True,True
+IQV,IQVIA,stock,True,True,True
+IRM,Iron Mountain,stock,True,True,True
+JBHT,J.B. Hunt,stock,True,True,True
+JBL,Jabil,stock,True,True,True
+JKHY,Jack Henry & Associates,stock,True,True,True
+J,Jacobs Solutions,stock,True,True,True
+JNJ,Johnson & Johnson,stock,True,True,True
+JCI,Johnson Controls,stock,True,True,True
+JPM,JPMorgan Chase,stock,True,True,True
+KVUE,Kenvue,stock,True,True,True
+KDP,Keurig Dr Pepper,stock,True,True,True
+KEY,KeyCorp,stock,True,True,True
+KEYS,Keysight Technologies,stock,True,True,True
+KMB,Kimberly-Clark,stock,True,True,True
+KIM,Kimco Realty,stock,True,True,True
+KMI,Kinder Morgan,stock,True,True,True
+KKR,KKR & Co.,stock,True,True,True
+KLAC,KLA Corporation,stock,True,True,True
+KHC,Kraft Heinz,stock,True,True,True
+KR,Kroger,stock,True,True,True
+LHX,L3Harris,stock,True,True,True
+LH,Labcorp,stock,True,True,True
+LRCX,Lam Research,stock,True,True,True
+LVS,Las Vegas Sands,stock,True,True,True
+LDOS,Leidos,stock,True,True,True
+LEN,Lennar,stock,True,True,True
+LII,Lennox International,stock,True,True,True
+LLY,Lilly (Eli),stock,True,True,True
+LIN,Linde plc,stock,True,True,True
+LYV,Live Nation Entertainment,stock,True,True,True
+LMT,Lockheed Martin,stock,True,True,True
+L,Loews Corporation,stock,True,True,True
+LOW,Lowe's,stock,True,True,True
+LULU,Lululemon Athletica,stock,True,True,True
+LITE,Lumentum,stock,True,True,True
+LYB,LyondellBasell,stock,True,True,True
+MTB,M&T Bank,stock,True,True,True
+MPC,Marathon Petroleum,stock,True,True,True
+MAR,Marriott International,stock,True,True,True
+MRSH,Marsh McLennan,stock,True,True,True
+MLM,Martin Marietta Materials,stock,True,True,True
+MRVL,Marvell Technology,stock,True,True,True
+MAS,Masco,stock,True,True,True
+MA,Mastercard,stock,True,True,True
+MKC,McCormick & Company,stock,True,True,True
+MCD,McDonald's,stock,True,True,True
+MCK,McKesson Corporation,stock,True,True,True
+MDT,Medtronic,stock,True,True,True
+MRK,Merck & Co.,stock,True,True,True
+META,Meta Platforms,stock,True,True,True
+MET,MetLife,stock,True,True,True
+MTD,Mettler Toledo,stock,True,True,True
+MGM,MGM Resorts,stock,True,True,True
+MCHP,Microchip Technology,stock,True,True,True
+MU,Micron Technology,stock,True,True,True
+MSFT,Microsoft,stock,True,True,True
+MAA,Mid-America Apartment Communities,stock,True,True,True
+MRNA,Moderna,stock,True,True,True
+MDLZ,Mondelez International,stock,True,True,True
+MPWR,Monolithic Power Systems,stock,True,True,True
+MNST,Monster Beverage,stock,True,True,True
+MCO,Moody's Corporation,stock,True,True,True
+MS,Morgan Stanley,stock,True,True,True
+MOS,Mosaic Company (The),stock,True,True,True
+MSI,Motorola Solutions,stock,True,True,True
+MSCI,MSCI,stock,True,True,True
+NDAQ,"Nasdaq, Inc.",stock,True,True,True
+NTAP,NetApp,stock,True,True,True
+NFLX,Netflix,stock,True,True,True
+NEM,Newmont,stock,True,True,True
+NWSA,News Corp (Class A),stock,True,True,True
+NWS,News Corp (Class B),stock,True,True,True
+NEE,NextEra Energy,stock,True,True,True
+NKE,"Nike, Inc.",stock,True,True,True
+NI,NiSource,stock,True,True,True
+NDSN,Nordson Corporation,stock,True,True,True
+NSC,Norfolk Southern,stock,True,True,True
+NTRS,Northern Trust,stock,True,True,True
+NOC,Northrop Grumman,stock,True,True,True
+NCLH,Norwegian Cruise Line Holdings,stock,True,True,True
+NRG,NRG Energy,stock,True,True,True
+NUE,Nucor,stock,True,True,True
+NVDA,Nvidia,stock,True,True,True
+NVR,"NVR, Inc.",stock,True,True,True
+NXPI,NXP Semiconductors,stock,True,True,True
+ORLY,O'Reilly Automotive,stock,True,True,True
+OXY,Occidental Petroleum,stock,True,True,True
+ODFL,Old Dominion,stock,True,True,True
+OMC,Omnicom Group,stock,True,True,True
+ON,ON Semiconductor,stock,True,True,True
+OKE,Oneok,stock,True,True,True
+ORCL,Oracle Corporation,stock,True,True,True
+OTIS,Otis Worldwide,stock,True,True,True
+PCAR,Paccar,stock,True,True,True
+PKG,Packaging Corporation of America,stock,True,True,True
+PLTR,Palantir Technologies,stock,True,True,True
+PANW,Palo Alto Networks,stock,True,True,True
+PSKY,Paramount Skydance Corporation,stock,True,True,True
+PH,Parker Hannifin,stock,True,True,True
+PAYX,Paychex,stock,True,True,True
+PYPL,PayPal,stock,True,True,True
+PNR,Pentair,stock,True,True,True
+PEP,PepsiCo,stock,True,True,True
+PFE,Pfizer,stock,True,True,True
+PCG,PG&E Corporation,stock,True,True,True
+PM,Philip Morris International,stock,True,True,True
+PSX,Phillips 66,stock,True,True,True
+PNW,Pinnacle West Capital,stock,True,True,True
+PNC,PNC Financial Services,stock,True,True,True
+PPG,PPG Industries,stock,True,True,True
+PPL,PPL Corporation,stock,True,True,True
+PFG,Principal Financial Group,stock,True,True,True
+PG,Procter & Gamble,stock,True,True,True
+PGR,Progressive Corporation,stock,True,True,True
+PLD,Prologis,stock,True,True,True
+PRU,Prudential Financial,stock,True,True,True
+PEG,Public Service Enterprise Group,stock,True,True,True
+PTC,PTC Inc.,stock,True,True,True
+PSA,Public Storage,stock,True,True,True
+PHM,PulteGroup,stock,True,True,True
+PWR,Quanta Services,stock,True,True,True
+QCOM,Qualcomm,stock,True,True,True
+DGX,Quest Diagnostics,stock,True,True,True
 Q,Qnity Electronics,stock,True,False,False
-RL,Ralph Lauren Corporation,stock,True,False,False
-RJF,Raymond James Financial,stock,True,False,False
-RDDT,Reddit,stock,True,False,False
-RTX,RTX Corporation,stock,True,False,False
-O,Realty Income,stock,True,False,False
-REG,Regency Centers,stock,True,False,False
-REGN,Regeneron Pharmaceuticals,stock,True,False,False
-RF,Regions Financial Corporation,stock,True,False,False
-RSG,Republic Services,stock,True,False,False
-RMD,ResMed |,stock,True,False,False
-RVTY,Revvity,stock,True,False,False
-HOOD,Robinhood Markets,stock,True,False,False
-ROK,Rockwell Automation,stock,True,False,False
-ROL,"Rollins, Inc.",stock,True,False,False
-ROP,Roper Technologies,stock,True,False,False
-ROST,Ross Stores,stock,True,False,False
-RCL,Royal Caribbean Group,stock,True,False,False
-SPGI,S&P Global,stock,True,False,False
-CRM,Salesforce,stock,True,False,False
+RL,Ralph Lauren Corporation,stock,True,True,True
+RJF,Raymond James Financial,stock,True,True,True
+RDDT,Reddit,stock,True,True,True
+RTX,RTX Corporation,stock,True,True,True
+O,Realty Income,stock,True,True,True
+REG,Regency Centers,stock,True,True,True
+REGN,Regeneron Pharmaceuticals,stock,True,True,True
+RF,Regions Financial Corporation,stock,True,True,True
+RSG,Republic Services,stock,True,True,True
+RMD,ResMed |,stock,True,True,True
+RVTY,Revvity,stock,True,True,True
+HOOD,Robinhood Markets,stock,True,True,True
+ROK,Rockwell Automation,stock,True,True,True
+ROL,"Rollins, Inc.",stock,True,True,True
+ROP,Roper Technologies,stock,True,True,True
+ROST,Ross Stores,stock,True,True,True
+RCL,Royal Caribbean Group,stock,True,True,True
+SPGI,S&P Global,stock,True,True,True
+CRM,Salesforce,stock,True,True,True
 SNDK,Sandisk,stock,True,False,False
-SBAC,SBA Communications,stock,True,False,False
-SLB,Schlumberger,stock,True,False,False
-STX,Seagate Technology,stock,True,False,False
-SRE,Sempra,stock,True,False,False
-NOW,ServiceNow,stock,True,False,False
-SHW,Sherwin-Williams,stock,True,False,False
-SPG,Simon Property Group,stock,True,False,False
-SWKS,Skyworks Solutions,stock,True,False,False
-SJM,J.M. Smucker Company (The),stock,True,False,False
-SW,Smurfit Westrock,stock,True,False,False
-SNA,Snap-on,stock,True,False,False
-SOLV,Solventum,stock,True,False,False
-SO,Southern Company,stock,True,False,False
-LUV,Southwest Airlines,stock,True,False,False
-SWK,Stanley Black & Decker,stock,True,False,False
-SBUX,Starbucks,stock,True,False,False
-STT,State Street Corporation,stock,True,False,False
-STLD,Steel Dynamics,stock,True,False,False
-STE,Steris,stock,True,False,False
-SYK,Stryker Corporation,stock,True,False,False
-SMCI,Supermicro,stock,True,False,False
-SYF,Synchrony Financial,stock,True,False,False
-SNPS,Synopsys,stock,True,False,False
-SYY,Sysco,stock,True,False,False
-TMUS,T-Mobile US,stock,True,False,False
-TROW,T. Rowe Price,stock,True,False,False
-TTWO,Take-Two Interactive,stock,True,False,False
-TPR,"Tapestry, Inc.",stock,True,False,False
-TRGP,Targa Resources,stock,True,False,False
-TGT,Target Corporation,stock,True,False,False
-TEL,TE Connectivity,stock,True,False,False
-TDY,Teledyne Technologies,stock,True,False,False
-TER,Teradyne,stock,True,False,False
-TSLA,"Tesla, Inc.",stock,True,False,False
-TXN,Texas Instruments,stock,True,False,False
-TPL,Texas Pacific Land Corporation,stock,True,False,False
-TXT,Textron,stock,True,False,False
-TMO,Thermo Fisher Scientific,stock,True,False,False
-TJX,TJX Companies,stock,True,False,False
-TKO,TKO Group Holdings,stock,True,False,False
-TSCO,Tractor Supply,stock,True,False,False
-TT,Trane Technologies,stock,True,False,False
-TDG,TransDigm Group,stock,True,False,False
-TRV,Travelers Companies (The),stock,True,False,False
-TRMB,Trimble Inc.,stock,True,False,False
-TFC,Truist Financial,stock,True,False,False
-TYL,Tyler Technologies,stock,True,False,False
-TSN,Tyson Foods,stock,True,False,False
-USB,U.S. Bancorp,stock,True,False,False
-UBER,Uber,stock,True,False,False
-UDR,"UDR, Inc.",stock,True,False,False
-ULTA,Ulta Beauty,stock,True,False,False
-UNP,Union Pacific Corporation,stock,True,False,False
-UAL,United Airlines Holdings,stock,True,False,False
-UPS,United Parcel Service,stock,True,False,False
-URI,United Rentals,stock,True,False,False
-UNH,UnitedHealth Group,stock,True,False,False
-UHS,Universal Health Services,stock,True,False,False
-VLO,Valero Energy,stock,True,False,False
-VEEV,Veeva Systems,stock,True,False,False
-VTR,Ventas,stock,True,False,False
-VLTO,Veralto,stock,True,False,False
-VRSN,Verisign,stock,True,False,False
-VRSK,Verisk Analytics,stock,True,False,False
-VZ,Verizon,stock,True,False,False
-VRTX,Vertex Pharmaceuticals,stock,True,False,False
-VRT,Vertiv,stock,True,False,False
-VTRS,Viatris,stock,True,False,False
-VICI,Vici Properties,stock,True,False,False
-V,Visa Inc.,stock,True,False,False
-VST,Vistra Corp .,stock,True,False,False
-VMRK,Vivmark Residential,stock,True,False,False
-VMC,Vulcan Materials Company,stock,True,False,False
-WRB,W. R. Berkley Corporation,stock,True,False,False
-GWW,W. W. Grainger,stock,True,False,False
-WAB,Wabtec,stock,True,False,False
-WMT,Walmart,stock,True,False,False
-DIS,Walt Disney Company (The),stock,True,False,False
-WBD,Warner Bros. Discovery,stock,True,False,False
-WM,Waste Management,stock,True,False,False
-WAT,Waters Corporation,stock,True,False,False
-WEC,WEC Energy Group,stock,True,False,False
-WFC,Wells Fargo,stock,True,False,False
-WELL,Welltower,stock,True,False,False
-WST,West Pharmaceutical Services,stock,True,False,False
-WDC,Western Digital,stock,True,False,False
-WY,Weyerhaeuser,stock,True,False,False
-WSM,"Williams-Sonoma, Inc.",stock,True,False,False
-WMB,Williams Companies,stock,True,False,False
-WTW,Willis Towers Watson,stock,True,False,False
-WDAY,"Workday, Inc.",stock,True,False,False
-WYNN,Wynn Resorts,stock,True,False,False
-XEL,Xcel Energy,stock,True,False,False
-XYL,Xylem Inc.,stock,True,False,False
-YUM,Yum! Brands,stock,True,False,False
-ZBRA,Zebra Technologies,stock,True,False,False
-ZBH,Zimmer Biomet,stock,True,False,False
-ZTS,Zoetis,stock,True,False,False
+SBAC,SBA Communications,stock,True,True,True
+SLB,Schlumberger,stock,True,True,True
+STX,Seagate Technology,stock,True,True,True
+SRE,Sempra,stock,True,True,True
+NOW,ServiceNow,stock,True,True,True
+SHW,Sherwin-Williams,stock,True,True,True
+SPG,Simon Property Group,stock,True,True,True
+SWKS,Skyworks Solutions,stock,True,True,True
+SJM,J.M. Smucker Company (The),stock,True,True,True
+SW,Smurfit Westrock,stock,True,True,True
+SNA,Snap-on,stock,True,True,True
+SOLV,Solventum,stock,True,True,True
+SO,Southern Company,stock,True,True,True
+LUV,Southwest Airlines,stock,True,True,True
+SWK,Stanley Black & Decker,stock,True,True,True
+SBUX,Starbucks,stock,True,True,True
+STT,State Street Corporation,stock,True,True,True
+STLD,Steel Dynamics,stock,True,True,True
+STE,Steris,stock,True,True,True
+SYK,Stryker Corporation,stock,True,True,True
+SMCI,Supermicro,stock,True,True,True
+SYF,Synchrony Financial,stock,True,True,True
+SNPS,Synopsys,stock,True,True,True
+SYY,Sysco,stock,True,True,True
+TMUS,T-Mobile US,stock,True,True,True
+TROW,T. Rowe Price,stock,True,True,True
+TTWO,Take-Two Interactive,stock,True,True,True
+TPR,"Tapestry, Inc.",stock,True,True,True
+TRGP,Targa Resources,stock,True,True,True
+TGT,Target Corporation,stock,True,True,True
+TEL,TE Connectivity,stock,True,True,True
+TDY,Teledyne Technologies,stock,True,True,True
+TER,Teradyne,stock,True,True,True
+TSLA,"Tesla, Inc.",stock,True,True,True
+TXN,Texas Instruments,stock,True,True,True
+TPL,Texas Pacific Land Corporation,stock,True,True,True
+TXT,Textron,stock,True,True,True
+TMO,Thermo Fisher Scientific,stock,True,True,True
+TJX,TJX Companies,stock,True,True,True
+TKO,TKO Group Holdings,stock,True,True,True
+TSCO,Tractor Supply,stock,True,True,True
+TT,Trane Technologies,stock,True,True,True
+TDG,TransDigm Group,stock,True,True,True
+TRV,Travelers Companies (The),stock,True,True,True
+TRMB,Trimble Inc.,stock,True,True,True
+TFC,Truist Financial,stock,True,True,True
+TYL,Tyler Technologies,stock,True,True,True
+TSN,Tyson Foods,stock,True,True,True
+USB,U.S. Bancorp,stock,True,True,True
+UBER,Uber,stock,True,True,True
+UDR,"UDR, Inc.",stock,True,True,True
+ULTA,Ulta Beauty,stock,True,True,True
+UNP,Union Pacific Corporation,stock,True,True,True
+UAL,United Airlines Holdings,stock,True,True,True
+UPS,United Parcel Service,stock,True,True,True
+URI,United Rentals,stock,True,True,True
+UNH,UnitedHealth Group,stock,True,True,True
+UHS,Universal Health Services,stock,True,True,True
+VLO,Valero Energy,stock,True,True,True
+VEEV,Veeva Systems,stock,True,True,True
+VTR,Ventas,stock,True,True,True
+VLTO,Veralto,stock,True,True,True
+VRSN,Verisign,stock,True,True,True
+VRSK,Verisk Analytics,stock,True,True,True
+VZ,Verizon,stock,True,True,True
+VRTX,Vertex Pharmaceuticals,stock,True,True,True
+VRT,Vertiv,stock,True,True,True
+VTRS,Viatris,stock,True,True,True
+VICI,Vici Properties,stock,True,True,True
+V,Visa Inc.,stock,True,True,True
+VST,Vistra Corp .,stock,True,True,True
+VMRK,Vivmark Residential,stock,True,True,True
+VMC,Vulcan Materials Company,stock,True,True,True
+WRB,W. R. Berkley Corporation,stock,True,True,True
+GWW,W. W. Grainger,stock,True,True,True
+WAB,Wabtec,stock,True,True,True
+WMT,Walmart,stock,True,True,True
+DIS,Walt Disney Company (The),stock,True,True,True
+WBD,Warner Bros. Discovery,stock,True,True,True
+WM,Waste Management,stock,True,True,True
+WAT,Waters Corporation,stock,True,True,True
+WEC,WEC Energy Group,stock,True,True,True
+WFC,Wells Fargo,stock,True,True,True
+WELL,Welltower,stock,True,True,True
+WST,West Pharmaceutical Services,stock,True,True,True
+WDC,Western Digital,stock,True,True,True
+WY,Weyerhaeuser,stock,True,True,True
+WSM,"Williams-Sonoma, Inc.",stock,True,True,True
+WMB,Williams Companies,stock,True,True,True
+WTW,Willis Towers Watson,stock,True,True,True
+WDAY,"Workday, Inc.",stock,True,True,True
+WYNN,Wynn Resorts,stock,True,True,True
+XEL,Xcel Energy,stock,True,True,True
+XYL,Xylem Inc.,stock,True,True,True
+YUM,Yum! Brands,stock,True,True,True
+ZBRA,Zebra Technologies,stock,True,True,True
+ZBH,Zimmer Biomet,stock,True,True,True
+ZTS,Zoetis,stock,True,True,True

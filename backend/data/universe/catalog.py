@@ -22,7 +22,7 @@ def build_asset_catalog() -> pd.DataFrame:
 
     universe["model_available"] = universe["ticker"].apply(
         lambda ticker: (
-            MODEL_DIR / f"{ticker.upper()}_model.joblib"
+            MODEL_DIR / f"{ticker.upper()}_random_forest.joblib"
         ).exists()
     )
 

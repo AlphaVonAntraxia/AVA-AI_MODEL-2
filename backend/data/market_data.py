@@ -58,6 +58,11 @@ def get_historical_data(
         timeout=30,
     )
 
+    if response.status_code == 429:
+        raise RuntimeError(
+            "Twelve Data rate limit reached (HTTP 429)."
+        )
+
     response.raise_for_status()
 
     data = response.json()
@@ -67,12 +72,16 @@ def get_historical_data(
         raise RuntimeError(f"Twelve Data API error: {message}")
 
     if "values" not in data:
-        raise RuntimeError("API response did not contain historical data.")
+        raise RuntimeError(
+            "API response did not contain historical data."
+        )
 
     df = pd.DataFrame(data["values"])
 
     if df.empty:
-        raise RuntimeError(f"No historical data returned for {symbol}.")
+        raise RuntimeError(
+            f"No historical data returned for {symbol}."
+        )
 
     df["datetime"] = pd.to_datetime(df["datetime"])
 

@@ -13,7 +13,7 @@ def download_ticker(
     symbol: str,
     outputsize: int = 500,
     retries: int = 3,
-    retry_delay: int = 5,
+    retry_delay: int = 15,
 ) -> Path:
     symbol = symbol.upper()
 
@@ -52,10 +52,13 @@ def download_ticker(
             )
 
             if attempt < retries:
+                wait_time = retry_delay * attempt
+
                 print(
-                    f"Waiting {retry_delay} seconds before retry..."
+                    f"Waiting {wait_time} seconds before retry..."
                 )
-                time.sleep(retry_delay)
+
+                time.sleep(wait_time)
 
     raise RuntimeError(
         f"Failed to download {symbol} after {retries} attempts: "
@@ -68,7 +71,7 @@ def download_universe(
     outputsize: int = 500,
     limit: int | None = None,
     skip_existing: bool = True,
-    request_delay: int = 2,
+    request_delay: int = 5,
 ) -> None:
     if symbols is None:
         universe = load_sp500_universe()

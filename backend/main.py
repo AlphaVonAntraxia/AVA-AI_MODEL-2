@@ -11,9 +11,17 @@ from backend.data.universe.coverage import (
 from models.availability import get_prediction_availability
 
 
+class FreshnessResponse(BaseModel):
+    latest_data_date: str
+    data_age_trading_days: int
+    is_stale: bool
+
+
 class PredictionResponse(BaseModel):
     ticker: str
     predicted_next_day_return: float
+    latest_data_date: str
+    freshness: FreshnessResponse
     model_version: str
     model_type: str
     prediction_horizon: str

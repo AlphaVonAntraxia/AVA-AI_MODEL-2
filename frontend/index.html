@@ -120,13 +120,9 @@
             font-size: 22px;
         }
 
-        /* Hidden ticker state */
-
         #ticker {
             display: none;
         }
-
-        /* Search button */
 
         .search-stock-button {
             width: 100%;
@@ -147,8 +143,6 @@
             background: rgba(30, 41, 59, 0.95);
             transform: translateY(-1px);
         }
-
-        /* Search panel */
 
         .stock-search-panel {
             margin-top: 14px;
@@ -178,8 +172,6 @@
             border-color: #3b82f6;
             box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.12);
         }
-
-        /* Recommended stocks */
 
         .recommended-stocks {
             margin-top: 18px;
@@ -235,8 +227,6 @@
             font-size: 11px;
         }
 
-        /* Search results */
-
         #stock-search-results {
             margin-top: 12px;
             max-height: 250px;
@@ -284,8 +274,6 @@
             color: #f87171;
         }
 
-        /* Selected stock */
-
         .selected-stock {
             margin-top: 14px;
             padding: 12px 14px;
@@ -299,8 +287,6 @@
         .selected-stock strong {
             color: #f8fafc;
         }
-
-        /* Prediction button */
 
         .predict-button {
             width: 100%;
@@ -324,8 +310,6 @@
         .predict-button:active {
             transform: translateY(0);
         }
-
-        /* Result */
 
         .result {
             min-height: 210px;
@@ -371,6 +355,31 @@
 
         .error {
             color: #f87171;
+        }
+
+        .freshness {
+            margin-top: 12px;
+            padding: 10px 12px;
+            border-radius: 10px;
+            font-size: 12px;
+            border: 1px solid rgba(148, 163, 184, 0.14);
+            background: rgba(15, 23, 42, 0.55);
+        }
+
+        .freshness.fresh {
+            color: #86efac;
+            border-color: rgba(34, 197, 94, 0.25);
+            background: rgba(34, 197, 94, 0.08);
+        }
+
+        .freshness.stale {
+            color: #fbbf24;
+            border-color: rgba(245, 158, 11, 0.25);
+            background: rgba(245, 158, 11, 0.08);
+        }
+
+        .freshness strong {
+            color: inherit;
         }
 
         .info {
@@ -425,13 +434,13 @@
 
             <div>
                 <h1>AVA-AI</h1>
-                <span>Artificial Intelligence • Market Analysis</span>
+                <span>Artificial Intelligence &bull; Market Analysis</span>
             </div>
 
         </div>
 
         <div class="status-badge">
-            ● API Online
+            API Online
         </div>
 
     </header>
@@ -463,8 +472,6 @@
             <h3>Select a stock</h3>
 
 
-            <!-- Hidden ticker state -->
-
             <input
                 id="ticker"
                 type="hidden"
@@ -472,18 +479,14 @@
             />
 
 
-            <!-- Search button -->
-
             <button
                 type="button"
                 class="search-stock-button"
                 onclick="toggleStockSearch()"
             >
-                🔍 Search S&P 500 stocks
+                Search S&P 500 stocks
             </button>
 
-
-            <!-- Search panel -->
 
             <div
                 id="stock-search-panel"
@@ -499,8 +502,6 @@
                     oninput="searchStocks()"
                 />
 
-
-                <!-- Recommended stocks -->
 
                 <div class="recommended-stocks">
 
@@ -581,14 +582,10 @@
                 </div>
 
 
-                <!-- Search results -->
-
                 <div id="stock-search-results"></div>
 
             </div>
 
-
-            <!-- Selected stock -->
 
             <div
                 id="selected-stock"
@@ -598,8 +595,6 @@
                 <strong>Apple (AAPL)</strong>
             </div>
 
-
-            <!-- Prediction button -->
 
             <button
                 type="button"
@@ -633,7 +628,7 @@
                 id="prediction"
                 class="prediction neutral"
             >
-                —
+                &mdash;
             </div>
 
 
@@ -649,8 +644,15 @@
                 id="modelMeta"
                 class="status"
             >
-                Model: —
+                Model: &mdash;
             </div>
+
+
+            <div
+                id="freshness"
+                class="freshness"
+                style="display: none;"
+            ></div>
 
         </section>
 
@@ -678,7 +680,7 @@
 
 
     <div class="footer">
-        AVA-AI • Machine Learning Stock Analysis Project
+        AVA-AI &bull; Machine Learning Stock Analysis Project
     </div>
 
 </div>
@@ -686,23 +688,12 @@
 
 <script>
 
-    /*
-     * Select a stock
-     *
-     * companyName is supplied directly for search results,
-     * so every S&P 500 company keeps its real company name.
-     */
-
     function selectStock(ticker, companyName = null) {
 
         ticker = ticker.toUpperCase();
 
         document.getElementById("ticker").value = ticker;
 
-
-        /*
-         * Update recommended-stock active state
-         */
 
         document
             .querySelectorAll(".recommended-stock")
@@ -716,11 +707,6 @@
 
             });
 
-
-        /*
-         * If this is one of the six recommended stocks
-         * and no company name was supplied, get its name.
-         */
 
         if (!companyName) {
 
@@ -741,18 +727,10 @@
         }
 
 
-        /*
-         * Final fallback
-         */
-
         if (!companyName) {
             companyName = ticker;
         }
 
-
-        /*
-         * Update selected stock display
-         */
 
         document.getElementById(
             "selected-stock"
@@ -760,18 +738,10 @@
             `Selected stock: <strong>${companyName} (${ticker})</strong>`;
 
 
-        /*
-         * Close search panel
-         */
-
         document.getElementById(
             "stock-search-panel"
         ).style.display = "none";
 
-
-        /*
-         * Clear search input/results
-         */
 
         const searchInput =
             document.getElementById("stock-search");
@@ -790,10 +760,6 @@
 
     }
 
-
-    /*
-     * Open / close S&P 500 search
-     */
 
     function toggleStockSearch() {
 
@@ -819,10 +785,6 @@
 
     }
 
-
-    /*
-     * Search S&P 500
-     */
 
     async function searchStocks() {
 
@@ -919,11 +881,6 @@
                 button.appendChild(ticker);
 
 
-                /*
-                 * IMPORTANT:
-                 * Pass both ticker AND company name.
-                 */
-
                 button.onclick = () => {
 
                     selectStock(
@@ -952,10 +909,6 @@
 
     }
 
-
-    /*
-     * Run prediction
-     */
 
     async function getPrediction() {
 
@@ -989,16 +942,25 @@
             );
 
 
+        const freshness =
+            document.getElementById(
+                "freshness"
+            );
+
+
         if (!ticker) {
 
             resultTicker.textContent =
                 "No stock selected";
 
             prediction.textContent =
-                "—";
+                "&mdash;";
 
             status.textContent =
                 "Please select a stock first.";
+
+            freshness.style.display =
+                "none";
 
             return;
 
@@ -1027,6 +989,10 @@
             "Model: Loading...";
 
 
+        freshness.style.display =
+            "none";
+
+
         try {
 
             const response =
@@ -1034,10 +1000,6 @@
                     `http://127.0.0.1:8000/predict/${ticker}`
                 );
 
-
-            /*
-             * Prediction unavailable
-             */
 
             if (response.status === 503) {
 
@@ -1061,14 +1023,14 @@
                     "Model: No trained model available";
 
 
+                freshness.style.display =
+                    "none";
+
+
                 return;
 
             }
 
-
-            /*
-             * Invalid ticker
-             */
 
             if (response.status === 404) {
 
@@ -1087,14 +1049,14 @@
                     "Model: —";
 
 
+                freshness.style.display =
+                    "none";
+
+
                 return;
 
             }
 
-
-            /*
-             * Other API errors
-             */
 
             if (!response.ok) {
 
@@ -1109,10 +1071,6 @@
                 await response.json();
 
 
-            /*
-             * Convert decimal return to percentage
-             */
-
             const percentage =
                 data.predicted_next_day_return * 100;
 
@@ -1120,10 +1078,6 @@
             prediction.textContent =
                 `${percentage.toFixed(4)}%`;
 
-
-            /*
-             * Prediction display state
-             */
 
             if (percentage > 0.05) {
 
@@ -1151,6 +1105,52 @@
                 `Model: ${data.model_version} • ${data.model_type} • Horizon: ${data.prediction_horizon}`;
 
 
+            if (data.freshness) {
+
+                const freshnessDays =
+                    data.freshness.data_age_trading_days;
+
+                const latestDate =
+                    data.latest_data_date ||
+                    data.freshness.latest_data_date;
+
+
+                freshness.style.display =
+                    "block";
+
+
+                freshness.className =
+                    data.freshness.is_stale
+                        ? "freshness stale"
+                        : "freshness fresh";
+
+
+                if (data.freshness.is_stale) {
+
+                    freshness.innerHTML =
+                        `<strong>Data freshness:</strong>
+                         Latest data: ${latestDate}
+                         • ${freshnessDays} trading days old
+                         • Stale`;
+
+                } else {
+
+                    freshness.innerHTML =
+                        `<strong>Data freshness:</strong>
+                         Latest data: ${latestDate}
+                         • ${freshnessDays} trading days old
+                         • Current`;
+
+                }
+
+            } else {
+
+                freshness.style.display =
+                    "none";
+
+            }
+
+
         } catch (error) {
 
             console.error(error);
@@ -1172,6 +1172,10 @@
 
             modelMeta.textContent =
                 "Model: —";
+
+
+            freshness.style.display =
+                "none";
 
         }
 

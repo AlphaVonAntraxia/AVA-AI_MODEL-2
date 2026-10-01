@@ -1,510 +1,168 @@
-\# AVA-AI Base Model v1
+# AVA-AI V2 Base Model
 
+## 1. Overview
 
+AVA-AI V2 is the project's first broad, production-oriented forecasting foundation.
 
-\## 1. Overview
+V2 expands the original six-stock research prototype into an S&P 500-scale system with:
 
+- 503 S&P 500 assets
+- Automated historical-data acquisition
+- Data-quality validation
+- Asset cataloging
+- Model training and registration
+- Leakage-free walk-forward evaluation
+- Naive baseline comparison
+- Prediction availability tracking
+- Data-freshness metadata
+- FastAPI backend integration
+- Frontend prediction dashboard
 
+The system predicts the next trading day's percentage return.
 
-AVA-AI Base Model v1 is the first end-to-end machine-learning forecasting system developed for the AVA-AI project.
+AVA-AI V2 is a research and engineering system. Its current evaluation does not demonstrate broad predictive superiority over a naive baseline and should not be interpreted as a validated trading strategy or investment recommendation.
 
+---
 
+## 2. V2 Asset Universe
 
-The purpose of this version is to establish a reproducible baseline for next-day stock-return prediction using historical market data and technical indicators.
+The V2 universe contains the 503 constituents represented by the project's S&P 500 universe file.
 
+The universe is stored in:
 
+`backend/data/universe/sp500.csv`
 
-The system currently supports:
+The asset catalog is generated at:
 
+`data/asset_catalog.csv`
 
+Each catalog entry tracks:
 
-\- Apple (AAPL)
+- ticker
+- company name
+- asset type
+- data availability
+- model availability
+- prediction availability
 
-\- Amazon (AMZN)
+### Current Coverage
 
-\- Alphabet (GOOGL)
+| Metric | Count |
+|---|---:|
+| S&P 500 assets | 503 |
+| Historical datasets available | 503 |
+| Trained models | 499 |
+| Prediction-ready assets | 499 |
+| Assets without models | 4 |
 
-\- Microsoft (MSFT)
+Four assets have insufficient historical data for the current five-fold training procedure and are therefore intentionally excluded from model training.
 
-\- NVIDIA (NVDA)
+These are currently recorded as:
 
-\- Tesla (TSLA)
+- FDXF
+- HONA
+- Q
+- SNDK
 
+Their raw data passed the available data-quality checks, but the historical length is insufficient for the current training architecture.
 
+---
 
-The base model is intended as a research and engineering baseline, not as a validated trading strategy or investment recommendation.
+## 3. Historical Market Data
 
+V2 uses daily historical market data containing:
 
+- datetime
+- open
+- high
+- low
+- close
+- volume
 
-\---
+Raw datasets are stored under:
 
+`data/raw/`
 
+Raw market-data files are intentionally excluded from Git because of their size.
 
-\## 2. Dataset
+The project uses Twelve Data for historical data acquisition.
 
+The market-data client is implemented in:
 
+`backend/data/market_data.py`
 
-The base model uses daily historical stock-market data for six equities.
+The universe downloader is implemented in:
 
+`backend/data/download_universe.py`
 
+The downloader supports:
 
-Each stock contains:
-
-
-
-\- 500 daily observations
-
-\- Date range: 2024-09-27 to 2026-09-25
-
-\- Open price
-
-\- High price
-
-\- Low price
-
-\- Close price
-
-\- Volume
-
-
-
-Data quality checks confirmed:
-
-
-
-\- Missing values: 0
-
-\- Duplicate dates: 0
-
-\- Rows per stock: 500
-
-
-
-\---
-
-
-
-\## 3. Feature Engineering
-
-
-
-The model uses the following technical features:
-
-
-
-\- Close price
-
-\- 20-day moving average (MA20)
-
-\- 50-day moving average (MA50)
-
-\- 20-day return volatility
-
-\- Volume percentage change
-
-\- 1-day lagged return
-
-\- 5-day lagged return
-
-\- 14-period RSI
-
-\- MACD
-
-\- MACD signal
-
-
-
-The prediction target is the next trading day's percentage return.
-
-
-
-The target is calculated as:
-
-
-
-`next\_day\_close / current\_close - 1`
-
-
-
-\---
-
-
-
-\## 4. Validation Method
-
-
-
-The model was evaluated using walk-forward validation rather than a random train/test split.
-
-
-
-The validation structure used sequential historical periods:
-
-
-
-| Fold | Training End | Test Start | Test End |
-
-|---|---:|---:|---:|
-
-| 1 | 150 | 150 | 210 |
-
-| 2 | 210 | 210 | 270 |
-
-| 3 | 270 | 270 | 330 |
-
-| 4 | 330 | 330 | 390 |
-
-| 5 | 390 | 390 | 450 |
-
-
-
-This approach preserves the chronological nature of financial data and avoids randomly mixing future observations into the training data.
-
-
-
-\---
-
-
-
-\## 5. Naive Baseline
-
-
-
-A naive baseline was established before evaluating machine-learning models.
-
-
-
-The baseline predicts the next return using the current return.
-
-
-
-Overall baseline performance:
-
-
-
-\- MAE: 0.01558
-
-\- RMSE: 0.02105
-
-
-
-The naive baseline is important because a machine-learning model should demonstrate improvement over a simple reference method before being considered useful.
-
-
-
-\---
-
-
-
-\## 6. Machine-Learning Experiments
-
-
-
-Several models were evaluated using the same walk-forward framework.
-
-
-
-\### Random Forest
-
-
-
-\- MAE: 0.01706
-
-\- RMSE: 0.02259
-
-\- Directional Accuracy: 49.67%
-
-
-
-\### Gradient Boosting
-
-
-
-\- MAE: 0.01996
-
-\- RMSE: 0.02611
-
-\- Directional Accuracy: 50.94%
-
-
-
-\### Linear Regression
-
-
-
-\- MAE: 0.01790
-
-\- RMSE: 0.02348
-
-\- Directional Accuracy: 49.50%
-
-
-
-\### Ridge Regression
-
-
-
-\- MAE: 0.01753
-
-\- RMSE: 0.02311
-
-\- Directional Accuracy: 49.00%
-
-
-
-\---
-
-
-
-\## 7. Expanded Feature Experiments
-
-
-
-Additional lagged returns, rolling returns, and price-to-moving-average features were also tested.
-
-
-
-These experiments did not produce a meaningful improvement over the naive baseline.
-
-
-
-Random Forest with expanded features:
-
-
-
-\- MAE: 0.01693
-
-\- RMSE: 0.02251
-
-\- Directional Accuracy: 48.44%
-
-
-
-Gradient Boosting with expanded features:
-
-
-
-\- MAE: 0.01940
-
-\- RMSE: 0.02538
-
-\- Directional Accuracy: 48.72%
-
-
-
-Scaled Ridge with expanded features:
-
-
-
-\- MAE: 0.01770
-
-\- RMSE: 0.02325
-
-\- Directional Accuracy: 48.17%
-
-
-
-\---
-
-
-
-\## 8. Classification Experiments
-
-
-
-Next-day direction classification was also tested.
-
-
-
-The experiments included:
-
-
-
-\- Random Forest classification
-
-\- Logistic Regression
-
-\- Majority-class baseline
-
-\- Multiple-stock pooled classification
-
-\- Confidence-threshold experiments
-
-
-
-The results remained close to chance-level performance.
-
-
-
-Logistic Regression:
-
-
-
-\- Accuracy: 49.39%
-
-\- Balanced Accuracy: 50.79%
-
-
-
-Random Forest next-day direction:
-
-
-
-\- Accuracy: 49.89%
-
-
-
-Majority baseline:
-
-
-
-\- Accuracy: 50.33%
-
-
-
-These results did not provide evidence of a meaningful predictive signal in the current technical feature set.
-
-
-
-\---
-
-
-
-\## 9. Final Base Model
-
-
-
-The production inference pipeline currently uses a Random Forest model for each supported stock.
-
-
-
-Configuration:
-
-
-
-\- Random Forest
-
-\- 300 trees
-
-\- Technical feature set described above
-
-\- Final model fitted using the available historical observations
-
-\- Saved using Joblib
-
-
-
-Model files are stored locally under:
-
-
-
-`models/\*.joblib`
-
-
-
-The generated model files are intentionally excluded from Git version control because of their size.
-
-
-
-\---
-
-
-
-\## 10. Model Performance Finding
-
-
-
-The most important finding from Base Model v1 is that the machine-learning models did not consistently outperform the naive baseline.
-
-
-
-The naive baseline achieved:
-
-
-
-\- MAE: 0.01558
-
-\- RMSE: 0.02105
-
-
-
-The original Random Forest achieved:
-
-
-
-\- MAE: 0.01706
-
-\- RMSE: 0.02259
-
-
-
-Therefore, Base Model v1 should be treated as a technical and research baseline rather than evidence of a profitable forecasting system.
-
-
-
-This result is retained intentionally rather than selecting a model solely because it produces attractive predictions.
-
-
-
-\---
-
-
-
-\## 11. API Integration
-
-
-
-The trained models are integrated into a FastAPI backend.
-
-
-
-The API supports:
-
-
-
-`GET /predict/{ticker}`
-
-
-
-Supported tickers:
-
-
-
-\- AAPL
-
-\- AMZN
-
-\- GOOGL
-
-\- MSFT
-
-\- NVDA
-
-\- TSLA
-
-
-
-The API returns a structured response containing:
-
-
-
-\- ticker
-
-\- predicted next-day return
-
-
-
-Example:
-
-
-
-```json
-
-{
-
-&#x20; "ticker": "AAPL",
-
-&#x20; "predicted\_next\_day\_return": -0.001156518179056177
-
-}
-
+- configurable output size
+- retries
+- retry delays
+- request delays
+- skipping existing datasets
+- complete S&P 500 universe downloads
+
+The final S&P 500 acquisition achieved 100% dataset availability.
+
+---
+
+## 4. Data Validation
+
+V2 includes automated validation before model training.
+
+Validation checks include:
+
+- required columns
+- missing values
+- duplicate dates
+- invalid numeric values
+- invalid OHLC relationships
+- historical row count
+- earliest available date
+- latest available date
+
+The validation process found:
+
+| Status | Assets |
+|---|---:|
+| PASS | 499 |
+| LIMITED_HISTORY / CHECK | 4 |
+| FAIL | 0 |
+
+The four limited-history datasets passed the underlying data-quality checks but do not contain enough observations for the current model-training procedure.
+
+This distinction is intentional: insufficient history is treated differently from corrupted market data.
+
+---
+
+## 5. Feature Engineering
+
+The current V2 production feature set contains 24 technical features.
+
+```text
+close
+MA5
+MA20
+MA50
+price_vs_MA5
+price_vs_MA20
+price_vs_MA50
+volatility_5
+volatility_10
+volatility_20
+volume_change
+volume_vs_MA20
+return_lag1
+return_lag2
+return_lag3
+return_lag5
+return_lag10
+rolling_return_5
+rolling_return_10
+rolling_return_20
+RSI_14
+MACD
+MACD_signal
+MACD_histogram

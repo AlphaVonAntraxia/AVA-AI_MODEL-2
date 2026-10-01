@@ -1,7 +1,6 @@
 from pathlib import Path
 
 import joblib
-import pandas as pd
 
 from models.train_model import build_features, FEATURE_COLUMNS
 
@@ -11,7 +10,12 @@ DATA_DIR = PROJECT_ROOT / "data" / "raw"
 MODEL_DIR = PROJECT_ROOT / "models"
 
 
-def predict_next_return(ticker: str) -> float:
+def predict_next_return(
+    ticker: str,
+    return_metadata: bool = False,
+):
+    ticker = ticker.upper()
+
     data_path = DATA_DIR / f"{ticker}_daily.csv"
     model_path = MODEL_DIR / f"{ticker}_random_forest.joblib"
 
@@ -27,6 +31,8 @@ def predict_next_return(ticker: str) -> float:
 
     data = build_features(data_path)
 
+    latest_raw_date = data.index.max()
+
     latest = (
         data[FEATURE_COLUMNS]
         .dropna()
@@ -35,9 +41,19 @@ def predict_next_return(ticker: str) -> float:
 
     model = joblib.load(model_path)
 
-    prediction = model.predict(latest)[0]
+    prediction = float(
+        model.predict(latest)[0]
+    )
 
-    return float(prediction)
+    if return_metadata:
+        return {
+            "prediction": prediction,
+            "latest_data_date": latest_raw_date.strftime(
+                "%Y-%m-%d"
+            ),
+        }
+
+    return prediction
 
 
 if __name__ == "__main__":
@@ -45,4 +61,7 @@ if __name__ == "__main__":
 
     prediction = predict_next_return(ticker)
 
-    print(f"{ticker} predicted next-day return: {prediction:.6%}")
+    print(
+        f"{ticker} predicted next-day return: "
+        f"{prediction:.6%}"
+    )

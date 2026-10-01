@@ -2,6 +2,7 @@ from pathlib import Path
 from datetime import datetime
 
 import pandas as pd
+import pandas_market_calendars as mcal
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -17,14 +18,24 @@ def get_data_freshness(latest_data_date: str) -> dict:
 
     current_date = datetime.now().date()
 
-    age_days = (
-        current_date - latest_date
-    ).days
+    nyse = mcal.get_calendar("NYSE")
+
+    schedule = nyse.schedule(
+        start_date=latest_date,
+        end_date=current_date,
+    )
+
+    trading_days = len(schedule)
+
+    if trading_days == 0:
+        trading_days_old = 0
+    else:
+        trading_days_old = trading_days - 1
 
     return {
         "latest_data_date": latest_data_date,
-        "data_age_days": age_days,
-        "is_stale": age_days > 1,
+        "data_age_trading_days": trading_days_old,
+        "is_stale": trading_days_old > 1,
     }
 
 

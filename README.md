@@ -1,6 +1,7 @@
 # AVA-AI_MODEL-2
 (Started In April after finishing the The AVA-AI_MODEL-2.
 THE PUSH AND COMMITS IN GITHUB WAS DONE IN SEPTEMBER)
+
 The goal of this project is to build a machine learning based platform that retrieve data for publicly traded companies, analyze historical price behaviours and relevant financial indicators. And generate forecast for future stockprice
 The initial version will focus on major publicly traded companies such as Apple, Microsoft, Alphabet, Amazon, NVIDIA, and Tesla. The architecture will be designed so that additional stocks and markets can be supported in the future.
 This project is intended as a research and educational forecasting system. Stock-market predictions are inherently uncertain, and model outputs should not be interpreted as guaranteed future prices or financial advice.

@@ -1,5 +1,5 @@
 # AVA-AI_MODEL-2
-{Timeline: v1 (AVA-AI_model-1) built Sept-Dec 2025. Model 2 development began around April 2026 locally and was uploaded to GitHub in September 2026.}
+{Timeline: Model 1 (AVA-AI_model-1) built Sept-Dec 2025. Model 2 development began around April 2026 locally and was uploaded to GitHub in September 2026.}
 
 The goal of this project is to build a machine learning based platform that retrieve data for publicly traded companies, analyze historical price behaviours and relevant financial indicators. And generate forecast for future stockprice
 The initial version will focus on major publicly traded companies such as Apple, Microsoft, Alphabet, Amazon, NVIDIA, and Tesla. The architecture will be designed so that additional stocks and markets can be supported in the future.
